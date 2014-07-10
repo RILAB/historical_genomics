@@ -1,9 +1,8 @@
-historical_genomics
-===================
+#Historical Genomics of US Maize
 
 ## Pedigree Files
 
-**Ames.csv**  
+**Ames_howie.csv**  
 All of Howie's data.  This includes the "Jeff_Inbred_pedigree-Howie2.xlsx" datafile and "Ames_pedigrees352014" as well, and may include some duplicates.
 
 **Minn.csv**  
@@ -11,6 +10,9 @@ Pedigree data from Minnesota inbreds, thanks to Rex Bernardo, from Chris Schaefe
 
 **CML.csv**  
 Pedigree data for CIMMYT CML lines. Original excel is CMLs-Information 1-539.CZ.20140312-2.xls
+
+**ames_withyears.csv**  
+Anne's efforts at getting years from GRIN, but their data is not so hot.
 
 **ames_10neighbors.csv**  
 10 closest neighbors based on IBS for Ames panel. Can use to cross-reference against pedigree. Data from [Romay 2013](http://genomebiology.com/2013/14/6/R55/)
@@ -66,11 +68,14 @@ Progress:
 * Pedigree information for lots of inbreds from Howie, CMLs, and Minnesota
 * IBD done across all Ames
 * HapMap3 imputation on Ames underway
+* Anne did time/year for ~800 lines but from GRIN where data is usually when they got the accession not when registered
 
 Plan:
 
 * More Pedigree data from Pioneer?
 * Check/add to pedigree from relatedness data
+* Need better year/time data
+* Scan for segregation distortion along genome, check for evidence of selection on those haplotypes (longer than expected, etc.)
 
 #### SQuaT
 
@@ -94,3 +99,7 @@ Plan:
 Of interest to run analyses on more closed systems (e.g. Minnesota material, McMullen BSSS material, etc.?)
 
 What GWAS panel doesn't cause big problems for structure for SQuaT? Are there landrace panels?
+
+Do we need time data? Perhaps instead we want distance down pedigree? Do we have enough lines (and/or confidence) to divide into decades?
+
+We have CML pedigree data.  Probably GBS too.  Include these?
