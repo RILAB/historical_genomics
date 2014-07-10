@@ -8,6 +8,9 @@ All of Howie's data.  This includes the "Jeff_Inbred_pedigree-Howie2.xlsx" dataf
 **Minn.csv**  
 Pedigree data from Minnesota inbreds, thanks to Rex Bernardo, from Chris Schaefer PhD thesis, original file is Crop Sci Schaefer and Bernardo Suppl Table.xls
 
+**kernel_panel.csv**  
+Panel from [Li et al. 2012](http://www.nature.com/ng/journal/v45/n1/full/ng.2484.html) with pedigree data.
+
 **CML.csv**  
 Pedigree data for CIMMYT CML lines. Original excel is CMLs-Information 1-539.CZ.20140312-2.xls
 
