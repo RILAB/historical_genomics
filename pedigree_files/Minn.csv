@@ -1,0 +1,743 @@
+No,Inbred name,GRIN ID,Developer,PVPA ID,PVPA expiration date,Seed source,Derivation,Year developed,Year released,Pedigree source,Status in study,Model-based cluster,B73,Mo17,Oh43,A321,PH207
+1,11430,PI 601558,"Cargill, Inc.",8800177,3/31/07,GRIN,"Oh43, H99, and Mo17 Composite",.,.,"Nelson et al., 2008",Included,Oh43,0.0092,0.0016,0.5884,0.396,0.0048
+2,2FACC,PI 601808,DeKalb Plant Genetics,9000016,8/31/08,GRIN,4676A x PB80,.,.,PVPA Certificate,Included,B73,0.7754,0.0048,0.0416,0.176,0.0022
+3,2MA22,PI 601560,DeKalb-Pfizer Genetics,8800193,1/31/07,GRIN,4780 x 5P9-1,.,.,"Nelson et al., 2008",Included,A321,0.0318,0.0852,0.34,0.3871,0.156
+4,3IBZ2,PI 554616,DeKalb Plant Genetics,9100223,4/30/10,GRIN,IBC2 x ZZZ38,.,.,PVPA Certificate,Included,PH207,0.001,0.1234,0.114,0.1316,0.6299
+5,4N506,PI 601745,"Funk Seeds International, Inc.",8900263,9/28/08,GRIN,B73 x BSSS 2,.,.,PVPA Certificate,Included,B73,0.857,0.0024,0.0022,0.075,0.0634
+6,6M502,PI 601561,DeKalb-Pfizer Genetics,8800191,7/31/08,GRIN,MAWU x 4913,.,.,PVPA Certificate,Included,Mo17,0.0038,0.4031,0.3537,0.2275,0.0118
+7,87916W,PI 601563,DeKalb-Pfizer Genetics,8800189,1/31/07,GRIN,B73 x W37-2,.,.,PVPA Certificate,Included,B73,0.7813,0.001,0.0332,0.1797,0.0048
+8,A1 ,.,Minnesota,.,.,.,Minn #13 ,.,1950,UM Records,No seed available,.,.,.,.,.,.
+9,A2,.,Minnesota,.,.,.,Minn #13 ,.,1950,UM Records,No seed available,.,.,.,.,.,.
+10,A3,.,Minnesota,.,.,.,Minn #13 ,.,.,UM Records,No seed available,.,.,.,.,.,.
+11,A4,.,Minnesota,.,.,.,Minn #13 ,.,.,UM Records,No seed available,.,.,.,.,.,.
+12,A5 ,.,Minnesota,.,.,.,Minn #13 ,.,.,UM Records,No seed available,.,.,.,.,.,.
+13,A6,.,Minnesota,.,.,.,Minn #13 ,.,.,UM Records,No seed available,.,.,.,.,.,.
+14,A7,NSL 42872,Minnesota,.,.,GRIN,Minn #13 ,.,.,UM Records,Included,Oh43,0.0322,0.027,0.4809,0.3838,0.0762
+15,A8,.,Minnesota,.,.,.,Minn #13 ,.,.,UM Records,No seed available,.,.,.,.,.,.
+16,A9,.,Minnesota,.,.,.,Minn #13 ,.,.,UM Records,No seed available,.,.,.,.,.,.
+17,A10,.,Minnesota,.,.,.,Minn #13 ,.,.,UM Records,No seed available,.,.,.,.,.,.
+18,A12,NSL 42873,Minnesota,.,.,GRIN,Minn #13 ,.,1950,UM Records,Included,A321,0.1132,0.0248,0.4004,0.4158,0.0458
+19,A13,.,Minnesota,.,.,.,Kalmoes #13,.,.,UM Records,No seed available,.,.,.,.,.,.
+20,A14,.,Minnesota,.,.,.,Kalmoes #13,.,.,UM Records,No seed available,.,.,.,.,.,.
+21,A15,Ames 23389,Minnesota,.,.,GRIN,Kalmoes #13,.,.,UM Records,Included,Oh43,0.0268,0.1016,0.4305,0.4246,0.0166
+22,A16,.,Minnesota,.,.,.,Kalmoes #13,.,.,UM Records,No seed available,.,.,.,.,.,.
+23,A17,.,Minnesota,.,.,.,Kalmoes #13,.,.,UM Records,No seed available,.,.,.,.,.,.
+24,A18,.,Minnesota,.,.,.,Kalmoes #13,.,.,UM Records,No seed available,.,.,.,.,.,.
+25,A19,.,Minnesota,.,.,.,Golden Gate,.,.,UM Records,No seed available,.,.,.,.,.,.
+26,A20,.,Minnesota,.,.,.,Golden Gate,.,.,UM Records,No seed available,.,.,.,.,.,.
+27,A21,.,Minnesota,.,.,.,Golden Gate,.,1950,UM Records,No seed available,.,.,.,.,.,.
+28,A22,.,Minnesota,.,.,.,Golden Gate,.,.,UM Records,No seed available,.,.,.,.,.,.
+29,A23,.,Minnesota,.,.,.,Golden Gate,.,.,UM Records,No seed available,.,.,.,.,.,.
+30,A24,.,Minnesota,.,.,.,Golden Gate,.,.,UM Records,No seed available,.,.,.,.,.,.
+31,A25,Ames 23390,Minnesota,.,.,GRIN**,Purdue Yellow Dent,1935,1950,UM Records,No seed available,.,.,.,.,.,.
+32,A26,.,Minnesota,.,.,.,Osterland Yellow Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+33,A27,.,Minnesota,.,.,.,Osterland Yellow Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+34,A28,.,Minnesota,.,.,.,Golden Glow,1935,.,UM Records,No seed available,.,.,.,.,.,.
+35,A28,.,Minnesota,.,.,.,Minn #13,1935,.,UM Records,No seed available,.,.,.,.,.,.
+36,A29,.,Minnesota,.,.,.,Minn #13,.,.,UM Records,No seed available,.,.,.,.,.,.
+37,A30,.,Minnesota,.,.,.,Minn #13,.,.,UM Records,No seed available,.,.,.,.,.,.
+38,A31,.,Minnesota,.,.,.,Holbert,.,.,UM Records,No seed available,.,.,.,.,.,.
+39,A32,.,Minnesota,.,.,.,Holbert,.,.,UM Records,No seed available,.,.,.,.,.,.
+40,A33,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+41,A33,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+42,A34,Ames 23391,Minnesota,.,.,GRIN,Rustler White Dent,.,1950,UM Records,Included,A321,0.0372,0.0232,0.3483,0.5135,0.0778
+43,A35,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+44,A35,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+45,A36,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+46,A36,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+47,A37,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+48,A38,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+49,A38,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+50,A39,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+51,A40,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+52,A41,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+53,A42,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+54,A43,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+55,A44,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+56,A45,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+57,A46,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+58,A47,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+59,A48,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+60,A49,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+61,A50,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+62,A51,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+63,A52,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+64,A53,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+65,A54,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+66,A55,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+67,A56,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+68,A57,.,Minnesota,.,.,.,Northwestern Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+69,A58,.,Minnesota,.,.,.,Minn #23,.,.,UM Records,No seed available,.,.,.,.,.,.
+70,A59,.,Minnesota,.,.,.,Minn #23,.,.,UM Records,No seed available,.,.,.,.,.,.
+71,A60,.,Minnesota,.,.,.,Minn #23,.,.,UM Records,No seed available,.,.,.,.,.,.
+72,A61,.,Minnesota,.,.,.,Minn #23,.,.,UM Records,No seed available,.,.,.,.,.,.
+73,A62,.,Minnesota,.,.,.,Minn #23,.,.,UM Records,No seed available,.,.,.,.,.,.
+74,A63,.,Minnesota,.,.,.,Minn #23,.,.,UM Records,No seed available,.,.,.,.,.,.
+75,A64,.,Minnesota,.,.,.,Longfellow,.,.,UM Records,No seed available,.,.,.,.,.,.
+76,A65,.,Minnesota,.,.,.,Longfellow,.,.,UM Records,No seed available,.,.,.,.,.,.
+77,A66,.,Minnesota,.,.,.,Longfellow,.,.,UM Records,No seed available,.,.,.,.,.,.
+78,A67,.,Minnesota,.,.,.,Longfellow,.,.,UM Records,No seed available,.,.,.,.,.,.
+79,A68,.,Minnesota,.,.,.,King Phillip,.,.,UM Records,No seed available,.,.,.,.,.,.
+80,A69,.,Minnesota,.,.,.,King Phillip,.,.,UM Records,No seed available,.,.,.,.,.,.
+81,A70,.,Minnesota,.,.,.,Unknown,.,.,UM Records,No seed available,.,.,.,.,.,.
+82,A71,NSL 42875,Minnesota,.,.,GRIN,Funk Yellow Dent,1935,1950,UM Records,Included,A321,0.0886,0.0094,0.1545,0.6444,0.1032
+83,A72,.,Minnesota,.,.,.,R3 x AR9,1935,.,UM Records,No seed available,.,.,.,.,.,.
+84,A73,Ames 22439,Minnesota,.,.,GRIN,G3 x AR9,1935,1950,UM Records,Included,A321,0.0312,0.0004,0.001,0.9664,0.001
+85,A74,.,Minnesota,.,.,.,15 x A36,.,.,UM Records,No seed available,.,.,.,.,.,.
+86,A75,.,Minnesota,.,.,.,15 x A36,.,.,UM Records,No seed available,.,.,.,.,.,.
+87,A76,.,Minnesota,.,.,.,58 x 60,1933,.,UM Records,No seed available,.,.,.,.,.,.
+88,A77,.,Minnesota,.,.,.,58 x 60,1933,.,UM Records,No seed available,.,.,.,.,.,.
+89,A78,.,Minnesota,.,.,.,A48 x A50,.,.,UM Records,No seed available,.,.,.,.,.,.
+90,A79,.,Minnesota,.,.,.,A48 x A50,.,.,UM Records,Included,Oh43,0.0512,0.0462,0.4061,0.3806,0.116
+91,A80,.,Minnesota,.,.,.,A48 x A12,.,.,UM Records,Included,Oh43,0.001,0.103,0.4744,0.3478,0.0738
+92,A81,.,Minnesota,.,.,.,A48 x A9,.,.,UM Records,Included,B73,0.7968,0.0006,0.0546,0.1464,0.0016
+93,A82,.,Minnesota,.,.,.,A48 x A9,.,.,UM Records,No seed available,.,.,.,.,.,.
+94,A83,.,Minnesota,.,.,.,A48 x A9,.,.,UM Records,No seed available,.,.,.,.,.,.
+95,A84,.,Minnesota,.,.,.,A48 x A9,.,.,UM Records,Included,Oh43,0.0654,0.0562,0.4898,0.3876,0.001
+96,A85,.,Minnesota,.,.,.,A48 x A9,.,.,UM Records,Included,A321,0.2744,0.0052,0.2246,0.4685,0.0274
+97,A86,.,Minnesota,.,.,.,A48 x A12,.,.,UM Records,No seed available,.,.,.,.,.,.
+98,A87,.,Minnesota,.,.,.,A48 x A12,.,.,UM Records,No seed available,.,.,.,.,.,.
+99,A88,.,Minnesota,.,.,.,A48 x A39,.,.,UM Records,Included,A321,0.0214,0.0852,0.3567,0.5121,0.0246
+100,A89,.,Minnesota,.,.,.,A48 x A39,.,.,UM Records,Included,B73,0.8622,0.0002,0.0486,0.0876,0.0014
+101,A90,Ames23392,Minnesota,.,.,GRIN,A48 x A39,.,1950,UM Records,Included,A321,0.0008,0.0056,0.359,0.6254,0.0092
+102,A91,.,Minnesota,.,.,.,A48 x 4-29,.,.,UM Records,Included,Oh43,0.0022,0.0338,0.5191,0.4421,0.0028
+103,A92,.,Minnesota,.,.,.,A48 x 4-29,.,.,UM Records,Included,A321,0.1488,0.0568,0.3174,0.3742,0.1028
+104,A93,.,Minnesota,.,.,.,A48 x H,.,.,UM Records,No seed available,.,.,.,.,.,.
+105,A94,.,Minnesota,.,.,.,A48 x H,.,.,UM Records,Included,A321,0.3088,0.0572,0.2937,0.3191,0.0212
+106,A95,.,Minnesota,.,.,.,A48 x H,.,.,UM Records,No seed available,.,.,.,.,.,.
+107,A96,Ames 23393,Minnesota,.,.,GRIN,A48 x H,.,1950,UM Records,Included,A321,0.0078,0.0012,0.1744,0.8156,0.001
+108,A97,.,Minnesota,.,.,.,A48 x H,.,.,UM Records,No seed available,.,.,.,.,.,.
+109,A98,.,Minnesota,.,.,.,A9 x A39,.,.,UM Records,No seed available,.,.,.,.,.,.
+110,A99,.,Minnesota,.,.,.,A9 x A39,.,.,UM Records,No seed available,.,.,.,.,.,.
+111,A100,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+112,A101,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+113,A102,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+114,A103,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+115,A104,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+116,A106,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+117,A107,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+118,A108,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+119,A109,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+120,A110,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+121,A111,.,Minnesota,.,.,.,A9 x A26,.,1950,UM Records,No seed available,.,.,.,.,.,.
+122,A112,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+123,A113,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+124,A114,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+125,A115,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+126,A116,Ames 23394,Minnesota,.,.,GRIN,A9 x A26,.,1950,UM Records,Included,A321,0.002,0.0492,0.3393,0.5175,0.092
+127,A117,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+128,A118,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+129,A119,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+130,A120,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+131,A121,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+132,A122,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+133,A123,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+134,A124,.,Minnesota,.,.,.,A9 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+135,A125,.,Minnesota,.,.,.,A12 x A39,.,.,UM Records,No seed available,.,.,.,.,.,.
+136,A126,.,Minnesota,.,.,.,A12 x A39,.,.,UM Records,No seed available,.,.,.,.,.,.
+137,A127,.,Minnesota,.,.,.,A12 x A39,.,.,UM Records,No seed available,.,.,.,.,.,.
+138,A128,.,Minnesota,.,.,.,A12 x A39,.,.,UM Records,No seed available,.,.,.,.,.,.
+139,A129,.,Minnesota,.,.,.,A12 x A39,.,.,UM Records,No seed available,.,.,.,.,.,.
+140,A130,.,Minnesota,.,.,.,A12 x A39,.,.,UM Records,No seed available,.,.,.,.,.,.
+141,A131,.,Minnesota,.,.,.,A12 x A39,.,1950,UM Records,No seed available,.,.,.,.,.,.
+142,A132,.,Minnesota,.,.,.,A39 x A25,.,.,UM Records,No seed available,.,.,.,.,.,.
+143,A133,.,Minnesota,.,.,.,A39 x 9,.,.,UM Records,No seed available,.,.,.,.,.,.
+144,A134,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+145,A135,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+146,A136,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+147,A137,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+148,A138,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+149,A139,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+150,A140,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+151,A141,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+152,A142,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+153,A143,.,Minnesota,.,.,.,A39 x 9,.,.,UM Records,No seed available,.,.,.,.,.,.
+154,A144,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+155,A145,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+156,A146,.,Minnesota,.,.,.,A39 x A26,.,.,UM Records,No seed available,.,.,.,.,.,.
+157,A147,.,Minnesota,.,.,.,A39 x H,.,.,UM Records,No seed available,.,.,.,.,.,.
+158,A148,.,Minnesota,.,.,.,A2 x A7,.,1950,UM Records,No seed available,.,.,.,.,.,.
+159,A149,.,Minnesota,.,.,.,A2 x A7,.,.,UM Records,No seed available,.,.,.,.,.,.
+160,A150,.,Minnesota,.,.,.,A2 x A7,.,.,UM Records,No seed available,.,.,.,.,.,.
+161,A151,.,Minnesota,.,.,.,A2 x A7,.,.,UM Records,No seed available,.,.,.,.,.,.
+162,A152,Ames 23395,Minnesota,.,.,GRIN,A2 x A7,.,.,UM Records,Included,Oh43,0,0.0006,0.9956,0.0034,0.0004
+163,A153,.,Minnesota,.,.,.,A2 x A7,.,.,UM Records,No seed available,.,.,.,.,.,.
+164,A154,.,Minnesota,.,.,.,A2 x A7,.,.,UM Records,No seed available,.,.,.,.,.,.
+165,A155,Ames 23396,Minnesota,.,.,GRIN,A2 x A7,.,.,UM Records,Included,Oh43,0.0002,0.0004,0.9798,0.0192,0.0004
+166,A156,.,Minnesota,.,.,.,A2 x A7,.,.,UM Records,No seed available,.,.,.,.,.,.
+167,A157,.,Minnesota,.,.,.,A2 x 47,.,.,UM Records,No seed available,.,.,.,.,.,.
+168,A158,Ames 23397,Minnesota,.,.,GRIN,A2 x 47,.,1950,UM Records,Included,Oh43,0,0,0.9998,0.0002,0
+169,A159,.,Minnesota,.,.,.,A2 x 47,.,.,UM Records,No seed available,.,.,.,.,.,.
+170,A160,.,Minnesota,.,.,.,A2 x 47,.,.,UM Records,No seed available,.,.,.,.,.,.
+171,A161,.,Minnesota,.,.,.,A2 x 47,.,.,UM Records,No seed available,.,.,.,.,.,.
+172,A162,.,Minnesota,.,.,.,A2 x 47,.,.,UM Records,No seed available,.,.,.,.,.,.
+173,A163,.,Minnesota,.,.,.,A2 x 47,.,.,UM Records,No seed available,.,.,.,.,.,.
+174,A164,.,Minnesota,.,.,.,A2 x 47,.,.,UM Records,No seed available,.,.,.,.,.,.
+175,A165,NSL 42877,Minnesota,.,.,GRIN,A2 x 47,.,1950,UM Records,Included,Oh43,0,0,0.9996,0.0004,0
+176,A166,Ames 23398,Minnesota,.,.,UMN,A9 x A39,.,1950,UM Records,Included,A321,0.0182,0.001,0.314,0.5764,0.0904
+177,A167,.,Minnesota,.,.,.,Rustler White Dent,.,.,UM Records,No seed available,.,.,.,.,.,.
+178,A171,NSL 42878,Minnesota,.,.,UMN,Complex cross,.,1950,UM Records,Included,A321,0.0286,0.0212,0.3853,0.4417,0.1232
+179,A172,.,Minnesota,.,.,.,Complex cross,.,.,UM Records,No seed available,.,.,.,.,.,.
+180,A173,.,Minnesota,.,.,.,Complex cross,.,.,UM Records,No seed available,.,.,.,.,.,.
+181,A177,.,Minnesota,.,.,.,Complex cross (composite),.,.,"Gerdes et al., 1993",No seed available,.,.,.,.,.,.
+182,A181,.,Minnesota,.,.,.,(8 x 10) x 8(2),.,.,UM Records,No seed available,.,.,.,.,.,.
+183,A182,.,Minnesota,.,.,.,(8 x 10) x 10(2),.,.,UM Records,No seed available,.,.,.,.,.,.
+184,A183,.,Minnesota,.,.,.,(88 x 91) x 88(2),.,.,UM Records,No seed available,.,.,.,.,.,.
+185,A184,.,Minnesota,.,.,.,(88 x 91) x 91(2),.,.,UM Records,No seed available,.,.,.,.,.,.
+186,A185,.,Minnesota,.,.,.,(4-29 x A48) x 4-29(4),.,.,UM Records,No seed available,.,.,.,.,.,.
+187,A186,.,Minnesota,.,.,.,(4-29 x A48) x 4-29(4),.,.,UM Records,No seed available,.,.,.,.,.,.
+188,A187,.,Minnesota,.,.,.,(4-29 x A48) x 4-29(4),.,.,UM Records,No seed available,.,.,.,.,.,.
+189,A188,Ames 22443,Minnesota,.,.,GRIN,(4-29 x A48) x 4-29(4),.,1950,UM Records,Included,A321,0.0178,0.1581,0.3351,0.481,0.008
+190,A189,.,Minnesota,.,.,.,Sweepstakes,.,.,UM Records,No seed available,.,.,.,.,.,.
+191,A190,.,Minnesota,.,.,.,Sweepstakes,.,.,UM Records,No seed available,.,.,.,.,.,.
+192,A191,.,Minnesota,.,.,.,Sweepstakes,.,.,UM Records,No seed available,.,.,.,.,.,.
+193,A192,.,Minnesota,.,.,.,Sweepstakes,.,.,UM Records,No seed available,.,.,.,.,.,.
+194,A193,.,Minnesota,.,.,.,Sweepstakes,.,.,UM Records,No seed available,.,.,.,.,.,.
+195,A200,.,Minnesota,.,.,.,(A2 x C23) x A2(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+196,A201,Ames 23399,Minnesota,.,.,GRIN,(A2 x C23) x A2(2),1938,.,UM Records,Included,Oh43,0,0.0002,0.9624,0.0366,0.0008
+197,A202,.,Minnesota,.,.,.,(A2 x C23) x A2(3),1938,.,UM Records,No seed available,.,.,.,.,.,.
+198,A203,Ames 23400,Minnesota,.,.,GRIN,(A2 x C23) x A2(3),1938,.,UM Records,Included,Oh43,0,0,0.9606,0.039,0.0004
+199,A204,Ames 23401,Minnesota,.,.,GRIN,(A2 x C23) x A2(3),1938,.,UM Records,Included,Oh43,0.001,0.001,0.904,0.0916,0.0024
+200,A205,.,Minnesota,.,.,.,(A2 x C23) x A2(2),1943,.,UM Records,No seed available,.,.,.,.,.,.
+201,A206,.,Minnesota,.,.,.,(A2 x C23) x A2(2),1943,.,UM Records,No seed available,.,.,.,.,.,.
+202,A208,Ames 23402,Minnesota,.,.,GRIN,(A2 x C23) x A2(2),1943,.,UM Records,Included,Oh43,0.0038,0.0044,0.6778,0.3066,0.0074
+203,A209,.,Minnesota,.,.,.,(A2 x C23) x A2(3),1943,.,UM Records,No seed available,.,.,.,.,.,.
+204,A210,.,Minnesota,.,.,.,(A1 x A374) x A1(1),1938,.,UM Records,No seed available,.,.,.,.,.,.
+205,A211,.,Minnesota,.,.,.,(A1 x A374) x A1(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+206,A212,.,Minnesota,.,.,.,(A9 x A10) x A10(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+207,A213,.,Minnesota,.,.,.,(A9 x A10) x A10(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+208,A214,.,Minnesota,.,.,.,[(A9 x A10) x A2] x A10(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+209,A215,.,Minnesota,.,.,.,(A1 x A374) x A1(3),1938,.,UM Records,No seed available,.,.,.,.,.,.
+210,A216,.,Minnesota,.,.,.,(A1 x A374) x A1(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+211,A217,.,Minnesota,.,.,.,(A1 x A374) x A1(2),1943,.,UM Records,No seed available,.,.,.,.,.,.
+212,A218,Ames 23403,Minnesota,.,.,UMN,(A1 x A374) x A1(2),1943,.,UM Records,Included,A321,0.0028,0.001,0.406,0.518,0.0722
+213,A219,.,Minnesota,.,.,.,(A9 x A10) x A10(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+214,A220,.,Minnesota,.,.,.,(A1 x A374) x A374(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+215,A221,.,Minnesota,.,.,.,(A1 x A374) x A374(3),1938,.,UM Records,No seed available,.,.,.,.,.,.
+216,A222,.,Minnesota,.,.,.,(A1 x A374) x A374(3),1938,.,UM Records,No seed available,.,.,.,.,.,.
+217,A223,Ames 23404,Minnesota,.,.,UMN,(A1 x A374) x A374(3),1943,.,UM Records,Included,A321,0.0058,0.002,0.0034,0.9564,0.0324
+218,A230,.,Minnesota,.,.,.,(A2 x C23) x C23(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+219,A231,.,Minnesota,.,.,.,(A2 x C23) x C23(3),1938,.,UM Records,No seed available,.,.,.,.,.,.
+220,A232,.,Minnesota,.,.,.,(A2 x C23) x C23(3),1938,.,UM Records,No seed available,.,.,.,.,.,.
+221,A233,.,Minnesota,.,.,.,(A2 x C23) x C23(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+222,A234,.,Minnesota,.,.,.,(A2 x C23) x C23(2),1943,.,UM Records,No seed available,.,.,.,.,.,.
+223,A237,.,Minnesota,.,.,.,(A2 x C23) x A2(2),1938,.,UM Records,No seed available,.,.,.,.,.,.
+224,A238,NSL 81595,Minnesota,.,.,GRIN,A347 x A73,1946,1970,UM Records,Included,A321,0.0108,0,0.0214,0.9614,0.0064
+225,A239,Ames 23405,Minnesota,.,.,GRIN,A347 x A73,1946,.,UM Records,Included,A321,0.0032,0,0.0244,0.9724,0
+226,A240,.,Minnesota,.,.,.,A347 x A73,1946,.,UM Records,No seed available,.,.,.,.,.,.
+227,A241,.,Minnesota,.,.,.,A347 x A73,1946,.,UM Records,No seed available,.,.,.,.,.,.
+228,A242,.,Minnesota,.,.,.,A347 x A73,1946,.,UM Records,No seed available,.,.,.,.,.,.
+229,A243,.,Minnesota,.,.,.,A347 x A73,1946,.,UM Records,No seed available,.,.,.,.,.,.
+230,A244,.,Minnesota,.,.,.,A347 x A73,1946,.,UM Records,No seed available,.,.,.,.,.,.
+231,A245,.,Minnesota,.,.,.,A347 x Os420,1946,.,UM Records,No seed available,.,.,.,.,.,.
+232,A247,.,Minnesota,.,.,.,A347 x Os420,1946,.,UM Records,No seed available,.,.,.,.,.,.
+233,A248,.,Minnesota,.,.,.,A375 x Ia234,1946,.,UM Records,No seed available,.,.,.,.,.,.
+234,A249,.,Minnesota,.,.,.,A375 x Ia234,1946,.,UM Records,No seed available,.,.,.,.,.,.
+235,A250,.,Minnesota,.,.,.,A73 x Oh51A,1946,.,UM Records,No seed available,.,.,.,.,.,.
+236,A251,Ames 23406,Minnesota,.,.,GRIN,A73 x Oh51A,1946,.,UM Records,Included,A321,0.1142,0.0094,0.1274,0.724,0.025
+237,A252,.,Minnesota,.,.,.,A73 x Oh51A,1946,.,UM Records,No seed available,.,.,.,.,.,.
+238,A254,.,Minnesota,.,.,.,A344 x CC36,1946,.,UM Records,No seed available,.,.,.,.,.,.
+239,A255,.,Minnesota,.,.,.,A344 x CC36,1946,.,UM Records,No seed available,.,.,.,.,.,.
+240,A256,.,Minnesota,.,.,.,A344 x CC36,1946,.,UM Records,No seed available,.,.,.,.,.,.
+241,A257,Ames 23407,Minnesota,.,.,GRIN,A73 x Os420,1946,.,UM Records,Included,A321,0.044,0.001,0.0734,0.8768,0.0048
+242,A258,NSL 81596,Minnesota,.,.,GRIN,A73 x Os420,1946,1970,UM Records,Included,A321,0.041,0.0012,0.0716,0.8355,0.0506
+243,A259,.,Minnesota,.,.,.,A73 x Os420,1946,.,UM Records,No seed available,.,.,.,.,.,.
+244,A260,Ames 23408,Minnesota,.,.,GRIN,A367 x IndFe,1946,.,UM Records,Included,A321,0.0782,0.0512,0.2675,0.4597,0.1434
+245,A261,.,Minnesota,.,.,.,A367 x IndFe,1946,.,UM Records,No seed available,.,.,.,.,.,.
+246,A262,.,Minnesota,.,.,.,A334 x Oh40B,1946,.,UM Records,No seed available,.,.,.,.,.,.
+247,A263,.,Minnesota,.,.,.,(A334 x Oh40B) x A334(2),1946,.,UM Records,No seed available,.,.,.,.,.,.
+248,A264,Ames 23409,Minnesota,.,.,GRIN,(A334 x Oh40B) x A334,1946,.,UM Records,Included,A321,0.0718,0.028,0.3663,0.4658,0.0682
+249,A265,Ames 23410,Minnesota,.,.,UMN,(B164 x H76) x B164(2),1947,.,UM Records,Included,A321,0.1326,0.0678,0.2776,0.4899,0.032
+250,A266,Ames 23411,Minnesota,.,.,GRIN**,(B164 x H76) x B164(2),1947,.,UM Records,No seed available,.,.,.,.,.,.
+251,A267,Ames 23412,Minnesota,.,.,GRIN**,Horowty Flint,1942,.,UM Records,No seed available,.,.,.,.,.,.
+252,A268,.,Minnesota,.,.,.,A163 x Ky55,1947,.,UM Records,No seed available,.,.,.,.,.,.
+253,A269,.,Minnesota,.,.,.,(A334 x 389) x A334(3),1946,.,UM Records,No seed available,.,.,.,.,.,.
+254,A270,.,Minnesota,.,.,.,(A334 x 389) x A334(3),1946,.,UM Records,No seed available,.,.,.,.,.,.
+255,A271,.,Minnesota,.,.,.,(A375 x 401) x A375(3),1946,.,UM Records,No seed available,.,.,.,.,.,.
+256,A272,.,Minnesota,.,.,.,(A375 x 401) x A375(3),1946,.,UM Records,No seed available,.,.,.,.,.,.
+257,A273,.,Minnesota,.,.,.,(A375 x 401) x A375(3),1946,.,UM Records,No seed available,.,.,.,.,.,.
+258,A274,.,Minnesota,.,.,.,(A73 x 399) x A73(3),1946,.,UM Records,No seed available,.,.,.,.,.,.
+259,A275,.,Minnesota,.,.,.,(A73 x 399) x A73(3),1946,.,UM Records,No seed available,.,.,.,.,.,.
+260,A276,.,Minnesota,.,.,.,(A73 x 399) x A73(3),1946,.,UM Records,No seed available,.,.,.,.,.,.
+261,A277,.,Minnesota,.,.,.,A322 x R4,1947,.,UM Records,No seed available,.,.,.,.,.,.
+262,A278,.,Minnesota,.,.,.,A322 x R4,1947,.,UM Records,No seed available,.,.,.,.,.,.
+263,A279,.,Minnesota,.,.,.,A322 x R4,1947,.,UM Records,No seed available,.,.,.,.,.,.
+264,A280,.,Minnesota,.,.,.,A322 x R4,1947,.,UM Records,No seed available,.,.,.,.,.,.
+265,A281,.,Minnesota,.,.,.,A334 x Oh7,1947,.,UM Records,No seed available,.,.,.,.,.,.
+266,A282,.,Minnesota,.,.,.,A334 x Oh7,1947,.,UM Records,No seed available,.,.,.,.,.,.
+267,A284,.,Minnesota,.,.,.,A334 x Oh7,1947,.,UM Records,No seed available,.,.,.,.,.,.
+268,A285,.,Minnesota,.,.,.,A334 x Oh7,1947,.,UM Records,No seed available,.,.,.,.,.,.
+269,A286,Ames 23413,Minnesota,.,.,UMN,A334 x Oh7,1947,.,UM Records,Included,A321,0.1063,0.0302,0.2864,0.5117,0.0654
+270,A287,.,Minnesota,.,.,.,A334 x Oh7,1947,.,UM Records,No seed available,.,.,.,.,.,.
+271,A288,Ames 23414,Minnesota,.,.,GRIN,A344 x L317,1947,.,UM Records,Included,A321,0.001,0.0642,0.3626,0.5032,0.069
+272,A289,.,Minnesota,.,.,.,A344 x L317,1947,.,UM Records,No seed available,.,.,.,.,.,.
+273,A290,.,Minnesota,.,.,.,A344 x L317,1947,.,UM Records,No seed available,.,.,.,.,.,.
+274,A291,.,Minnesota,.,.,.,A344 x L317,1947,.,UM Records,No seed available,.,.,.,.,.,.
+275,A292,.,Minnesota,.,.,.,A344 x L317,1947,.,UM Records,No seed available,.,.,.,.,.,.
+276,A293,.,Minnesota,.,.,.,A344 x L317,1947,.,UM Records,No seed available,.,.,.,.,.,.
+277,A294,.,Minnesota,.,.,UMN,A344 x L317,1947,.,UM Records,Included,A321,0.0022,0.0778,0.3982,0.447,0.0748
+278,A295,Ames 23415,Minnesota,.,.,GRIN,A344 x L317,1947,.,UM Records,Included,A321,0.001,0.0444,0.4244,0.5274,0.0028
+279,A296,.,Minnesota,.,.,.,A340 x Mo940,1947,.,UM Records,No seed available,.,.,.,.,.,.
+280,A297,Ames 23416,Minnesota,.,.,GRIN**,A340 x Mo940,1947,1959,UM Records,No seed available,.,.,.,.,.,.
+281,A298,.,Minnesota,.,.,.,A347 x Mich77,1947,.,UM Records,No seed available,.,.,.,.,.,.
+282,A299,.,Minnesota,.,.,.,A347 x Mich77,1947,.,UM Records,No seed available,.,.,.,.,.,.
+283,A300,.,Minnesota,.,.,.,4-29 x A48,1935,.,UM Records,No seed available,.,.,.,.,.,.
+284,A301,.,Minnesota,.,.,.,6-29 x H,1935,.,UM Records,No seed available,.,.,.,.,.,.
+285,A302,.,Minnesota,.,.,.,A26 x H,1937,.,UM Records,No seed available,.,.,.,.,.,.
+286,A303,.,Minnesota,.,.,.,Golden King,1935,.,UM Records,No seed available,.,.,.,.,.,.
+287,A304,.,Minnesota,.,.,.,G25 Composite (Wisc. Lines),1935,.,UM Records,No seed available,.,.,.,.,.,.
+288,A305,Ames 23417,Minnesota,.,.,UMN,C1 x H,1937,1950,UM Records,Included,A321,0.1044,0.0938,0.2866,0.4655,0.0496
+289,A306,.,Minnesota,.,.,.,C1 x H,.,.,UM Records,No seed available,.,.,.,.,.,.
+290,A307,.,Minnesota,.,.,.,Unknown,1937,.,UM Records,No seed available,.,.,.,.,.,.
+291,A308,Ames 23418,Minnesota,.,.,UMN,A34 x A25,1935,1950,UM Records,Included,A321,0.022,0.1326,0.3474,0.4961,0.002
+292,A309,.,Minnesota,.,.,.,Silver King,1935,.,UM Records,No seed available,.,.,.,.,.,.
+293,A310,Ames 23419,Minnesota,.,.,GRIN,6-29 x H,.,1950,UM Records,Included,A321,0.0058,0.0809,0.2024,0.7089,0.002
+294,A311,.,Minnesota,.,.,.,A39 x A25,1935,1950,UM Records,No seed available,.,.,.,.,.,.
+295,A312,Ames 23420,Minnesota,.,.,UMN,A34 x A25,1937,1950,UM Records,Included,A321,0.0524,0.0066,0.2542,0.6066,0.0802
+296,A313,.,Minnesota,.,.,.,A34 x A25,1937,.,UM Records,No seed available,.,.,.,.,.,.
+297,A314,.,Minnesota,.,.,.,A34 x A25,1937,.,UM Records,No seed available,.,.,.,.,.,.
+298,A315,.,Minnesota,.,.,.,6-29 x H,1937,.,UM Records,No seed available,.,.,.,.,.,.
+299,A316,.,Minnesota,.,.,.,6-29 x H,1937,.,UM Records,No seed available,.,.,.,.,.,.
+300,A317,.,Minnesota,.,.,.,Silver King,1935,.,UM Records,No seed available,.,.,.,.,.,.
+301,A321,Ames 23421,Minnesota,.,.,GRIN,Holbert,1935,.,UM Records,Included,A321,0.0004,0,0.0002,0.9992,0.0002
+302,A322,Ames 23422,Minnesota,.,.,UMN,A39 x A25,1935,1950,UM Records,Included,A321,0.0018,0.0026,0.2532,0.6472,0.0952
+303,A332,.,Minnesota,.,.,.,Golden King,1935,.,UM Records,No seed available,.,.,.,.,.,.
+304,A333,.,Minnesota,.,.,.,Rustler,1935,.,UM Records,No seed available,.,.,.,.,.,.
+305,A334,Ames 23423,Minnesota,.,.,UMN,Golden King,1935,1950,UM Records,Included,A321,0.0672,0.0212,0.325,0.5069,0.0798
+306,A335,.,Minnesota,.,.,.,4-29 x A48,1935,.,UM Records,No seed available,.,.,.,.,.,.
+307,A337,.,Minnesota,.,.,.,G6-9276-4 (Wisc. Lines),1935,.,UM Records,No seed available,.,.,.,.,.,.
+308,A339,.,Minnesota,.,.,.,4-29 x A48,1935,.,UM Records,No seed available,.,.,.,.,.,.
+309,A340,Ames 23424,Minnesota,.,.,GRIN,4-29 x A48,1935,1950,UM Records,Included,A321,0.048,0.0956,0.3626,0.4927,0.001
+310,A342,.,Minnesota,.,.,.,4-29 x A48,1935,.,UM Records,No seed available,.,.,.,.,.,.
+311,A344,Ames 23425,Minnesota,.,.,GRIN,U.S. 153 (Iowa),1938,1950,UM Records,Included,A321,0.0044,0.045,0.4138,0.5224,0.0144
+312,A345,.,Minnesota,.,.,.,6-29 x H,1935,.,UM Records,No seed available,.,.,.,.,.,.
+313,A347,.,Minnesota,.,.,.,6-29 x H,1935,1950,UM Records,No seed available,.,.,.,.,.,.
+314,A348,.,Minnesota,.,.,.,6-29 x H,1935,.,UM Records,No seed available,.,.,.,.,.,.
+315,A349,.,Minnesota,.,.,.,6-29 x H,1935,.,UM Records,No seed available,.,.,.,.,.,.
+316,A351,.,Minnesota,.,.,.,6-29 x H,1935,.,UM Records,No seed available,.,.,.,.,.,.
+317,A356,.,Minnesota,.,.,.,6-29 x H,1935,.,UM Records,No seed available,.,.,.,.,.,.
+318,A357,Ames 23426,Minnesota,.,.,GRIN,6-29 x H,1935,1950,UM Records,Included,A321,0.0018,0.0428,0.1929,0.7613,0.0012
+319,A359,.,Minnesota,.,.,.,6-29 x H,1935,.,UM Records,No seed available,.,.,.,.,.,.
+320,A367,.,Minnesota,.,.,.,A26 x A9,1935,.,UM Records,No seed available,.,.,.,.,.,.
+321,A374,Ames 23427,Minnesota,.,.,UMN,Reids Yellow Dent (Holberts),1928,1950,UM Records,Included,A321,0.002,0.0006,0.0018,0.9946,0.001
+322,A375,Ames 23428,Minnesota,.,.,GRIN,Reids Yellow Dent (Holberts),1928,1950,UM Records,Included,A321,0.002,0,0.0006,0.9972,0.0002
+323,A385,Ames 23429,Minnesota,.,.,GRIN,A39 x H,1935,1950,UM Records,Included,A321,0.001,0.0016,0.4815,0.5135,0.0024
+324,A387,.,Minnesota,.,.,.,A34 x H,1935,.,UM Records,No seed available,.,.,.,.,.,.
+325,A389,.,Minnesota,.,.,.,A34 x H,1935,.,UM Records,No seed available,.,.,.,.,.,.
+326,A392,.,Minnesota,.,.,.,A39 x H,1935,1950,UM Records,No seed available,.,.,.,.,.,.
+327,A394,.,Minnesota,.,.,.,Unknown,.,.,UM Records,No seed available,.,.,.,.,.,.
+328,A395,.,Minnesota,.,.,.,(B164 x C37) x B164(2),.,1950,UM Records,No seed available,.,.,.,.,.,.
+329,A396,.,Minnesota,.,.,.,(B164 x C37) x B164(2),.,.,UM Records,No seed available,.,.,.,.,.,.
+330,A400,.,Minnesota,.,.,.,A347 x K230,1947,.,UM Records,No seed available,.,.,.,.,.,.
+331,A401,Ames 23430,Minnesota,.,.,GRIN,A347 x K230,1947,.,UM Records,Included,A321,0.0736,0.062,0.1719,0.6908,0.0018
+332,A402,.,Minnesota,.,.,.,A347 x K230,1947,.,UM Records,No seed available,.,.,.,.,.,.
+333,A404,.,Minnesota,.,.,.,A392 x K230,1947,.,UM Records,No seed available,.,.,.,.,.,.
+334,A405,.,Minnesota,.,.,.,Taos VI,1941,.,UM Records,No seed available,.,.,.,.,.,.
+335,A406,.,Minnesota,.,.,.,A392 x Mich106,1947,.,UM Records,No seed available,.,.,.,.,.,.
+336,A407,Ames 23431,Minnesota,.,.,GRIN,A96 x H,1948,.,UM Records,Included,Oh43,0.0412,0.0062,0.544,0.3775,0.031
+337,A408,.,Minnesota,.,.,.,A96 x H,1947,.,UM Records,No seed available,.,.,.,.,.,.
+338,A409,.,Minnesota,.,.,.,A131 x Oh7,1948,.,UM Records,No seed available,.,.,.,.,.,.
+339,A410,.,Minnesota,.,.,.,A131 x Oh7,1948,.,UM Records,No seed available,.,.,.,.,.,.
+340,A411,.,Minnesota,.,.,.,A131 x Oh7,1948,.,UM Records,No seed available,.,.,.,.,.,.
+341,A412,.,Minnesota,.,.,.,A131 x Oh7,1948,.,UM Records,No seed available,.,.,.,.,.,.
+342,A413,.,Minnesota,.,.,.,A131 x Oh7,1948,.,UM Records,No seed available,.,.,.,.,.,.
+343,A414,.,Minnesota,.,.,.,A131 x Oh7,1948,.,UM Records,No seed available,.,.,.,.,.,.
+344,A415,.,Minnesota,.,.,.,A148 x CC5,1948,.,UM Records,No seed available,.,.,.,.,.,.
+345,A416,.,Minnesota,.,.,.,A148 x CC5,1947,.,UM Records,No seed available,.,.,.,.,.,.
+346,A417,.,Minnesota,.,.,.,A148 x CC5,1948,.,UM Records,No seed available,.,.,.,.,.,.
+347,A418,.,Minnesota,.,.,.,A116 x L317,1947,.,UM Records,No seed available,.,.,.,.,.,.
+348,A419,Ames 23432,Minnesota,.,.,GRIN**,A21 x A163,1948,.,UM Records,No seed available,.,.,.,.,.,.
+349,A420,.,Minnesota,.,.,.,A21 x A163,1948,.,UM Records,No seed available,.,.,.,.,.,.
+350,A421,.,Minnesota,.,.,.,A21 x W283,1948,.,UM Records,No seed available,.,.,.,.,.,.
+351,A422,Ames 23433,Minnesota,.,.,GRIN,A21 x W283,1948,.,UM Records,Included,A321,0.001,0.0014,0.4824,0.513,0.0022
+352,A423,.,Minnesota,.,.,.,A2 x LSR,1948,.,UM Records,No seed available,.,.,.,.,.,.
+353,A424,Ames 23434,Minnesota,.,.,UMN,A2 x LSR,1948,.,UM Records,Included,Oh43,0.001,0.0166,0.7032,0.2718,0.0074
+354,A425,.,Minnesota,.,.,.,A2 x LSR,1948,.,UM Records,No seed available,.,.,.,.,.,.
+355,A426,.,Minnesota,.,.,.,A95 x A344,1948,.,UM Records,No seed available,.,.,.,.,.,.
+356,A427,Ames 23435,Minnesota,.,.,UMN,CC36 x A405,1948,.,UM Records,Included,A321,0.0889,0.0584,0.2049,0.4193,0.2285
+357,A428,.,Minnesota,.,.,.,CC36 x A405,1948,.,UM Records,No seed available,.,.,.,.,.,.
+358,A429,.,Minnesota,.,.,.,A131 x A230,1948,.,UM Records,No seed available,.,.,.,.,.,.
+359,A430,.,Minnesota,.,.,.,A131 x A230,1948,.,UM Records,No seed available,.,.,.,.,.,.
+360,A431,.,Minnesota,.,.,.,A131 x A230,1948,.,UM Records,No seed available,.,.,.,.,.,.
+361,A432,.,Minnesota,.,.,.,(A131 x A230) x A131,1948,.,UM Records,No seed available,.,.,.,.,.,.
+362,A433,.,Minnesota,.,.,.,(A131 x A230) x A131,1948,.,UM Records,No seed available,.,.,.,.,.,.
+363,A434,.,Minnesota,.,.,.,(A34 x Oh93) x A34(2),1948,.,UM Records,No seed available,.,.,.,.,.,.
+364,A435,.,Minnesota,.,.,.,(A34 x Oh93) x A34(2),1948,.,UM Records,No seed available,.,.,.,.,.,.
+365,A436,.,Minnesota,.,.,.,(A340 x HS187-2) x A340(2),1948,.,UM Records,No seed available,.,.,.,.,.,.
+366,A437,.,Minnesota,.,.,.,(A357 x HS187-2) x A357(2),1948,.,UM Records,No seed available,.,.,.,.,.,.
+367,A438,.,Minnesota,.,.,.,(A97 x 398) x A97(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+368,A439,.,Minnesota,.,.,.,(A97 x 398) x A97(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+369,A440,.,Minnesota,.,.,.,(A97 x 398) x A97(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+370,A441,.,Minnesota,.,.,.,(A97 x 398) x A97(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+371,A442,.,Minnesota,.,.,.,(A97 x 398) x A97(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+372,A443,.,Minnesota,.,.,.,A334 x Oh40B,1948,.,UM Records,No seed available,.,.,.,.,.,.
+373,A446,.,Minnesota,.,.,.,(A322 x POP) x A322(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+374,A447,.,Minnesota,.,.,.,(A322 x POP) x A322(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+375,A448,.,Minnesota,.,.,.,(A322 x POP) x A322(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+376,A449,Ames 23436,Minnesota,.,.,GRIN,(A322 x POP) x A322(3),1948,.,UM Records,Included,A321,0.0008,0.001,0.0972,0.8661,0.035
+377,A450,Ames 23437,Minnesota,.,.,GRIN,(A322 x POP) x A322(3),1948,.,UM Records,Included,A321,0.001,0.001,0.1224,0.8662,0.0094
+378,A451,Ames 23438,Minnesota,.,.,GRIN,(A322 x POP) x A322(3),1948,.,UM Records,Included,A321,0.0004,0.001,0.1371,0.8605,0.001
+379,A453,.,Minnesota,.,.,.,(A334 x Picuris) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+380,A454,.,Minnesota,.,.,.,(A334 x Picuris) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+381,A455,.,Minnesota,.,.,.,(A334 x Picuris) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+382,A456,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+383,A457,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+384,A458,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+385,A459,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+386,A460,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+387,A461,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+388,A462,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+389,A463,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+390,A464,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+391,A465,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+392,A466,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+393,A467,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+394,A468,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+395,A469,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+396,A470,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+397,A471,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+398,A472,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+399,A473,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+400,A474,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+401,A475,.,Minnesota,.,.,.,(A334 x POP) x A334(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+402,A476,.,Minnesota,.,.,.,(A357 x Zuni Blue) x A357(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+403,A477,.,Minnesota,.,.,.,(A357 x Zuni Blue) x A357(3),1948,.,UM Records,No seed available,.,.,.,.,.,.
+404,A478,.,Minnesota,.,.,.,A116 x L317,1948,.,UM Records,No seed available,.,.,.,.,.,.
+405,A479,.,Minnesota,.,.,.,A334 x Oh7,1949,.,UM Records,No seed available,.,.,.,.,.,.
+406,A480,Ames 23439,Minnesota,.,.,GRIN,A21 x A163,1949,.,UM Records,Included,Oh43,0.0006,0.0088,0.7775,0.2121,0.001
+407,A481,.,Minnesota,.,.,.,A21 x A163,1949,.,UM Records,No seed available,.,.,.,.,.,.
+408,A482,.,Minnesota,.,.,.,A21 x A163,1949,.,UM Records,No seed available,.,.,.,.,.,.
+409,A483,.,Minnesota,.,.,.,A21 x A163,1949,.,UM Records,No seed available,.,.,.,.,.,.
+410,A484,.,Minnesota,.,.,.,A21 x A163,1949,.,UM Records,No seed available,.,.,.,.,.,.
+411,A485,.,Minnesota,.,.,.,A21 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+412,A486,.,Minnesota,.,.,.,A21 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+413,A487,.,Minnesota,.,.,.,A21 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+414,A488,.,Minnesota,.,.,.,A21 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+415,A489,.,Minnesota,.,.,.,A21 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+416,A490,.,Minnesota,.,.,.,A21 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+417,A491,.,Minnesota,.,.,.,A163 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+418,A492,.,Minnesota,.,.,.,A163 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+419,A493,.,Minnesota,.,.,.,A163 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+420,A494,.,Minnesota,.,.,UMN,A163 x W283,1949,.,UM Records,Included,Oh43,0,0,0.7365,0.2629,0.0006
+421,A495,Ames 23440,Minnesota,.,.,UMN,A163 x W283,1949,.,UM Records,Included,Oh43,0,0.0006,0.7214,0.277,0.001
+422,A496,.,Minnesota,.,.,.,A163 x W283,1949,.,UM Records,No seed available,.,.,.,.,.,.
+423,A497,Ames 23441,Minnesota,.,.,UMN,A163 x W283,1949,.,UM Records,Included,Oh43,0,0.0002,0.6249,0.3743,0.0006
+424,A498,Ames 23442,Minnesota,.,.,UMN,A163 x W283,1949,.,UM Records,Included,Oh43,0,0,0.8361,0.1633,0.0006
+425,A499,Ames 23443,Minnesota,.,.,GRIN,A163 x W283,1949,.,UM Records,Included,Oh43,0,0.0006,0.8181,0.1807,0.0006
+426,A500,Ames 23444,Minnesota,.,.,UMN,A163 x W283,1949,.,UM Records,Included,Oh43,0,0.0006,0.6402,0.3582,0.001
+427,A501,.,Minnesota,.,.,.,A334 x Haney's #13,1949,.,UM Records,No seed available,.,.,.,.,.,.
+428,A502,Ames 23445,Minnesota,.,.,UMN,A334 x Haney's #13,1949,.,UM Records,Included,A321,0.0374,0.037,0.3866,0.5236,0.0154
+429,A503,.,Minnesota,.,.,.,A334 x Haney's #13,1949,.,UM Records,No seed available,.,.,.,.,.,.
+430,A504,.,Minnesota,.,.,.,A344 x Haney's #13,1949,.,UM Records,No seed available,.,.,.,.,.,.
+431,A505,.,Minnesota,.,.,.,A344 x Haney's #13,1949,.,UM Records,No seed available,.,.,.,.,.,.
+432,A506,.,Minnesota,.,.,.,A357 x Haney's #13,1949,.,UM Records,No seed available,.,.,.,.,.,.
+433,A507,.,Minnesota,.,.,.,A357 x Haney's #13,1949,.,UM Records,No seed available,.,.,.,.,.,.
+434,A508,Ames 23446,Minnesota,.,.,UMN,A357 x Haney's #13,1949,.,UM Records,Included,A321,0.0058,0.0188,0.2781,0.5961,0.1012
+435,A509,Ames 23447,Minnesota,.,.,UMN,A78 x A109,1949,.,UM Records,Included,A321,0.0072,0.0086,0.2727,0.5925,0.119
+436,A510,.,Minnesota,.,.,.,A95 x A148,1949,.,UM Records,No seed available,.,.,.,.,.,.
+437,A511,.,Minnesota,.,.,.,A95 x A148,1949,.,UM Records,No seed available,.,.,.,.,.,.
+438,A512,.,Minnesota,.,.,.,A95 x A148,1949,.,UM Records,No seed available,.,.,.,.,.,.
+439,A513,.,Minnesota,.,.,.,A109 x A148,1949,.,UM Records,No seed available,.,.,.,.,.,.
+440,A514,.,Minnesota,.,.,.,A109 x A148,1949,.,UM Records,No seed available,.,.,.,.,.,.
+441,A515,.,Minnesota,.,.,.,A109 x A148,1949,.,UM Records,No seed available,.,.,.,.,.,.
+442,A516,.,Minnesota,.,.,.,A95 x A109,1949,.,UM Records,No seed available,.,.,.,.,.,.
+443,A517,.,Minnesota,.,.,.,A95 x A109,1949,.,UM Records,No seed available,.,.,.,.,.,.
+444,A518,.,Minnesota,.,.,.,A95 x A109,1949,.,UM Records,No seed available,.,.,.,.,.,.
+445,A519,.,Minnesota,.,.,.,A95 x A109,1949,.,UM Records,No seed available,.,.,.,.,.,.
+446,A520,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+447,A521,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+448,A522,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+449,A523,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+450,A524,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+451,A525,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+452,A526,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+453,A527,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+454,A528,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+455,A529,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+456,A530,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+457,A531,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+458,A532,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+459,A533,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+460,A534,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+461,A535,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+462,A536,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+463,A537,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+464,A538,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+465,A539,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+466,A540,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+467,A541,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+468,A542,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+469,A543,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+470,A544,.,Minnesota,.,.,.,A116 x L317,1949,.,UM Records,No seed available,.,.,.,.,.,.
+471,A545,.,Minnesota,.,.,.,A334 x Oh7,1952,.,UM Records,No seed available,.,.,.,.,.,.
+472,A546,.,Minnesota,.,.,.,A334 x Oh7,1952,.,UM Records,No seed available,.,.,.,.,.,.
+473,A547,Ames 23448,Minnesota,.,.,UMN,(A375 x Pioneer Long Ear) x A375,1953,.,UM Records,Included,A321,0.0006,0.0006,0.0006,0.998,0.0002
+474,A548,Ames 23449,Minnesota,.,.,GRIN,(A375 x Pioneer Long Ear) x A375,1953,.,UM Records,Included,A321,0.0036,0.001,0.0462,0.9482,0.001
+475,A549,.,Minnesota,.,.,.,A189 x Golden King,1953,.,UM Records,No seed available,.,.,.,.,.,.
+476,A550,.,Minnesota,.,.,.,A189 x Golden King,1953,.,UM Records,No seed available,.,.,.,.,.,.
+477,A551,.,Minnesota,.,.,.,A192 x Golden King,1953,.,UM Records,No seed available,.,.,.,.,.,.
+478,A552,.,Minnesota,.,.,.,A192 x Golden King,1953,.,UM Records,No seed available,.,.,.,.,.,.
+479,A553,.,Minnesota,.,.,.,(AM14 x ND230) x ND230(2),1954,.,UM Records,No seed available,.,.,.,.,.,.
+480,A554,PI 587138,Minnesota,.,.,GRIN,(Wf9 x WD) x WD(2),1954,1960,UM Records,No seed available,.,.,.,.,.,.
+481,A555,.,Minnesota,.,.,.,B164-886 x A237,1949,.,UM Records,No seed available,.,.,.,.,.,.
+482,A556,Ames 23450,Minnesota,.,.,UMN,B164-886 x A237,1949,.,UM Records,Included,Oh43,0.0122,0.0018,0.52,0.4148,0.0512
+483,A557,.,Minnesota,.,.,.,A392 x Haney's #13,1950,.,UM Records,No seed available,.,.,.,.,.,.
+484,A558,.,Minnesota,.,.,.,A392 x Haney's #13,1950,.,UM Records,No seed available,.,.,.,.,.,.
+485,A559,.,Minnesota,.,.,.,A392 x Haney's #13,1950,.,UM Records,No seed available,.,.,.,.,.,.
+486,A560,.,Minnesota,.,.,.,A392 x Haney's #13,1950,.,UM Records,No seed available,.,.,.,.,.,.
+487,A561,.,Minnesota,.,.,.,A392 x Haney's #13,1950,.,UM Records,No seed available,.,.,.,.,.,.
+488,A562,.,Minnesota,.,.,.,(A340 x HS187-2) x A340(2),1952,.,UM Records,No seed available,.,.,.,.,.,.
+489,A563,.,Minnesota,.,.,.,(A334 x Pioneer Long Ear) x A334,1953,.,UM Records,No seed available,.,.,.,.,.,.
+490,A564,.,Minnesota,.,.,.,(A334 x Pioneer Long Ear) x A334,1953,.,UM Records,No seed available,.,.,.,.,.,.
+491,A565,.,Minnesota,.,.,.,(A375 x Pioneer Long Ear) x A375,1953,.,UM Records,No seed available,.,.,.,.,.,.
+492,A566,.,Minnesota,.,.,.,(A375 x Pioneer Long Ear) x A375,1953,.,UM Records,No seed available,.,.,.,.,.,.
+493,A567,.,Minnesota,.,.,.,(A375 x Pioneer Long Ear) x A375,1953,.,UM Records,No seed available,.,.,.,.,.,.
+494,A568,.,Minnesota,.,.,.,Golden Jewel,1950,.,UM Records,No seed available,.,.,.,.,.,.
+495,A569,.,Minnesota,.,.,.,A73 x Murdock,1954,.,UM Records,No seed available,.,.,.,.,.,.
+496,A570,.,Minnesota,.,.,.,Minnesota Synthetic #2,1954,.,UM Records,No seed available,.,.,.,.,.,.
+497,A571,.,Minnesota,.,.,.,(A344 x Morris 13) x A344,1952,.,UM Records,No seed available,.,.,.,.,.,.
+498,A572,Ames 23451,Minnesota,.,.,GRIN,A344 x Morris 13,1952,.,UM Records,Included,A321,0.0556,0.0814,0.3388,0.494,0.0302
+499,A573,.,Minnesota,.,.,.,A344 x Ia234,1952,.,UM Records,No seed available,.,.,.,.,.,.
+500,A574,.,Minnesota,.,.,.,A344 x A396,1952,.,UM Records,No seed available,.,.,.,.,.,.
+501,A575,Ames 23452,Minnesota,.,.,GRIN,A344 x A396,1952,.,UM Records,Included,A321,0.0286,0.04,0.2528,0.67,0.0086
+502,A576,.,Minnesota,.,.,.,Hershell's Hardy Cow Gold,1955,.,UM Records,No seed available,.,.,.,.,.,.
+503,A577,.,Minnesota,.,.,.,Golden Standard,1954,.,UM Records,No seed available,.,.,.,.,.,.
+504,A578,.,Minnesota,.,.,.,W9 x Fort Kent Golden,1954,.,UM Records,No seed available,.,.,.,.,.,.
+505,A579,.,Minnesota,.,.,.,(A73 x A21) x A73,.,.,UM Records,No seed available,.,.,.,.,.,.
+506,A580,.,Minnesota,.,.,.,(A73 x A21) x A73,.,.,UM Records,No seed available,.,.,.,.,.,.
+507,A581,.,Minnesota,.,.,.,(A73 x A21) x A73,.,.,UM Records,No seed available,.,.,.,.,.,.
+508,A582,.,Minnesota,.,.,.,(A73 x A21) x A73,.,.,UM Records,No seed available,.,.,.,.,.,.
+509,A583,.,Minnesota,.,.,.,(A15 x Pioneer Long Ear) x A15,1957,.,UM Records,No seed available,.,.,.,.,.,.
+510,A584,.,Minnesota,.,.,.,(A15 x Pioneer Long Ear) x A15,1957,.,UM Records,No seed available,.,.,.,.,.,.
+511,A585,Ames 23453,Minnesota,.,.,GRIN**,(A15 x Amargo 41-2504B) x A15,1957,.,UM Records,Included,Oh43,0.0588,0.1287,0.4331,0.3473,0.0322
+512,A586,Ames 23454,Minnesota,.,.,GRIN**,(A21 x Pioneer Long Ear) x A15,1957,.,UM Records,No seed available,.,.,.,.,.,.
+513,A587,.,Minnesota,.,.,.,(A21 x HK59) x A21,1957,.,UM Records,No seed available,.,.,.,.,.,.
+514,A588,Ames 23455,Minnesota,.,.,UMN,(A165 x Pioneer Long Ear) x A165,1957,.,UM Records,Included,Oh43,0.016,0.0218,0.7024,0.2558,0.004
+515,A589,.,Minnesota,.,.,.,(A116 x Pioneer Long Ear) x A116,1957,.,UM Records,No seed available,.,.,.,.,.,.
+516,A590,.,Minnesota,.,.,.,A158 x B2,1956,.,UM Records,No seed available,.,.,.,.,.,.
+517,A591,.,Minnesota,.,.,.,(M14 x Wf9) x Mt42,1957,.,UM Records,No seed available,.,.,.,.,.,.
+518,A592,.,Minnesota,.,.,.,A344 x ND211,1957,.,UM Records,No seed available,.,.,.,.,.,.
+519,A593,.,Minnesota,.,.,.,Iowa Synthetic #1,1955,.,UM Records,No seed available,.,.,.,.,.,.
+520,A594,.,Minnesota,.,.,.,Iowa Synthetic #1,1955,.,UM Records,No seed available,.,.,.,.,.,.
+521,A595,.,Minnesota,.,.,.,Iowa Synthetic #1,1955,.,UM Records,No seed available,.,.,.,.,.,.
+522,A596,.,Minnesota,.,.,.,Iowa Synthetic #1,1955,.,UM Records,No seed available,.,.,.,.,.,.
+523,A597,.,Minnesota,.,.,.,Iowa Synthetic #1,1955,.,UM Records,No seed available,.,.,.,.,.,.
+524,A598,.,Minnesota,.,.,.,Minnesota Synthetic #1,1954,.,UM Records,No seed available,.,.,.,.,.,.
+525,A599,.,Minnesota,.,.,.,Minnesota Synthetic #1,1955,.,UM Records,No seed available,.,.,.,.,.,.
+526,A600,.,Minnesota,.,.,.,Minnesota Synthetic #1,1955,.,UM Records,No seed available,.,.,.,.,.,.
+527,A601,.,Minnesota,.,.,.,Minnesota Synthetic #2,1955,.,UM Records,No seed available,.,.,.,.,.,.
+528,A602,.,Minnesota,.,.,.,Minnesota Synthetic #2,1955,.,UM Records,No seed available,.,.,.,.,.,.
+529,A603,.,Minnesota,.,.,.,Minnesota Synthetic #2,1955,.,UM Records,No seed available,.,.,.,.,.,.
+530,A604,.,Minnesota,.,.,.,Minnesota Synthetic #2,1955,.,UM Records,No seed available,.,.,.,.,.,.
+531,A605,.,Minnesota,.,.,.,Brown County Yellow Dent,1955,.,UM Records,No seed available,.,.,.,.,.,.
+532,A606,.,Minnesota,.,.,.,Brown County Yellow Dent,1955,.,UM Records,No seed available,.,.,.,.,.,.
+533,A607,.,Minnesota,.,.,.,A25 x B9A,1955,.,UM Records,No seed available,.,.,.,.,.,.
+534,A608,.,Minnesota,.,.,.,A25 x B9A,1954,.,UM Records,No seed available,.,.,.,.,.,.
+535,A609,.,Minnesota,.,.,.,A25 x Golden King,1955,.,UM Records,No seed available,.,.,.,.,.,.
+536,A610,.,Minnesota,.,.,.,A25 x Golden King,1955,.,UM Records,No seed available,.,.,.,.,.,.
+537,A611,.,Minnesota,.,.,.,A73 x Murdock L-6,1955,.,UM Records,No seed available,.,.,.,.,.,.
+538,A612,.,Minnesota,.,.,.,A73 x Murdock L-35,1955,.,UM Records,No seed available,.,.,.,.,.,.
+539,A613,.,Minnesota,.,.,.,(A73 x Oh51A) x A73(2),1955,.,UM Records,No seed available,.,.,.,.,.,.
+540,A614,.,Minnesota,.,.,.,(A73 x Oh51A) x A73(2),1955,.,UM Records,No seed available,.,.,.,.,.,.
+541,A615,.,Minnesota,.,.,.,(A73 x Oh51A) x A73(2),1955,.,UM Records,No seed available,.,.,.,.,.,.
+542,A617,Ames 23456,Minnesota,.,.,GRIN,A434 x W22,1957,.,UM Records,Included,A321,0.0316,0.0032,0.1806,0.7826,0.002
+543,A618,Ames 23457,Minnesota,.,.,GRIN,A434 x W22,1957,.,UM Records,Included,A321,0.0088,0.004,0.2369,0.7443,0.006
+544,A619,PI 587139,Minnesota,.,.,UMN,(A171 x Oh43) x Oh43,1957,.,UM Records,Included,Oh43,0,0,0.6,0.4,0
+545,A620,.,Minnesota,.,.,.,A166 x A277,1957,.,UM Records,No seed available,.,.,.,.,.,.
+546,A621,.,Minnesota,.,.,.,(A166 x A277) x A277,1957,.,UM Records,No seed available,.,.,.,.,.,.
+547,A622,Ames 23459,Minnesota,.,.,GRIN,(A298 x Amargo 41-2504B) x A298(2),1958,.,UM Records,Included,A321,0.0854,0.0444,0.2354,0.5985,0.0362
+548,A623,.,Minnesota,.,.,.,Unknown,1958,.,UM Records,No seed available,.,.,.,.,.,.
+549,A624,Ames 23460,Minnesota,.,.,GRIN,(ND230 x A295) x A295,1957,.,UM Records,Included,A321,0.002,0.0392,0.4708,0.487,0.001
+550,A625,Ames 23461,Minnesota,.,.,GRIN,(A165 x Pioneer Long Ear) x A165,1957,.,UM Records,Included,Oh43,0.0424,0.057,0.6589,0.2308,0.011
+551,A626,Ames 23462,Minnesota,.,.,GRIN**,A322 x B2,1955,.,UM Records,No seed available,.,.,.,.,.,.
+552,A627,Ames 23463,Minnesota,.,.,GRIN,A392 x R61,1956,.,UM Records,Included,A321,0.0022,0.0036,0.2102,0.742,0.042
+553,A628,Ames 23464,Minnesota,.,.,GRIN,(M14 x A206) x Oh4c,1956,.,UM Records,Included,Oh43,0.0226,0.033,0.4005,0.3433,0.2006
+554,A629,Ames 23465,Minnesota,.,.,GRIN,(V3 x Wf9) x Wf9,1960,1962,UM Records,Included,A321,0.0078,0.0168,0.1595,0.7783,0.0376
+555,A630,Ames 23466,Minnesota,.,.,UMN,(A116 x Wf9) x Wf9(3),1960,.,UM Records,Included,A321,0.001,0.003,0.1476,0.8028,0.0456
+556,A631,Ames 23467,Minnesota,.,.,GRIN,(A509 x Wf9) x Wf9(3),1960,1962,UM Records,Included,A321,0.0032,0.001,0.1651,0.8077,0.023
+557,A632,PI 587140,Minnesota,.,.,UMN,(Mt42 x B14) x B14(3),1959,1961,UM Records,Included,B73,0.8118,0.0036,0.0847,0.0988,0.001
+558,A633,Ames 23471,Minnesota,.,.,GRIN,(Mt42 x B14) x B14(3),1960,.,UM Records,Included,B73,0.8634,0.001,0.0566,0.078,0.001
+559,A634,Ames 19308,Minnesota,.,.,GRIN,(Mt42 x B14) x B14(3),1960,.,UM Records,Included,B73,0.8076,0.0028,0.0884,0.0991,0.002
+560,A635,Ames 19309,Minnesota,.,.,GRIN,(ND203 x B14) x B14(2),1960,.,UM Records,Included,B73,0.8481,0.0018,0.0646,0.0845,0.001
+561,A636,Ames 23474,Minnesota,.,.,GRIN,(ND203 x B14) x B14(3),1960,.,UM Records,Included,B73,0.871,0.001,0.058,0.0554,0.0146
+562,A637,Ames 23475,Minnesota,.,.,GRIN,CO106 x A321,1959,.,UM Records,Included,A321,0.0014,0.001,0.0094,0.9746,0.0136
+563,A638,Ames 23476,Minnesota,.,.,GRIN,(V3 x Wf9) x Wf9,1959,.,UM Records,Included,A321,0.0226,0.0014,0.1674,0.7268,0.0818
+564,A639,Ames 19310,Minnesota,.,.,GRIN**,A158 x B14,1959,.,UM Records,Included,Oh43,0.3641,0,0.6353,0.0006,0
+565,A640,Ames 23477,Minnesota,.,.,UMN,ND203 x B14,1959,.,UM Records,Included,B73,0.5695,0.0162,0.2502,0.1515,0.0126
+566,A641,Ames 19311,Minnesota,.,.,GRIN,ND203 x B14,1959,.,UM Records,Included,B73,0.5027,0.0038,0.2421,0.1934,0.058
+567,A642,.,Minnesota,.,.,.,Koric Early Dent x Reid Yellow Dent,1965,.,UM Records,No seed available,.,.,.,.,.,.
+568,A643,Ames 23478,Minnesota,.,.,GRIN,Iowa Synthetic A,1965,.,UM Records,Included,A321,0.054,0.1008,0.2597,0.4637,0.1218
+569,A644,Ames 23479,Minnesota,.,.,UMN,Iowa Synthetic A,1965,.,UM Records,Included,A321,0.0604,0.0902,0.2229,0.5557,0.0708
+570,A645,Ames 23480,Minnesota,.,.,GRIN,Minnesota Synthetic 3,1965,.,UM Records,Included,A321,0.0002,0.001,0.282,0.7108,0.006
+571,A646,Ames 23481,Minnesota,.,.,UMN,Minnesota Synthetic 3,1965,.,UM Records,Included,A321,0.0002,0.001,0.2806,0.7106,0.0076
+572,A647,.,Minnesota,.,.,.,Minnesota Synthetic 3,1965,.,UM Records,No seed available,.,.,.,.,.,.
+573,A648,NSL 81597,Minnesota,.,.,GRIN,Minnesota Synthetic 3,1965,1970,UM Records,Included,A321,0.082,0.0206,0.1976,0.695,0.0048
+574,A649,Ames 23482,Minnesota,.,.,GRIN,(V3 x A321) x A321,1959,.,UM Records,Included,A321,0.0008,0.0004,0.0394,0.9584,0.001
+575,A650,Ames 23483,Minnesota,.,.,GRIN,(V3 x A321) x A321,1959,.,UM Records,Included,A321,0.0032,0.001,0.0572,0.9356,0.003
+576,A651,Ames 23484,Minnesota,.,.,GRIN,(A73 x Q573) x A73,1959,.,UM Records,Included,A321,0.001,0.0424,0.1427,0.8129,0.001
+577,A652,Ames 23485,Minnesota,.,.,GRIN,A90 x Wf9,1959,.,UM Records,Included,A321,0,0.0202,0.2958,0.664,0.02
+578,A653,Ames 23486,Minnesota,.,.,GRIN,A90 x Wf9,1959,.,UM Records,Included,A321,0.001,0.0038,0.2644,0.7288,0.002
+579,A654,PI 587141,Minnesota,.,.,UMN,A116 x Wf9,1959,.,UM Records,Included,A321,0.001,0.0032,0.3198,0.6142,0.0618
+580,A655,Ames 23487,Minnesota,.,.,GRIN,(A488 x Wf9) x Wf9,1959,.,UM Records,Included,A321,0.0086,0.041,0.2453,0.7001,0.005
+581,A656,Ames 23488,Minnesota,.,.,GRIN,(Mt42 x B14) x B14,1959,.,UM Records,Included,Oh43,0.3557,0,0.6437,0.0006,0
+582,A657,NSL 81598,Minnesota,.,.,GRIN,Iowa Stiff Stalk Synthetic (Early),1969,1971,UM Records,Included,B73,0.3915,0.0042,0.1643,0.3248,0.1152
+583,A658,Ames 23489,Minnesota,.,.,GRIN**,Penn State Sythetic 2,1969,1979,UM Records,Included,A321,0.0296,0.1058,0.2501,0.6086,0.006
+584,A659,NSL 81599,Minnesota,.,.,GRIN,Minnesota Synthetic 3,1969,1971,UM Records,Included,A321,0.0112,0.0034,0.2672,0.7154,0.0028
+585,A660,NSL81600,Minnesota,.,.,GRIN,Minnesota Synthetic 3,1969,1971,UM Records,Included,A321,0.0128,0.0372,0.2019,0.7464,0.0018
+586,A661,PI 607521,Minnesota,.,.,GRIN,Minnesota Synthetic AS-A,1966,1975,UM Records,Included,A321,0.0082,0.0178,0.4422,0.5196,0.0122
+587,A662,PI 607522,Minnesota,.,.,GRIN,Minnesota Synthetic AS-A,1966,1975,UM Records,Included,Oh43,0.001,0.0958,0.4461,0.4121,0.045
+588,A663,PI 607523,Minnesota,.,.,GRIN,(A427 x Cuzco) x A427(2),1966,1975,UM Records,Included,A321,0.086,0.0614,0.2092,0.4251,0.2184
+589,A664,PI 607524,Minnesota,.,.,GRIN,(ND203 x A636) x A636(2),.,1975,UM Records,Included,B73,0.6829,0.009,0.1212,0.1276,0.0594
+590,A665,PI 607525,Minnesota,.,.,GRIN,(ND203 x A635) x A635(3),1969,1975,UM Records,Included,B73,0.7538,0.003,0.101,0.1338,0.0084
+591,A666,Ames 23490,Minnesota,.,.,GRIN,Minnesota Synthetic C,1966,1978,UM Records,Included,A321,0.0632,0.0544,0.3771,0.5012,0.004
+592,A667,Ames 23491,Minnesota,.,.,GRIN,(W33 x 38-11) x 38-11,1969,1978,UM Records,Included,A321,0.0128,0.072,0.2628,0.5349,0.1174
+593,A668,Ames 23492,Minnesota,.,.,GRIN,(A509 x C103) x C103(2),1969,1978,UM Records,Included,Mo17,0.0634,0.4153,0.21,0.3085,0.0028
+594,A669,Ames 23493,Minnesota,.,.,GRIN,(W33 x Hy2) x Hy2(3),1969,1978,UM Records,Included,A321,0.1708,0.0126,0.1533,0.4845,0.1788
+595,A670,Ames 23494,Minnesota,.,.,GRIN,(A632 x A619) x A619(4),1971,1979,UM Records,Included,Oh43,0.0142,0.0008,0.588,0.3962,0.0008
+596,A671,Ames 23495,Minnesota,.,.,GRIN,(W103 x N13A) x N13A(2),1973,1981,UM Records,Included,A321,0.0108,0.2857,0.2591,0.3952,0.0492
+597,A672,Ames 23496,Minnesota,.,.,GRIN,(Golden Mine-Dent x A632) x A632,1975,1982,UM Records,Included,B73,0.6705,0.0414,0.1202,0.1663,0.0016
+598,A673,Ames 23497,Minnesota,.,.,GRIN,UC D73,1978,1984,UM Records,Included,A321,0.0386,0.0174,0.3376,0.5382,0.0682
+599,A674,Ames 23498,Minnesota,.,.,GRIN,ULR,1978,1984,UM Records,Included,Oh43,0.1734,0.101,0.3775,0.3445,0.0036
+600,A675,Ames 23499,Minnesota,.,.,GRIN,B73 x A662,1977,1984,UM Records,Included,B73,0.5927,0.0086,0.1462,0.2161,0.0364
+601,A676,Ames 23500,Minnesota,.,.,GRIN,B70 x A662,1978,1984,UM Records,Included,Mo17,0.0018,0.4095,0.2858,0.2849,0.018
+602,A677,Ames 23501,Minnesota,.,.,GRIN,Oh545 x A90,1978,1984,UM Records,Included,Oh43,0,0.002,0.5243,0.4523,0.0214
+603,A678,Ames 23502,Minnesota,.,.,GRIN,(B52 x A662) x B52,1977,1984,UM Records,Included,A321,0.048,0.0066,0.3896,0.5446,0.0112
+604,A679,PI 587142,Minnesota,.,.,GRIN,(B73 x A662) x B73(3),1981,1987,UM Records,Included,B73,1,0,0,0,0
+605,A680,Ames 23503,Minnesota,.,.,GRIN,(B73 x A662) x B73(3),1980,1987,UM Records,Included,B73,1,0,0,0,0
+606,A681,Ames 23504,Minnesota,.,.,GRIN,(B73 x A662) x B73(3),1980,1987,UM Records,Included,B73,1,0,0,0,0
+607,A682,PI 587143,Minnesota,.,.,GRIN,(Mo17 x AS-D) x Mo17(2),1981,1987,UM Records,Included,Mo17,0.0004,0.9282,0.0668,0.004,0.0006
+608,A683,Ames 23505,Minnesota,.,.,GRIN,(Mo17 x AS-D) x Mo17(2),1981,1987,UM Records,Included,Mo17,0,0.8305,0.0034,0.1661,0
+609,AS5707,PI 601269,Asgrow Seed Company,8600036,8/31/04,GRIN,C123Ht x Va59,.,.,"Mikel, 2006",Included,Mo17,0.0122,0.5946,0.1501,0.2385,0.0046
+610,B14,NSL 65866,Iowa State,.,.,GRIN,BSSS,.,.,"Gerdes et al., 1993",Included,B73,1,0,0,0,0
+611,B37,PI 550467,Iowa State,.,.,GRIN,BSSS,.,.,"Gerdes et al., 1993",Included,B73,0.4359,0.0112,0.0944,0.3634,0.0951
+612,B52,PI 550454,Iowa State,.,.,GRIN,Unknown,.,.,"Gerdes et al., 1993",Included,A321,0.0334,0.0892,0.2528,0.5973,0.0272
+613,B73,PI 550473,Iowa State,.,.,GRIN,BSSS C5,.,.,"Gerdes et al., 1993",Included,B73,1,0,0,0,0
+614,B84,PI 608767,Iowa State,.,.,GRIN,BS13(S2)C0,.,.,"Gerdes et al., 1993",Included,B73,0.7327,0.001,0.0024,0.1759,0.088
+615,BCC03,PI 544065,"Novartis Seeds, Inc.",9100002,5/29/10,GRIN,3224 x LH51,.,.,PVPA Certificate,Missing markers,.,.,.,.,.,.
+616,C103,Ames 19284,Connecticut,.,.,GRIN,Lancaster Sure Crop,.,.,"Gerdes et al., 1993",Included,Mo17,0.001,0.983,0.0124,0.0028,0.0008
+617,C14,NSL 42874,Minnesota,.,.,GRIN,Minn #13,.,.,UM Records,Included,Oh43,0.016,0.0674,0.4601,0.3099,0.1466
+618,C49,Ames 28290,Minnesota,.,.,GRIN,Minn #13,.,.,UM Records,Included,A321,0.0718,0.0836,0.3373,0.3958,0.1114
+619,CM105,PI 587124,Agriculture Canada,.,.,GRIN,V3 x B14(2),.,.,"Gerdes et al., 1993",Included,B73,0.5799,0.0042,0.1588,0.2151,0.042
+620,CMV3,Ames 27104,Agriculture Canada,.,.,GRIN,A21 x W185,.,.,"Gerdes et al., 1993",Included,A321,0.0394,0.0254,0.3442,0.5389,0.052
+621,CR14,PI 601683,The J.C. Robinson Seed Company,8900095,12/31/08,GRIN,"B73Ht, CM105, and CQ187 Synthetic",.,.,PVPA Certificate,Included,B73,0.862,0.0002,0.0638,0.0732,0.0008
+622,CR1Ht,PI 601080,The J.C. Robinson Seed Company,8400042,3/29/03,GRIN,W117Ht x Mo17Ht,.,.,"Mikel, 2006",Included,Mo17,0.0006,0.7732,0.0891,0.1299,0.0072
+623,DJ7,PI 601191,"Edward J. Funk & Sons, Inc.",8500086,2/28/04,GRIN,B73 x BS16 Synthetic,.,.,"Mikel, 2006",Included,B73,1,0,0,0,0
+624,DK4676A,PI 601300,DeKalb-Pfizer Genetics,8600092,12/31/04,GRIN,1067-1 x B-Line Composite,.,.,"Mikel, 2006",Included,B73,0.4242,0.1044,0.1847,0.2819,0.0048
+625,DK78004,PI 601210,DeKalb-Pfizer Genetics,8600091,12/31/04,GRIN,B73 x A634,.,.,"Mikel, 2006",Included,B73,1,0,0,0,0
+626,DKFAPW,PI 600958,DeKalb-Pfizer Genetics,8200152,2/27/02,GRIN,B14AHt x B37Ht,.,.,"Mikel, 2006",Included,B73,0.7391,0.0028,0.0092,0.2465,0.0024
+627,DKFBHJ,PI 601439,DeKalb-Pfizer Genetics,8700173,7/29/06,GRIN,(FBAB x B84) x FBAB,.,.,"Mikel, 2006",Included,B73,0.6158,0.0068,0.1502,0.1454,0.0818
+628,DKHBA1,PI 601172,DeKalb-Pfizer Genetics,8500069,9/30/04,GRIN,Pioneer Hyb 3195 x Pioneer Hyb 3199,.,.,"Mikel, 2006",Included,Mo17,0.1976,0.2909,0.1816,0.2131,0.1168
+629,DKIBO14,PI 601208,DeKalb-Pfizer Genetics,8500123,4/30/04,GRIN,(Pioneer Hyb 3901 x H99) x Pioneer Hyb 3901,.,.,"Mikel, 2006",Included,PH207,0,0.001,0.0594,0.0334,0.9062
+630,DKMBPM,PI 601440,DeKalb-Pfizer Genetics,8700175,9/30/06,GRIN,Composite 400M,.,.,"Mikel, 2006",Included,A321,0.0082,0.0626,0.412,0.515,0.0022
+631,DKMDF-13D,PI 600956,DeKalb-Pfizer Genetics,8200151,2/27/02,GRIN,H4101 x Composite 800M,.,.,"Mikel, 2006",Included,Mo17,0.001,0.5272,0.2716,0.1752,0.025
+632,E8501,PI 601724,"Novartis Seeds, Inc.",8900233,10/31/08,GRIN,387 x FRMo17,.,.,PVPA Certificate,Included,Mo17,0.001,0.56,0.0906,0.3475,0.001
+633,Ep1,Ames 27111,Spain,.,.,GRIN,Spanish population 'Lizargarate',.,.,"Flint-Garcia et al., 2005",Included,A321,0.0218,0.1838,0.3317,0.3961,0.0666
+634,F2,PI 257506,France,.,.,GRIN,OP Lacaune,.,.,"Gerdes et al., 1993",Included,A321,0.0302,0.141,0.3599,0.3794,0.0894
+635,F7,PI 257507,France,.,.,GRIN,OP Lacaune,.,.,"Gerdes et al., 1993",Included,A321,0.0808,0.1444,0.314,0.3674,0.0934
+636,F42,PI 601026,FFR Cooperative,8300157,11/30/02,GRIN,B73 Mutation selection,.,.,"Mikel, 2006",Included,B73,1,0,0,0,0
+637,H99,PI 587129,Indiana,.,.,GRIN,Illinois Synthetic 60C,.,.,"Gerdes et al., 1993",Included,Oh43,0.044,0.1374,0.4212,0.3549,0.0424
+638,IBB14,PI 601565,DeKalb Plant Genetics,8800192,7/31/08,GRIN,Pioneer Hyb 3710 x Pioneer Hyb 3732,.,.,PVPA Certificate,Included,PH207,0.2299,0.002,0.0554,0.0392,0.6735
+639,L 127,PI 601726,Lifaco Seed Corporation,8900201,12/31/08,GRIN,P 3901 x W117,.,.,PVPA Certificate,Included,PH207,0,0.0046,0.0008,0.0006,0.994
+640,L 135,PI 601727,Lifaco Seed Corporation,8900202,12/31/08,GRIN,P 3901 x W117,.,.,PVPA Certificate,Included,PH207,0,0,0,0,1
+641,L 139,PI 601728,Lifaco Seed Corporation,8900203,12/31/08,GRIN,P 3901 x P 3780,.,.,PVPA Certificate,Included,PH207,0,0,0.2545,0.1804,0.5652
+642,LH38,PI 600791,Iowa State University Research Foundation,8000066,2/26/99,GRIN,Unknown,.,.,"Mikel, 2006",Included,Oh43,0,0,0.6,0.4,0
+643,LH57,PI 601317,"Holden's Foundation Seeds, Inc.",8600129,1/30/05,GRIN,(Mo17 x H99) x LH53,.,.,"Mikel, 2006",Included,Mo17,0,1,0,0,0
+644,LH59,PI 601466,"Holden's Foundation Seeds, Inc.",8700213,4/29/06,GRIN,(Mo17 x H99) x LH53,.,.,"Mikel, 2006",Included,Mo17,0,1,0,0,0
+645,LH60,PI 601404,"Holden's Foundation Seeds, Inc.",8700087,7/31/05,GRIN,LH55 x LH47,.,.,"Mikel, 2006",Included,Mo17,0.0014,0.7569,0.05,0.1905,0.0012
+646,LH61,PI 601416,"Holden's Foundation Seeds, Inc.",8700137,3/11/06,GRIN,(ASA x Mo17) x Mo17(2),.,.,"Mikel, 2006",Included,Mo17,0,1,0,0,0
+647,LH82,PI 601170,"Holden's Foundation Seeds, Inc.",8500037,7/26/03,GRIN,Holden Line 610 x LH7,.,.,"Mikel, 2006",Included,PH207,0.0014,0.006,0.041,0.4521,0.4995
+648,LH85,PI 601405,"Holden's Foundation Seeds, Inc.",8700088,3/31/06,GRIN,Pioneer Hyb 3987,.,.,"Mikel, 2006",Included,A321,0.0052,0.0128,0.3309,0.5329,0.1182
+649,LH93,PI 601171,"Holden's Foundation Seeds, Inc.",8500038,3/31/04,GRIN,BS11(FR)C3,.,.,"Mikel, 2006",Included,A321,0.0578,0.1744,0.3075,0.3699,0.0904
+650,LH119,PI 600954,"Holden's Foundation Seeds, Inc.",8200064,5/26/01,GRIN,(H93 x B73) x B73,.,.,"Mikel, 2006",Included,B73,1,0,0,0,0
+651,LH123HT,PI 601079,"Holden's Foundation Seeds, Inc.",8400030,2/22/03,GRIN,Pioneer Hyb 3535,.,.,"Mikel, 2006",Included,Mo17,0.0618,0.3379,0.3646,0.2209,0.0148
+652,LH127,PI 538007,"Holden's Foundation Seeds, Inc.",9000064,5/31/09,GRIN,LH122 x LH58,.,.,PVPA Certificate,Included,Mo17,0.0694,0.6016,0.1819,0.1119,0.0352
+653,LH128,PI 547086,"Holden's Foundation Seeds, Inc.",9100067,10/31/09,GRIN,LH51 x BS11LHC3,.,.,PVPA Certificate,Included,Mo17,0.0036,0.8182,0.0228,0.1332,0.0222
+654,LH145,PI 600959,"Holden's Foundation Seeds, Inc.",8300102,6/29/02,GRIN,A632Ht x CM105,.,.,"Mikel, 2006",Included,B73,0.6075,0.0016,0.16,0.2241,0.0068
+655,LH149,PI 601493,"Holden's Foundation Seeds, Inc.",8800053,11/30/06,GRIN,(A662 x B73) x B73(2),.,.,"Mikel, 2006",Included,B73,0.984,0.001,0.0088,0.0052,0.001
+656,LH156,PI 601403,"Holden's Foundation Seeds, Inc.",8700090,1/15/06,GRIN,Va85 x Pa91,.,.,"Mikel, 2006",Included,A321,0.0662,0.1009,0.2572,0.5589,0.0168
+657,LH160,PI 539920,"Holden's Foundation Seeds, Inc.",9000122,1/31/09,GRIN,ND246 x Early Mo17 Composite,.,.,PVPA Certificate,Included,Mo17,0.0076,0.5057,0.2273,0.255,0.0044
+658,LH190,PI 539922,"Holden's Foundation Seeds, Inc.",9000124,1/31/09,GRIN,B73Ht x B68Ht,.,.,PVPA Certificate,Included,B73,1,0,0,0,0
+659,LH193,PI 539927,"Holden's Foundation Seeds, Inc.",9000141,6/28/09,GRIN,LHE137 x LHE136,.,.,PVPA Certificate,Included,B73,0.998,0,0.0004,0.001,0.0006
+660,LH194,PI 539923,"Holden's Foundation Seeds, Inc.",9000125,5/31/09,GRIN,LH117 x LHE137,.,.,PVPA Certificate,Included,B73,0.8485,0,0.003,0.0084,0.1401
+661,LH196,PI 538009,"Holden's Foundation Seeds, Inc.",9000066,6/28/09,GRIN,LH74 x LH119,.,.,PVPA Certificate,Included,B73,1,0,0,0,0
+662,LH202,PI 539924,"Holden's Foundation Seeds, Inc.",9000126,6/28/09,GRIN,(A662 x B73) x B73(2),.,.,PVPA Certificate,Included,B73,1,0,0,0,0
+663,LH205,PI 537099,"Holden's Foundation Seeds, Inc.",9000049,5/31/09,GRIN,LH74 x LH119,.,.,PVPA Certificate,Included,B73,1,0,0,0,0
+664,LH208,PI 547088,"Holden's Foundation Seeds, Inc.",9100069,10/31/09,GRIN,LH74 x CB59G,.,.,PVPA Certificate,Included,B73,0.9246,0.001,0.0012,0.001,0.0722
+665,LH215,PI 552815,"Holden's Foundation Seeds, Inc.",9100201,4/30/10,GRIN,R177 Synthetic x Mo17 Synthetic,.,.,PVPA Certificate,Included,Mo17,0.001,0.7371,0.1141,0.1318,0.016
+666,MBST,PI 601566,DeKalb-Pfizer Genetics,8800194,2/28/07,GRIN,LH38 x 4726-1,.,.,"Nelson et al., 2008",Included,Oh43,0,0.0702,0.5618,0.367,0.001
+667,MBUB,PI 548839,DeKalb Plant Genetics,9100135,4/30/10,GRIN,LH38 x MANS,.,.,PVPA Certificate,Included,Oh43,0,0.0032,0.5974,0.3978,0.0016
+668,MM402A,PI 554615,DeKalb Plant Genetics,9100222,4/30/10,GRIN,LH38 x MANS,.,.,PVPA Certificate,Included,Oh43,0.0006,0.1476,0.4163,0.4141,0.0214
+669,Mo17,PI 558532,Missouri,.,.,GRIN,C.I. 187-2 x C103,.,.,"Gerdes et al., 1993",Included,Mo17,0,1,0,0,0
+670,Mt42,Ames 20140,Montana,.,.,GRIN,Minn #13,.,.,"Gerdes et al., 1993",Included,A321,0.0706,0.0366,0.3479,0.5159,0.029
+671,NC268,PI 587145,North Carolina,.,.,GRIN,(B73 x NC250) x B73,.,.,"Gerdes et al., 1993",Included,B73,0.7997,0.001,0.0826,0.0931,0.0236
+672,ND203,NSL 32732,North Dakota,.,.,GRIN,Haney's Minn #13,.,.,"Gerdes et al., 1993",Included,Oh43,0.1509,0.0988,0.3613,0.2912,0.0978
+673,ND300,PI 607527,North Dakota,.,.,GRIN,W739 x W845,.,.,"Gerdes et al., 1993",Included,A321,0.037,0.0014,0.4004,0.555,0.0062
+674,NK740,PI 601489,"Novartis Seeds, Inc.",8800028,6/30/06,GRIN,(Mo17 x Mexican Deep Kernel) x Mo17(2),.,.,"Mikel, 2006",Included,Mo17,0,1,0,0,0
+675,NK764,PI 601374,"Novartis Seeds, Inc.",8700036,6/30/05,GRIN,NK235 x B73,.,.,"Mikel, 2006",Included,B73,1,0,0,0,0
+676,NK779,PI 601376,"Novartis Seeds, Inc.",8700041,8/31/05,GRIN,CM7 x W117,.,.,"Mikel, 2006",Included,A321,0.0706,0.1134,0.3091,0.4798,0.027
+677,NK793,PI 601492,"Novartis Seeds, Inc.",8800031,8/31/06,GRIN,NK235 x B73,.,.,"Mikel, 2006",Included,B73,1,0,0,0,0
+678,NK807,PI 601430,"Novartis Seeds, Inc.",8700151,4/29/06,GRIN,W117 x B37,.,.,"Mikel, 2006",Included,A321,0.2622,0.1523,0.1233,0.3942,0.068
+679,NKS8326,PI 601612,"Novartis Seeds, Inc.",8800154,11/30/06,GRIN,(W117 x Mo17) x Mo17,.,.,"Mikel, 2006",Included,Mo17,0,1,0,0,0
+680,Oh43,Ames 19288,Ohio,.,.,GRIN,W8 x Oh40B,.,.,"Gerdes et al., 1993",Included,Oh43,0,0,0.6,0.4,0
+681,OQ603,PI 601584,DowElanco,8800150,4/27/07,GRIN,Pioneer Hyb 3713,.,.,PVPA Certificate,Included,PH207,0.1166,0.005,0.001,0.0016,0.8758
+682,Pa91,PI 587147,Pennsylvania,.,.,GRIN,(Wf9 x Oh40B) x [(38-11 x L317) x 38-11],.,.,"Gerdes et al., 1993",Included,A321,0.0136,0.0796,0.2515,0.6499,0.0054
+683,PH207,PI 601005,"Pioneer Hi-Bred International, Inc.",8300144,12/21/02,GRIN,PHG3BD2 x PHG3RZ1,.,.,"Mikel, 2006",Included,PH207,0,0,0,0,1
+684,PHB09,PI 601007,"Pioneer Hi-Bred International, Inc.",8300142,12/21/02,GRIN,PH555 x PH031,.,.,"Mikel, 2006",Included,B73,0.4993,0.0678,0.1703,0.1688,0.0938
+685,PHBA6,PI 559935,"Pioneer Hi-Bred International, Inc.",9200078,6/30/10,GRIN,PHZ51 x PHG47,.,.,PVPA Certificate,Included,Oh43,0.0012,0.2763,0.3255,0.2764,0.1206
+686,PHG29,PI 601270,"Pioneer Hi-Bred International, Inc.",8600047,9/30/04,GRIN,PH207 x (PH207 x PH806),.,.,"Mikel, 2006",Included,PH207,0,0,0,0,1
+687,PHG47,PI 601318,"Pioneer Hi-Bred International, Inc.",8600131,1/30/05,GRIN,PH041 x MKSDTE C10,.,.,"Mikel, 2006",Included,A321,0.0334,0.1312,0.3436,0.4322,0.0596
+688,PHG50,PI 601006,"Pioneer Hi-Bred International, Inc.",8300143,12/21/02,GRIN,PH848 x PH207,.,.,"Mikel, 2006",Included,PH207,0,0,0.0002,0,0.9998
+689,PHG80,PI 601037,"Pioneer Hi-Bred International, Inc.",8400128,7/26/03,GRIN,PH495 x PH331,.,.,"Mikel, 2006",Included,B73,0.4391,0.2739,0.0798,0.1322,0.075
+690,PHG84,PI 601320,"Pioneer Hi-Bred International, Inc.",8600130,1/30/05,GRIN,PH848 x PH595,.,.,"Mikel, 2006",Included,PH207,0.0014,0.2012,0.1798,0.3085,0.3091
+691,PHG86,PI 601442,"Pioneer Hi-Bred International, Inc.",8700170,3/31/06,GRIN,B64 x B73,.,.,"Mikel, 2006",Included,B73,0.988,0,0.0104,0.0016,0
+692,PHH93,PI 601567,"Pioneer Hi-Bred International, Inc.",8800216,2/28/07,GRIN,PH806 x PH207,.,.,"Nelson et al., 2008",Included,PH207,0,0,0,0,1
+693,PHJ33,PI 601774,"Pioneer Hi-Bred International, Inc.",8900308,9/28/08,GRIN,PHG83 x CE18,.,.,PVPA Certificate,Included,PH207,0.0036,0.3049,0.0602,0.069,0.5623
+694,PHJ65,PI 543840,"Pioneer Hi-Bred International, Inc.",9000245,8/30/09,GRIN,PHG63 x PHG65,.,.,PVPA Certificate,Included,A321,0.065,0.0682,0.287,0.4548,0.125
+695,PHJ75,PI 601776,"Pioneer Hi-Bred International, Inc.",8900310,10/31/08,GRIN,207 x G96,.,.,PVPA Certificate,Included,PH207,0.001,0.0024,0.1263,0.0706,0.7997
+696,PHK29,PI 601468,"Pioneer Hi-Bred International, Inc.",8700214,5/31/06,GRIN,PHB47 x PHAC54,.,.,"Mikel, 2006",Included,B73,0.7114,0.1166,0.0054,0.0682,0.0984
+697,PHK35,PI 601777,"Pioneer Hi-Bred International, Inc.",8900311,10/31/08,GRIN,AC34 x G93H,.,.,PVPA Certificate,Included,B73,0.877,0.1202,0.001,0.0006,0.0012
+698,PHK42,PI 601495,"Pioneer Hi-Bred International, Inc.",8800035,7/29/06,GRIN,PH207 x (PH207 x PH806),.,.,"Mikel, 2006",Included,PH207,0,0,0,0,1
+699,PHK76,PI 601496,"Pioneer Hi-Bred International, Inc.",8800036,7/29/06,GRIN,PHAD18 x PHB02,.,.,"Mikel, 2006",Included,Mo17,0.0808,0.5909,0.1737,0.1144,0.0402
+700,PHK93,PI 548800,"Pioneer Hi-Bred International, Inc.",9100094,4/30/10,GRIN,PHB72 x PHT60,.,.,PVPA Certificate,Included,Oh43,0.012,0.0982,0.4206,0.395,0.0742
+701,PHM57,PI 601779,"Pioneer Hi-Bred International, Inc.",8900313,10/31/08,GRIN,B97 x 595,.,.,PVPA Certificate,Included,A321,0.0056,0.1419,0.3065,0.4058,0.1401
+702,PHM81,PI 548801,"Pioneer Hi-Bred International, Inc.",9100095,4/30/10,GRIN,PHG72 x PHG68,.,.,PVPA Certificate,Included,PH207,0.1202,0,0.1099,0.1809,0.589
+703,PHN11,PI 601497,"Pioneer Hi-Bred International, Inc.",8800037,7/29/06,GRIN,PH207 x (PH207 x PH806),.,.,"Mikel, 2006",Included,PH207,0,0,0,0,1
+704,PHN29,PI 601780,"Pioneer Hi-Bred International, Inc.",8900314,10/31/08,GRIN,G69 x C40,.,.,PVPA Certificate,Included,PH207,0.4447,0.0008,0.003,0.0022,0.5493
+705,PHN47,PI 601569,"Pioneer Hi-Bred International, Inc.",8800217,3/31/07,GRIN,207 x PHB60,.,.,PVPA Certificate,Included,PH207,0.0016,0.0046,0.127,0.1128,0.754
+706,PHN66,PI 548802,"Pioneer Hi-Bred International, Inc.",9100096,4/30/10,GRIN,PHG53 x PHG21,.,.,PVPA Certificate,Included,B73,0.5595,0.1708,0.1784,0.0856,0.0058
+707,PHN82,PI 601783,"Pioneer Hi-Bred International, Inc.",8900317,11/30/08,GRIN,PHG29 x HD38,.,.,PVPA Certificate,Included,PH207,0,0.0006,0,0,0.9994
+708,PHP55,PI 601784,"Pioneer Hi-Bred International, Inc.",8900318,11/30/08,GRIN,PHG44 x PHG29,.,.,PVPA Certificate,Included,PH207,0.001,0,0,0,0.999
+709,PHP60,PI 601785,"Pioneer Hi-Bred International, Inc.",8900319,11/30/08,GRIN,AT2 x 805,.,.,PVPA Certificate,Included,A321,0.0384,0.0466,0.4103,0.4877,0.017
+710,PHP76,PI 543846,"Pioneer Hi-Bred International, Inc.",9000251,8/30/09,GRIN,G50 x PHEJ8,.,.,PVPA Certificate,Included,PH207,0.0004,0.0004,0.0769,0.0286,0.8937
+711,PHP85,PI 559944,"Pioneer Hi-Bred International, Inc.",9200087,6/30/10,GRIN,PHK29 x PHW52,.,.,PVPA Certificate,Included,B73,0.8788,0.115,0.0018,0.0018,0.0026
+712,PHPR5,PI 559945,"Pioneer Hi-Bred International, Inc.",9200088,6/30/10,GRIN,PHK76 x PHW52,.,.,PVPA Certificate,Included,B73,0.6239,0.145,0.057,0.1658,0.0082
+713,PHR32,PI 601571,"Pioneer Hi-Bred International, Inc.",8800218,3/31/07,GRIN,PHB82 x PHG61,.,.,PVPA Certificate,Included,A321,0.0112,0.0664,0.3912,0.4566,0.0746
+714,PHR36,PI 601361,"Pioneer Hi-Bred International, Inc.",8700017,5/29/05,GRIN,[(PH203 x PH549) x PH549] x PH848,.,.,"Mikel, 2006",Included,A321,0.0024,0.119,0.1644,0.376,0.3382
+715,PHR47,PI 601572,"Pioneer Hi-Bred International, Inc.",8800213,1/31/07,GRIN,G39 x PHB49,.,.,PVPA Certificate,Included,A321,0.2204,0.1648,0.2896,0.3182,0.007
+716,PHR55,PI 548804,"Pioneer Hi-Bred International, Inc.",9100098,4/30/10,GRIN,PH005 x PHG84,.,.,PVPA Certificate,Included,A321,0.0058,0.1898,0.1844,0.3113,0.3087
+717,PHR58,PI 548805,"Pioneer Hi-Bred International, Inc.",9100099,4/30/10,GRIN,PH383 x PHG16,.,.,PVPA Certificate,Included,Mo17,0.0014,0.4034,0.2296,0.2738,0.0918
+718,PHR62,PI 601786,"Pioneer Hi-Bred International, Inc.",8900320,11/30/08,GRIN,G50 x G35,.,.,PVPA Certificate,Included,PH207,0,0.0334,0.0532,0.0314,0.882
+719,PHT10,PI 601573,"Pioneer Hi-Bred International, Inc.",8800214,2/28/07,GRIN,B73 x G39,.,.,PVPA Certificate,Included,B73,0.9996,0,0,0.0004,0
+720,PHT22,PI 601788,"Pioneer Hi-Bred International, Inc.",8900322,11/30/08,GRIN,207 x HD12,.,.,PVPA Certificate,Included,PH207,0,0.1464,0.1413,0.0915,0.6208
+721,PHT55,PI 601498,"Pioneer Hi-Bred International, Inc.",8800046,8/31/06,GRIN,A33GB4 x A34CB4,.,.,"Mikel, 2006",Included,B73,0.6153,0.163,0.0914,0.0726,0.0578
+722,PHT77,PI 601499,"Pioneer Hi-Bred International, Inc.",8800038,7/29/06,GRIN,PH814 x PH995,.,.,"Mikel, 2006",Included,Oh43,0.0018,0.3108,0.354,0.2274,0.106
+723,PHV53,PI 559952,"Pioneer Hi-Bred International, Inc.",9200095,6/30/10,GRIN,PHB89 x PHDT2,.,.,PVPA Certificate,Included,Oh43,0.001,0.0852,0.4575,0.3181,0.1382
+724,PHV78,PI 601470,"Pioneer Hi-Bred International, Inc.",8800003,5/31/06,GRIN,PHG42 x PH595,.,.,"Mikel, 2006",Included,PH207,0.001,0.3008,0.0821,0.1129,0.5031
+725,PHVA9,PI 559953,"Pioneer Hi-Bred International, Inc.",9200096,6/30/10,GRIN,PHK29 x PHGP8,.,.,PVPA Certificate,Included,B73,0.5078,0.1329,0.0965,0.2089,0.054
+726,PHW03,PI 601790,"Pioneer Hi-Bred International, Inc.",8900324,11/30/08,GRIN,801 x G48,.,.,PVPA Certificate,Included,A321,0.1086,0.0418,0.4045,0.438,0.0072
+727,PHW17,PI 601362,"Pioneer Hi-Bred International, Inc.",8700018,5/29/05,GRIN,(PHID11 x B73) x [B73 x (B73 x PH051)],.,.,"Mikel, 2006",Included,B73,0.8182,0.0012,0.027,0.0962,0.0574
+728,PHW30,PI 548808,"Pioneer Hi-Bred International, Inc.",9100102,4/30/10,GRIN,PHG42 x PHV15,.,.,PVPA Certificate,Included,PH207,0,0.0915,0.1167,0.1418,0.65
+729,PHW43,PI 601792,"Pioneer Hi-Bred International, Inc.",8900326,11/30/08,GRIN,995 x G35,.,.,PVPA Certificate,Included,PH207,0.0006,0.0046,0.3187,0.2997,0.3764
+730,PHW51,PI 543849,"Pioneer Hi-Bred International, Inc.",9000254,8/30/09,GRIN,PHDF2 x PHW51,.,.,PVPA Certificate,Included,B73,0.7102,0.1762,0.1056,0.003,0.005
+731,PHW52,PI 601575,"Pioneer Hi-Bred International, Inc.",8800215,2/28/07,GRIN,B73 x G39,.,.,PVPA Certificate,Included,B73,0.9188,0.063,0.0042,0.014,0
+732,PHW65,PI 601501,"Pioneer Hi-Bred International, Inc.",8800040,8/31/06,GRIN,PH861 x PH595,.,.,"Mikel, 2006",Included,PH207,0.001,0.2673,0.2575,0.1532,0.3209
+733,PHZ51,PI 601322,"Pioneer Hi-Bred International, Inc.",8600132,3/31/05,GRIN,PH814 x PH848,.,.,"Mikel, 2006",Included,Mo17,0.0072,0.3357,0.1914,0.2743,0.1914
+734,SD42,PI 508277,South Dakota State,.,.,GRIN,SDp332 x H96,.,.,"Mikel, 2006",Included,A321,0.1032,0.0314,0.2523,0.4704,0.1427
+735,Va35,PI 587150,Virginia,.,.,GRIN,(C103 x T8) x T8,.,.,"Gerdes et al., 1993",Included,Mo17,0.0458,0.4032,0.2057,0.3387,0.0066
+736,W117,PI 587153,Wisconsin,.,.,GRIN,643 x Minn #13,.,.,"Gerdes et al., 1993",Included,A321,0.0558,0.2065,0.2647,0.4101,0.0628
+737,W64a,PI 587152,Wisconsin,.,.,GRIN,Wf9 x C.I. 187-2,.,.,"Gerdes et al., 1993",Included,A321,0.0012,0.1962,0.0976,0.5843,0.1208
+738,W8304,PI 601502,"Novartis Seeds, Inc.",8800032,3/31/07,GRIN,(B14A x B73)  x B14A,.,.,"Nelson et al., 2008",Included,B73,1,0,0,0,0
+739,W8555,PI 601729,"Novartis Seeds, Inc.",8900227,9/28/08,GRIN,B73Ht x B84,.,.,PVPA Certificate,Included,B73,0.9758,0.0008,0.0008,0.0112,0.0114
+740,WIL500,PI 601689,"Wilson Hybrids, Inc.",8900156,7/31/08,GRIN,82C25 Composite,.,.,PVPA Certificate,Included,A321,0.2615,0.0652,0.3097,0.3135,0.0502
+741,WIL900,PI 601684,"Wilson Hybrids, Inc.",8900092,5/31/09,GRIN,82C43 Composite,.,.,PVPA Certificate,Included,Mo17,0,1,0,0,0
+742,WIL901,PI 601685,"Wilson Hybrids, Inc.",8900093,5/31/09,GRIN,82C232 Composite,.,.,PVPA Certificate,Included,Mo17,0,1,0,0,0

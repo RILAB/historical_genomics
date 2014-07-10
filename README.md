@@ -3,14 +3,17 @@ historical_genomics
 
 ## Pedigree Files
 
-#### Ames_pedigrees352014.numbers
-All of Howie's data.  This includes the "Jeff_Inbred_pedigree-Howie2.xlsx" datafile as well, and may include some duplicates.
+**Ames.csv**  
+All of Howie's data.  This includes the "Jeff_Inbred_pedigree-Howie2.xlsx" datafile and "Ames_pedigrees352014" as well, and may include some duplicates.
 
-#### Crop Sci Schaefer and Bernardo Suppl Table.numbers
-Pedigree data from Minnesota inbreds, thanks to Rex Bernardo
+**Minn.csv**  
+Pedigree data from Minnesota inbreds, thanks to Rex Bernardo, from Chris Schaefer PhD thesis, original file is Crop Sci Schaefer and Bernardo Suppl Table.xls
 
-#### CMLs-Information 1-539.CZ.20140312-2.xls
-Pedigree data for CIMMYT CML lines
+**CML.csv**  
+Pedigree data for CIMMYT CML lines. Original excel is CMLs-Information 1-539.CZ.20140312-2.xls
+
+**ames_10neighbors.csv**  
+10 closest neighbors based on IBS for Ames panel. Can use to cross-reference against pedigree. Data from [Romay 2013](http://genomebiology.com/2013/14/6/R55/)
 
 ## Genotype Data
 
@@ -20,12 +23,15 @@ Probably not worth going back to 55K data.
 
 Should be able to impute Hapmap3 on all of the GBS data where possible.
 
-## Analysis strategy
+Progress:
 
+* Hapmap3 imputation underway
+
+## Analysis strategy
 
 #### BAYENV2
 
-Run Beynv2 on data, similar to [van Heervaarden 2012](http://www.pnas.org/content/109/31/12420.abstract)
+Run [Bayenv2](http://gcbias.org/bayenv/) on data, similar to [van Heervaarden 2012](http://www.pnas.org/content/109/31/12420.abstract)
 
 Improvements on 2012 paper:
 
@@ -34,8 +40,8 @@ Improvements on 2012 paper:
 
 Plan:
 
-Run BAYENV2
-Try Birth-death mapping approach as well
+* Run BAYENV2
+* Try [Birthdate mapping](http://www.biomedcentral.com/1471-2164/13/606) approach as well? Ask Jared Decker to do for us.
 
 #### Genome Scan
 
@@ -49,7 +55,7 @@ Plan:
 
 * Need to get iHS, Fst working
 * Run on imputed data
-* split by time/heterotic group
+* split by time and heterotic group
 
 #### Pedigree Analysis
 
@@ -57,7 +63,7 @@ Track IBD regions down pedigree.  Ask whether haplotypes are more common than ex
 
 Progress:
 
-* Pedigree
+* Pedigree information for lots of inbreds from Howie, CMLs, and Minnesota
 * IBD done across all Ames
 * HapMap3 imputation on Ames underway
 
@@ -65,3 +71,26 @@ Plan:
 
 * More Pedigree data from Pioneer?
 * Check/add to pedigree from relatedness data
+
+#### SQuaT
+
+Run [SQuaT](https://github.com/jjberg2/PolygenicAdaptationCode) on Ames genotpye data, looking for evidence of selection on individual traits over time.
+
+Note this is perhaps method of most interest for Pioneer, as it suggests where breeding has been successful and can identify traits that nobody thought were under selection.
+
+Berg may be willing to help us incorporate similarity of structure between GWAS panel and lines of interest.  Essentially lines of interest projected onto PCs of GWAS panel should be term in the model.
+
+Progress:
+
+* Beissinger getting method working for 282/landraces
+
+Plan:
+
+* Identify GWAS panel and traits of interest, run.
+* Try multiple GWAS panels of same trait to see how results differ?
+
+### Questions
+
+Of interest to run analyses on more closed systems (e.g. Minnesota material, McMullen BSSS material, etc.?)
+
+What GWAS panel doesn't cause big problems for structure for SQuaT? Are there landrace panels?
