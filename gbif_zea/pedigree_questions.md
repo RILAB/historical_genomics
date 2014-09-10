@@ -27,7 +27,7 @@ Pedigree GBIF/GRIN stuff and table joins
 	-There are more examples of this sort of thing, plus GBIF adds some more information on year released.
 
 3. What is GEMS - what does this stand for?
-	
+	[Germplasm Enhancement of Maize](http://www.public.iastate.edu/~usda-gem/)
 
 	
 
