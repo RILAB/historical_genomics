@@ -20,3 +20,9 @@ new.T <- zea.gbif.T[amesHowie.T, roll=T]
 # write.csv(new.T, "amesgbif.csv")
 
 # Looks ok!
+
+# Make a smaller table or df of "useful fields" side by side with Howie's
+# Accession numbers from GBIFs with Howie's, GBIF ancestry with Howie's parentage
+# Year released with year released
+useful.df <- data.frame(new.T$Seq, new.T$accenumb, new.T$Accesion.N, new.T$ancest,new.T$P1A, new.T$P2A, new.T$released, 
+	new.T$Year.Rel, new.T$history, new.T$remarks,)
