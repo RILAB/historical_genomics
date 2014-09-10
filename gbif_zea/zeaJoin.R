@@ -11,7 +11,9 @@ zea.gbif.T <- data.table(zea.gbif)
 amesHowie.T <- data.table(amesHowie)
 setkey(zea.gbif.T, accenumb)
 setkey(amesHowie.T, accenumb)
-zea.gbif.T[amesHowie.T, roll=T]
+
+# Joins tables - GBIF on left, Howie's on right by accession number
+new.T <- zea.gbif.T[amesHowie.T, roll=T]
 
 # Write out if you want - to check
 
