@@ -30,4 +30,4 @@ Pedigree GBIF/GRIN stuff and table joins
 	[Germplasm Enhancement of Maize](http://www.public.iastate.edu/~usda-gem/)
 
 	
-
+4. Have more questions on heterotic groups with respect to pollen (dads) vs. seed (mother) parents - this does not seem trivial, with respect to Ne and also with respect to inheritance of potential sex linked traits. Will try to talk to Josh Hough (from Wright/Barrett lab) this week about plant sex chromosomes, Y chromosome decay, etc. Is it true stiff stalk vs. non-stiff stalk were generally classified as pollen receivers/pollen donors (Tracy and Chandler 2006)? This may just be a crazy idea. 
