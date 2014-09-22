@@ -20,7 +20,7 @@ Anne's efforts at getting years from GRIN, but their data is not so hot.
 **ames_10neighbors.csv**  
 10 closest neighbors based on IBS for Ames panel. Can use to cross-reference against pedigree. Data from [Romay 2013](http://genomebiology.com/2013/14/6/R55/)
 
-## Genotype Data
+## Genotype and Phenotype Data
 
 [GBS](http://www.panzea.org/lit/data_sets.html#genos) data from Ames and all Zea.
 
@@ -28,10 +28,12 @@ Probably not worth going back to 55K data.
 
 Should be able to impute Hapmap3 on all of the GBS data where possible.
 
+SEEds? What data was used for hybrid gwas?
+
 Progress:
 
 * Hapmap3 imputation underway
-
+ber
 ## Analysis strategy
 
 #### BAYENV2
