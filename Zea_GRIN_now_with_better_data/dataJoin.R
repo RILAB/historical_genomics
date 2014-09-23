@@ -35,3 +35,8 @@ setkey(zea.grin.T, Accesion.N)
 setkey(amesWyears.T, Accesion.N)
 
 new.T <- zea.grin.T[amesWyears.T, roll=T]
+
+# Go check
+write.csv(new.T, "join_GRIN_amesWyears.csv")
+
+# Looks ok, and then make some more relevant smaller dfs that are interesting 
