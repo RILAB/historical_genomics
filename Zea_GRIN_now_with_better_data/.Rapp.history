@@ -1,0 +1,763 @@
+data(woodmouse)
+library(pegas)
+library(geosphere)#
+Lon = c(1:9/1000, 1:9/100, 1:9/10, 1:90*2)#
+Lat = c(1:9/1000, 1:9/100, 1:9/10, 1:90)#
+dcos = distCosine(c(0,0), cbind(Lon, Lat))#
+dhav = distHaversine(c(0,0), cbind(Lon, Lat))#
+dvsp = distVincentySphere(c(0,0), cbind(Lon, Lat))#
+par(mfrow=(c(1,2)))#
+plot(log(dcos), dcos-dhav, col='red', ylim=c(-1e-05, 1e-05),#
++ xlab="Log 'Law of Cosines' distance (m)",#
++ ylab="Law of Cosines minus Haversine distance")#
+plot(log(dhav), dhav-dvsp, col='blue',#
++ xlab="Log 'Haversine' distance (m)",#
++ ylab="Vincenty Sphere minus Haversine distance")
+library(geosphere)#
+Lon = c(1:9/1000, 1:9/100, 1:9/10, 1:90*2)#
+Lat = c(1:9/1000, 1:9/100, 1:9/10, 1:90)#
+dcos = distCosine(c(0,0), cbind(Lon, Lat))#
+dhav = distHaversine(c(0,0), cbind(Lon, Lat))#
+dvsp = distVincentySphere(c(0,0), cbind(Lon, Lat))#
+par(mfrow=(c(1,2)))#
+plot(log(dcos), dcos-dhav, col='red', ylim=c(-1e-05, 1e-05),#
+xlab="Log 'Law of Cosines' distance (m)",#
+ylab="Law of Cosines minus Haversine distance")#
+plot(log(dhav), dhav-dvsp, col='blue', xlab="Log 'Haversine' distance (m)",#
+ylab="Vincenty Sphere minus Haversine distance")
+Lat
+x<-9/8
+x
+mn<-0.22222222*0.222222222*(8/3242)
+mx<-0.22222222*0.555555556*(1/3242)
+xn<-0.22222222*0.555555556*(9/3242)
+y<-mn+mx+xn
+y
+y*x
+4/7
+mx<-0.2*0.8*(1/3242)
+x<-5/4
+x
+x*mx
+mx<-0.5714286*0.4285714*(1/3242)
+x<-7/6
+x*mx
+mn<-0.75*0.25*(8/3242)
+x<-4/3
+x*mn
+require(adegenet)#
+(X <- read.gtx(system.file("files/nancycats.gtx", package = "adegenet")))#
+## compare with the example in ?read.genetix
+?read.loci
+library(pegas)
+?read.loci
+32/31
+x<-32/31
+mx<-0.25*0.59375*(1/3242)
+xn<-0.59375*0.15623(9/3242)
+xn<-0.59375*0.15623*(9/3242)
+mn<-0.25*0.15623*(8/3242)
+y<-mn+xn+mx
+x*y
+x <- c(3, 5, 1, 10, 12, 6)
+x
+x[x > 6] <- 0
+x
+x[x >= 6] <- 0
+x
+x[x %in% 1:5] <- 0
+x
+rm(list=ls())
+x <- c(3, 5, 1, 10, 12, 6)
+x[x %in% 1:5] <- 0
+x
+x<-1:4
+y<-2:3
+x
+y
+x+y
+x <- c(1,3, 5)
+y <- c(3, 2, 10)
+cbind(x,y)
+x <- list(2, "a", "b", TRUE)
+x[[1]]
+cube <- function(x, n) {#
+        x^3#
+}
+cube(3)
+pow <- function(x = 4, n = 3) {#
+        x^n#
+}
+pow()
+x <- 1:10#
+if(x > 5) {#
+        x <- 0#
+}
+data(iris)
+summary(iris)
+iris.v<-subset(iris, Species=="virginica")
+iris.v
+summary(iris)
+apply(iris[, 1:4], 1, mean)
+colMeans(iris)
+apply(iris, 2, mean)
+apply(iris, 1, mean)
+apply(iris[, 1:4], 2, mean)
+library(datasets)#
+data(mtcars)
+tapply(mtcars$mpg, mtcars$cyl, mean)
+tapply(mtcars$cyl, mtcars$mpg, mean)
+debug(ls)
+ls
+ls()
+f <- function(x) {#
+        g <- function(y) {#
+                y + z#
+        }#
+        z <- 4#
+        x + g(x)#
+}
+z<-10
+f(3)
+rm(list=ls())
+data(mtcars)
+summary(mtcars)
+mtcars6<-subset(mtcars, cyl==6)
+mtcars4<-subset(mtcars, cyl==4)
+mtcars8<-subset(mtcars, cyl==8)
+summary(mtcars4)
+summary(mtcars8)
+209.2 - 82.64
+library(ggmap)#
+ukraine <- qmap(location = 'ukraine', fullpage = TRUE)#
+#
+n <- 10#
+fake_data <- factor(gl(3, n, label = c('a','b','c')))[sample(3*n,.50*3*n)]#
+f_df <- data.frame(x = factor(1), y = fake_data)#
+pie <- qplot(x, y, data = f_df, geom = 'bar', fill = y) + #
+  coord_polar(theta = 'y') + theme_nothing()#
+vplayout <- function(x, y)  viewport(layout.pos.row = x, layout.pos.col = y)     #
+grid.newpage()#
+pushViewport(viewport(layout = grid.layout(19,19))) #
+print(ukraine, vp = vplayout(1:19, 1:19))#
+print(pie, vp = vplayout(10, 10))
+library(ggmap)#
+qmap("NYU", zoom=13, source="stamen", maptype="watercolor")
+?maptype
+?qmap
+theme_set(theme_bw(16))#
+HoustonMap <- qmap("houston", zoom = 14, color = "bw", legend = "topleft")#
+HoustonMap +#
+geom_point(aes(x = lon, y = lat, colour = offense, size = offense),#
+data = violent_crimes)
+data(violent_crimes)
+datasets
+data(hadley)
+hadley
+?rpois
+x<-rpois(5, 5)
+x
+y<-rpois(5, 6)
+y
+y<-rpois(5, 10)
+y
+set.seed(31);#
+heightsCM = rnorm(30,mean=188, sd=5);#
+weightsK = rnorm(30,mean=84,sd=3); #
+hasDaughter = sample(c(TRUE,FALSE),size=30,replace=T); #
+dataFrame = data.frame(heightsCM,weightsK,hasDaughter);
+dataFrame
+dataFrame<-subset(dataFrame$heightsCM > 188)
+dataFrame<-subset(dataFrame$heightsCM >= 188)
+height<-[dataFrame$heightsCM >= 188]
+[dataFrame$heightsCM >= 188]
+dataFrame<-subset(dataFrame, dataFrame$heightsCM > 188)
+dataFrame
+mean(dataFrame$weightsK)
+?rfoo
+?rnorm
+rm(list=ls())#
+#
+## Simulate Genetic Drift (using Wright-Fisher model)#
+library(ggplot2)#
+library(reshape)#
+# Set up parameters#
+N = 20 # number of diploid individuals#
+N.chrom = 2*N # number of chromosomes#
+p = .791125; q = 1-p #p is average frequency of lemma colour in all of California in 1970s#
+N.gen = 40 # number of generations#
+N.sim = 1000 # number of simulations#
+# Simulation#
+X = array(0, dim=c(N.gen,N.sim))#
+X[1,] = rep(N.chrom*p,N.sim) # initialize number of A1 alleles in first generation#
+for(j in 1:N.sim){#
+  for(i in 2:N.gen){#
+    X[i,j] = rbinom(1,N.chrom,prob=X[i-1,j]/N.chrom)#
+    }  #
+  }#
+X = data.frame(X/N.chrom)#
+# Reshape data and plot the 1000 simulations#
+sim_data <- melt(X)#
+ggplot(sim_data, aes(x = rep(c(1:100), N.sim), y = value, colour = variable)) + geom_line() + opts(title = "Simulations of Genetic Drift") + xlab("Generation") + ylab("Allele Frequency") + ylim(0,1) + labs(colour = "Simulations")
+rm(list=ls())#
+#
+## Simulate Genetic Drift (using Wright-Fisher model)#
+library(ggplot2)#
+library(reshape)#
+# Set up parameters#
+N = 20 # number of diploid individuals#
+N.chrom = 2*N # number of chromosomes#
+p = .791125; q = 1-p #p is average frequency of lemma colour in all of California in 1970s#
+N.gen = 40 # number of generations#
+N.sim = 1000 # number of simulations#
+# Simulation#
+X = array(0, dim=c(N.gen,N.sim))#
+X[1,] = rep(N.chrom*p,N.sim) # initialize number of A1 alleles in first generation#
+for(j in 1:N.sim){#
+  for(i in 2:N.gen){#
+    X[i,j] = rbinom(1,N.chrom,prob=X[i-1,j]/N.chrom)#
+    }  #
+  }#
+X = data.frame(X/N.chrom)#
+# Reshape data and plot the 1000 simulations#
+sim_data <- melt(X)#
+ggplot(sim_data, aes(x = rep(c(1:100), N.sim), y = value, colour = variable)) + #
+geom_line() + xlab("Generation") + ylab("Allele Frequency") + ylim(0,1) + labs(colour = "Simulations")
+rm(list=ls())#
+#
+## Simulate Genetic Drift (using Wright-Fisher model)#
+library(ggplot2)#
+library(reshape)#
+# Set up parameters#
+N = 20 # number of diploid individuals#
+N.chrom = 2*N # number of chromosomes#
+p = .791125; q = 1-p #p is average frequency of lemma colour in all of California in 1970s#
+N.gen = 40 # number of generations#
+N.sim = 1000 # number of simulations#
+# Simulation#
+X = array(0, dim=c(N.gen,N.sim))#
+X[1,] = rep(N.chrom*p,N.sim) # initialize number of A1 alleles in first generation#
+for(j in 1:N.sim){#
+  for(i in 2:N.gen){#
+    X[i,j] = rbinom(1,N.chrom,prob=X[i-1,j]/N.chrom)#
+    }  #
+  }#
+X = data.frame(X/N.chrom)#
+# Reshape data and plot the 1000 simulations#
+sim_data <- melt(X)#
+ggplot(sim_data, aes(x = rep(c(1:40), N.sim), y = value, colour = variable)) + #
+geom_line() + xlab("Generation") + ylab("Allele Frequency") + ylim(0,1) + labs(colour = "Simulations")
+rm(list=ls())#
+#
+## Simulate Genetic Drift (using Wright-Fisher model)#
+library(ggplot2)#
+library(reshape)#
+# Set up parameters#
+N = 20 # number of diploid individuals#
+N.chrom = 2*N # number of chromosomes#
+p = .791125; q = 1-p #p is average frequency of lemma colour in all of California in 1970s#
+N.gen = 40 # number of generations#
+N.sim = 40 # number of simulations#
+# Simulation#
+X = array(0, dim=c(N.gen,N.sim))#
+X[1,] = rep(N.chrom*p,N.sim) # initialize number of A1 alleles in first generation#
+for(j in 1:N.sim){#
+  for(i in 2:N.gen){#
+    X[i,j] = rbinom(1,N.chrom,prob=X[i-1,j]/N.chrom)#
+    }  #
+  }#
+X = data.frame(X/N.chrom)#
+# Reshape data and plot the 1000 simulations#
+sim_data <- melt(X)#
+ggplot(sim_data, aes(x = rep(c(1:40), N.sim), y = value, colour = variable)) + #
+geom_line() + xlab("Generation") + ylab("Allele Frequency") + ylim(0,1) + labs(colour = "Simulations")
+X
+rm(list=ls())#
+#
+## Simulate Genetic Drift (using Wright-Fisher model)#
+library(ggplot2)#
+library(reshape)#
+# Set up parameters#
+N = 10000000000 # number of diploid individuals#
+N.chrom = 2*N # number of chromosomes#
+p = .791125; q = 1-p #p is average frequency of lemma colour in all of California in 1970s#
+N.gen = 40 # number of generations#
+N.sim = 40 # number of simulations#
+# Simulation#
+X = array(0, dim=c(N.gen,N.sim))#
+X[1,] = rep(N.chrom*p,N.sim) # initialize number of A1 alleles in first generation#
+for(j in 1:N.sim){#
+  for(i in 2:N.gen){#
+    X[i,j] = rbinom(1,N.chrom,prob=X[i-1,j]/N.chrom)#
+    }  #
+  }#
+X = data.frame(X/N.chrom)#
+# Reshape data and plot the 1000 simulations#
+sim_data <- melt(X)#
+ggplot(sim_data, aes(x = rep(c(1:40), N.sim), y = value, colour = variable)) + #
+geom_line() + xlab("Generation") + ylab("Allele Frequency") + ylim(0,1) + labs(colour = "Simulations")
+library(coin)
+?citation
+citation(package="coin")
+library(pegas)
+citation(package="pegas")
+library(lme4)
+citation(package="lme4")
+c <- 999; c(c = c)
+c
+d<-1; c(c=c)
+d<-1; d(d=d)
+library(rqtl)
+library(r-qtl)
+?boot
+library(boot)
+?boot
+air.rg <- function(data, mle) {#
+    # Function to generate random exponential variates.#
+    # mle will contain the mean of the original data#
+    out <- data#
+    out$hours <- rexp(nrow(out), 1/mle)#
+    out#
+}#
+#
+air.boot <- boot(aircondit, air.fun, R = 999, sim = "parametric",#
+                 ran.gen = air.rg, mle = mean(aircondit$hours))
+data(air.fun)
+?sample
+library(rgbif)
+install.packages("/Users/katecrosby/rgdal_0.8-16.tar", repos = NULL, type="source")
+install.packages("/Users/katecrosby/rgdal_0.8-16.tar.gz", repos = NULL, type="source")
+?install.packages
+install.packages("/Users/katecrosby/rgdal_0.8-16.tar.gz", repos = NULL, type="source")
+install.packages("/Users/katecrosby/Downloads/rgdal_0.8-16.tar.gz", repos = NULL, type="source")
+install.packages("~/Users/katecrosby/Downloads/rgdal_0.8-16.tar.gz", repos = NULL, type="source")
+install.packages("/katecrosby/Downloads/rgdal_0.8-16.tar.gz", repos = NULL, type="source")
+install.packages("/Downloads/rgdal_0.8-16.tar.gz", repos = NULL, type="source")
+install.packages("/~/Users/katecrosby/Downloads/rgdal_0.8-16.tar.gz", repos = NULL, type="source")
+?install.packages
+library(devtools)
+library(httr)
+# Kate: I'm writing the first iteration of a function for querying observations from OBIS. #
+# I'm starting with the URL in slide #30 from the email. #
+# We'll make this function more complex once we figure out all the arguments this specific URL (or REST method can take). #
+# For now, let's just pass species names and get some data back.#
+# Here is the URL: #
+# http://www.iobis.org/geoserver/OBIS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=OBIS:points_ex#
+# &outputFormat=csv&VIEWPARAMS=where:tname='Kogia breviceps'#
+#
+# We'll rename the function later. To something unique, perhaps a short prefix for all functions in this package,#
+# so they don't conflict with others that might get loaded at the same time.#
+#
+# Note all the comments below (or immediately above the function) with #' and an @ signs in front of them are doc strings.#
+# We will use the document(".") function in the devtools package to turn all of this into manual files.#
+# (or help files when you search with ?function_name)#
+# Some of the patterns might seem obvious. The first line is the title. After a blank like is the function description. #
+# This can be as long as you like and contain formatted content like tables, bulleted lists etc.#
+# Then, every argument the function takes (whatever we define) is described with an  @param.#
+# Followed by a brief description#
+# Functions have to be exported (using @export) if they are to be accessible by name. #
+# Otherwise they are only available internally to the package. #
+# Finally we add some keywords and an example.#
+#
+# THe @import tag means pull in specific functions from other packages so we can use them here.#
+#  We can import entire packages with @import package_name or #
+#  @importFrom package_name functions#
+#
+# You'll see below that I did both. I imported entire packages (httr and assertthat).#
+# But I also only pulled in one function (compact) from plyr. #
+# We can rewrite that function in this package later to avoid this extra dependency#
+# ----- The above comments wont actually be in the package once it's ready. ---------------#
+#
+#' OBIS observations#
+#'#
+#' A longer description#
+#' @param species The species name for which we require data#
+#' @param foptions  Additional arugments we wil never use except for debugging#
+#' @export#
+#' @keywords data observations#
+#" @import httr assertthat#
+#" @importFrom plyr compact#
+#' @examples \dontrun{#
+#' # obs(species = "Kogia breviceps")#
+#'}#
+obs <- function(species = NULL, foptions = list()) {#
+# This tells the function to make sure species is not blank. #
+# The next line will stop the function if it is ever FALSE#
+assert_that(!is.null(species))#
+# We declare the following options to pass to the API#
+base_url <- "http://www.iobis.org/geoserver/OBIS/ows"#
+service <- "WFS"#
+version <- "1.0.0"#
+request <- "GetFeature"#
+typeName <- "OBIS:points_ex"#
+outputFormat <- "csv"#
+VIEWPARAMS <- paste0("where:tname=", "\'" ,species, "\'")#
+# Compact removes anything from the list if it's NULL#
+args <- as.list(compact(c(service = service, version = version, #
+	request = request, typeName = typeName, #
+	outputFormat = outputFormat, VIEWPARAMS = VIEWPARAMS)))#
+# Using the GET protocol, we pass these arguments to the API#
+data <- GET(base_url, query = args, foptions)#
+# We don't parse the results in the first go, just get it back as is#
+results <- content(data, as = "text")#
+# Then we coerce into a data.frame#
+# This step is slow but we'll have to optimise it. #
+# Perhaps request a better format that csv from the server#
+read.csv(textConnection(results))#
+}#
+#
+# Since we haven't packaged the library yet,#
+# we do have to load the packages/functions explicitly#
+# Install these with install.packages("package_name") if you don't have them.#
+library(httr)#
+library(assertthat)#
+library(plyr)#
+#
+# Now run this#
+x <- obs(species = 'Kogia breviceps')#
+# Now just type x or edit(x) to see in spreadsheet view#
+# Did this work?#
+# If so, then yay! If not the API is likely down.
+ls()
+obs
+x
+library(httr)
+library(devtools)
+# Kate: I'm writing the first iteration of a function for querying observations from OBIS. #
+# I'm starting with the URL in slide #30 from the email. #
+# We'll make this function more complex once we figure out all the arguments this specific URL (or REST method can take). #
+# For now, let's just pass species names and get some data back.#
+# Here is the URL: #
+# http://www.iobis.org/geoserver/OBIS/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=OBIS:points_ex#
+# &outputFormat=csv&VIEWPARAMS=where:tname='Kogia breviceps'#
+#
+# We'll rename the function later. To something unique, perhaps a short prefix for all functions in this package,#
+# so they don't conflict with others that might get loaded at the same time.#
+#
+# Note all the comments below (or immediately above the function) with #' and an @ signs in front of them are doc strings.#
+# We will use the document(".") function in the devtools package to turn all of this into manual files.#
+# (or help files when you search with ?function_name)#
+# Some of the patterns might seem obvious. The first line is the title. After a blank like is the function description. #
+# This can be as long as you like and contain formatted content like tables, bulleted lists etc.#
+# Then, every argument the function takes (whatever we define) is described with an  @param.#
+# Followed by a brief description#
+# Functions have to be exported (using @export) if they are to be accessible by name. #
+# Otherwise they are only available internally to the package. #
+# Finally we add some keywords and an example.#
+#
+# THe @import tag means pull in specific functions from other packages so we can use them here.#
+#  We can import entire packages with @import package_name or #
+#  @importFrom package_name functions#
+#
+# You'll see below that I did both. I imported entire packages (httr and assertthat).#
+# But I also only pulled in one function (compact) from plyr. #
+# We can rewrite that function in this package later to avoid this extra dependency#
+# ----- The above comments wont actually be in the package once it's ready. ---------------#
+#
+#' OBIS observations#
+#'#
+#' A longer description#
+#' @param species The species name for which we require data#
+#' @param foptions  Additional arugments we wil never use except for debugging#
+#' @export#
+#' @keywords data observations#
+#" @import httr assertthat#
+#" @importFrom plyr compact#
+#' @examples \dontrun{#
+#' # obs(species = "Kogia breviceps")#
+#'}#
+obs <- function(species = NULL, foptions = list()) {#
+# This tells the function to make sure species is not blank. #
+# The next line will stop the function if it is ever FALSE#
+assert_that(!is.null(species))#
+# We declare the following options to pass to the API#
+base_url <- "http://www.iobis.org/geoserver/OBIS/ows"#
+service <- "WFS"#
+version <- "1.0.0"#
+request <- "GetFeature"#
+typeName <- "OBIS:points_ex"#
+outputFormat <- "csv"#
+VIEWPARAMS <- paste0("where:tname=", "\'" ,species, "\'")#
+# Compact removes anything from the list if it's NULL#
+args <- as.list(compact(c(service = service, version = version, #
+	request = request, typeName = typeName, #
+	outputFormat = outputFormat, VIEWPARAMS = VIEWPARAMS)))#
+# Using the GET protocol, we pass these arguments to the API#
+data <- GET(base_url, query = args, foptions)#
+# We don't parse the results in the first go, just get it back as is#
+results <- content(data, as = "text")#
+# Then we coerce into a data.frame#
+# This step is slow but we'll have to optimise it. #
+# Perhaps request a better format that csv from the server#
+read.csv(textConnection(results))#
+}#
+#
+# Since we haven't packaged the library yet,#
+# we do have to load the packages/functions explicitly#
+# Install these with install.packages("package_name") if you don't have them.#
+library(httr)#
+library(assertthat)#
+library(plyr)#
+#
+# Now run this#
+x <- obs(species = 'Kogia breviceps')#
+# Now just type x or edit(x) to see in spreadsheet view#
+# Did this work?#
+# If so, then yay! If not the API is likely down.
+dim(x)
+library(vegan)
+data(dune)#
+data(dune.env)#
+adonis(dune ~ Management*A1, data=dune.env, permutations=99)
+head(dune)
+head(dune.env)
+?cor
+library(obis)
+library(robis)
+library(devtools)
+install_github("ropensci/obis")
+library(obis)
+library(OBIS)
+install_github("ropensci/obis")
+library(devtools)
+install_github("ropensci/obis")
+library(rOBIS)
+obs("Parargorgia arborea")
+?obs
+obs(species="Paragorgia arborea")
+library(assertthat)
+obs(species="Paragorgia arborea")
+library(httr)
+library(plyr)
+obs(species="Paragorgia arborea")
+base_url <- "http://www.iobis.org/geoserver/OBIS/ows"#
+service <- "WFS"#
+version <- "1.0.0"#
+request <- "GetFeature"#
+typeName <- "OBIS:points_ex"#
+outputFormat <- "csv"#
+species <- "Salmo salar"#
+#VIEWPARAMS <- paste0("where:tname=", "\'" ,species, "\'")#
+# Compact removes anything from the list if it's NULL#
+args <- as.list(compact(c(service = service, version = version, #
+	request = request, typeName = typeName, #
+	outputFormat = outputFormat, VIEWPARAMS = VIEWPARAMS, species=species)))#
+# Using the GET protocol, we pass these arguments to the API#
+data <- GET(base_url, query = args)#
+# We don't parse the results in the first go, just get it back as is#
+results <- content(data, as = "text")#
+# Then we coerce into a data.frame#
+# This step is slow but we'll have to optimise it. #
+# Perhaps request a better format that csv from the server#
+toJSON(results)
+library(httr)#
+library(assertthat)#
+library(plyr)#
+library(jsonlite)
+base_url <- "http://www.iobis.org/geoserver/OBIS/ows"#
+service <- "WFS"#
+version <- "1.0.0"#
+request <- "GetFeature"#
+typeName <- "OBIS:points_ex"#
+outputFormat <- "csv"#
+species <- "Salmo salar"#
+#VIEWPARAMS <- paste0("where:tname=", "\'" ,species, "\'")#
+# Compact removes anything from the list if it's NULL#
+args <- as.list(compact(c(service = service, version = version, #
+	request = request, typeName = typeName, #
+	outputFormat = outputFormat, VIEWPARAMS = VIEWPARAMS, species=species)))#
+# Using the GET protocol, we pass these arguments to the API#
+data <- GET(base_url, query = args)#
+# We don't parse the results in the first go, just get it back as is#
+results <- content(data, as = "text")
+base_url <- "http://www.iobis.org/geoserver/OBIS/ows"#
+service <- "WFS"#
+version <- "1.0.0"#
+request <- "GetFeature"#
+typeName <- "OBIS:points_ex"#
+outputFormat <- "csv"#
+species <- "Salmo salar"#
+#VIEWPARAMS <- paste0("where:tname=", "\'" ,species, "\'")#
+# Compact removes anything from the list if it's NULL#
+args <- as.list(compact(c(service = service, version = version, #
+	request = request, typeName = typeName, #
+	outputFormat = outputFormat, species=species)))#
+# Using the GET protocol, we pass these arguments to the API#
+data <- GET(base_url, query = args)#
+# We don't parse the results in the first go, just get it back as is#
+results <- content(data, as = "text")#
+# Then we coerce into a data.frame#
+# This step is slow but we'll have to optimise it. #
+# Perhaps request a better format that csv from the server#
+toJSON(results)
+fromJSON(results)
+base_url <- "http://www.iobis.org/geoserver/OBIS/ows"#
+service <- "WFS"#
+version <- "1.0.0"#
+request <- "GetFeature"#
+typeName <- "OBIS:points_ex"#
+outputFormat <- "JSON"#
+species <- "Salmo salar"#
+#VIEWPARAMS <- paste0("where:tname=", "\'" ,species, "\'")#
+# Compact removes anything from the list if it's NULL#
+args <- as.list(compact(c(service = service, version = version, #
+	request = request, typeName = typeName, #
+	outputFormat = outputFormat, species=species)))#
+# Using the GET protocol, we pass these arguments to the API#
+data <- GET(base_url, query = args)#
+# We don't parse the results in the first go, just get it back as is#
+results <- content(data, as = "text")#
+# Then we coerce into a data.frame#
+# This step is slow but we'll have to optimise it. #
+# Perhaps request a better format that csv from the server#
+toJSON(results)#
+fromJSON(results)
+# We declare the following options to pass to the API#
+base_url <- "http://www.iobis.org/geoserver/OBIS/ows"#
+service <- "WFS"#
+version <- "1.0.0"#
+request <- "GetFeature"#
+typeName <- "OBIS:points_ex"#
+outputFormat <- "JSON"#
+species <- "Salmo salar"#
+#VIEWPARAMS <- paste0("where:tname=", "\'" ,species, "\'")#
+# Compact removes anything from the list if it's NULL#
+args <- as.list(compact(c(service = service, version = version, #
+	request = request, typeName = typeName, #
+	outputFormat = outputFormat, species=species)))#
+# Using the GET protocol, we pass these arguments to the API#
+data <- GET(base_url, query = args)#
+# We don't parse the results in the first go, just get it back as is#
+results <- content(data, as = "text")#
+# Then we coerce into a data.frame#
+# This step is slow but we'll have to optimise it. #
+# Perhaps request a better format that csv from the server#
+#toJSON(results)#
+fromJSON(results)#
+#stuff <- textConnection(results)#
+#}#
+#
+library(httr)#
+library(assertthat)#
+library(plyr)#
+library(jsonlite)
+.806*40
+.806*39
+.806*38
+.806*37
+.806*57
+.806*59
+.806*58
+.806*200
+.806*24
+.806*26
+.806*13
+14/20
+15/20
+15/22
+16/22
+17/22
+18/22
+18/23
+18/24
+19/24
+20/24
+32/40
+rm(list=ls())#
+#
+######################################
+#Let's get the GBIF oat records first#
+######################################
+#
+library(rgbif)#
+#
+#####################################
+#Get A. barbata species key#
+#####################################
+key <- name_backbone(name = "Zea mays", kingdom = "plants")$speciesKey#
+key
+occ_count(nubKey = 5290052)
+occ_count(taxonKey = 5290052)
+data_oats <- occ_search(taxonKey = key, return = "data", limit = 100, #
+                        fields="all", georeferenced=T)
+data_oats <- occ_search(taxonKey = key, return = "data", limit = 100, #
+                        fields="all")
+data_oats
+x <- data.frame(k1=c(NA,NA,3,4,5), k2=c(1,NA,NA,4,5), data=1:5)#
+y <- data.frame(k1=c(NA,2,NA,4,5), k2=c(NA,NA,3,4,5), data=1:5)#
+merge(x, y, by=c("k1","k2"))
+x
+y
+x
+y
+df<-merge(x, y, by=c("k1","k2"))
+df
+x
+y
+df
+setwd('/Users/katecrosby/Desktop/Zea_GRIN')
+rm(list=ls())#
+library(rgbif)#
+#
+#####################################
+#Get species key#
+#####################################
+key <- name_backbone(name = "Zea mays", kingdom = "plants")$speciesKey#
+key#
+#
+######################################################################################
+# Number of Zea mays records using occ_count#
+#######################################################################################
+#
+occ_count(taxonKey = 5290052)
+setwd('/Users/katecrosby/Desktop/Zea_GRIN')
+corn <- occ_search(taxonKey = key, return = "data", limit = 84736, #
+                        fields=c("name", "latitude", "longitude", "country",#
+                                 "county", "locality", "occurrenceDate", "altitude"))
+corn
+?occ_search
+corn <- occ_search(taxonKey = key, return = "data", limit = 1000, #
+                        fields=c("name", "latitude", "longitude", "country",#
+                                 "county", "locality", "occurrenceDate", "altitude", "eventDate", "year", "month"))
+corn <- occ_search(taxonKey = key, return = "data", limit = 1000, #
+                        fields=c("name", "latitude", "longitude", "country",#
+                                 "county", "locality", "occurrenceDate", "altitude", "eventDate", "year", "month"))
+corn <- occ_search(taxonKey = key, return = "data", limit = 1000, #
+                        fields=c("name", "latitude", "longitude", "country",#
+                                 "county", "locality", "altitude", "eventDate", "year", "month"))
+corn <- occ_search(taxonKey = key, return = "data", limit = 1000, #
+                        fields=c("name", "latitude", "longitude", "country",#
+                                 "county", "locality", "occurrenceDate", "altitude"))
+setwd('/Users/katecrosby/Desktop/Zea_GRIN')
+corn <- occ_search(taxonKey = key, return = "data", limit = 100, #
+                        fields=c("name", "latitude", "longitude", "country",#
+                                 "county", "locality", "occurrenceDate", "altitude"))
+setwd('/Users/katecrosby/Desktop/Zea_GRIN')
+rm(list=ls())#
+library(rgbif)#
+#
+#####################################
+#Get species key#
+#####################################
+key <- name_backbone(name = "Zea mays", kingdom = "plants")$speciesKey#
+key#
+#
+######################################################################################
+# Number of Zea mays records using occ_count#
+#######################################################################################
+#
+occ_count(taxonKey = 5290052)#
+#####################################################################################
+#Get all of the data with occ_search#
+#####################################################################################
+corn <- occ_search(taxonKey = key, return = "data", limit = 100, #
+                        fields="all")#
+#
+corn <- occ_search(taxonKey = key, return = "data", limit = 100, #
+                        fields=c("name", "latitude", "longitude", "country",#
+                                 "county", "locality", "occurrenceDate", "altitude"))
+setwd('/Users/katecrosby/Desktop/Zea_GRIN')
+library(rgbif)
+setwd('/Users/katecrosby/Desktop/Zea_GRIN')
+key <- name_backbone(name = "Zea mays", kingdom = "plants")$speciesKey#
+key
