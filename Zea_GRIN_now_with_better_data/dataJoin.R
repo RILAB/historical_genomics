@@ -20,12 +20,18 @@ accenumbMBG<- str_replace(accenumbPI, "S ", "S")
 accenumbAmes <- str_replace(accenumbMBG, "s ", "s")
 accenumbNSL <- str_replace(accenumbAmes, "L ", "L")
 
-accenumbKate <- accenumbNSL
+# Rename that new vector so that it matches pedigree files - 
+# there still a few ones with weird spaces, can change later
+Accesion.N <- accenumbNSL
 
-grin.new <- data.frame(accenumbKate, grin.all)
+# New dataframe
+grin.new <- data.frame(grin.all, Accesion.N, stringsAsFactors = F)
 
+# Now start the joining of the two datasets
 
-str_replace(accenumb, )
+zea.grin.T <- data.table(grin.new)
+amesWyears.T <- data.table(amesWyears)
+setkey(zea.grin.T, Accesion.N)
+setkey(amesWyears.T, Accesion.N)
 
-
-# rename the GRIN field accenumb
+new.T <- zea.grin.T[amesWyears.T, roll=T]
