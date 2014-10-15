@@ -33,7 +33,18 @@ SEEds? What data was used for hybrid gwas?
 Progress:
 
 * Hapmap3 imputation underway
-ber
+
+Phenotype data:
+
+| Code | description |
+| --- | --- |
+| PLHT	| plant height |
+| DMC | dry matter content at harvest |
+| DMY | dry matter yield |
+| DTS | days to silking |
+| DTA | days to anthesis |
+
+
 ## Analysis strategy
 
 #### BAYENV2
