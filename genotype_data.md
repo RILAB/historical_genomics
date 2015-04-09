@@ -15,7 +15,7 @@ NAM Founders:
 /group/jrigrp4/hmp31/taxa_list_founders37.txt
 ```
 
-NAM RILs: as far as I can tell there are no NAM RILS imputed for HMP v. 3.1 just for GBS 2.7
+NAM RILs: as far as I can tell there are no NAM RILS imputed from HMP v. 3.1 just for GBS 2.7
 
 ###GbS 2.7
 
@@ -54,3 +54,9 @@ List of Ames entries here:
 /group/jrigrp4/GBS2.7/keep_list_Ames.txt
 ```
 
+## To do list Kate/Justin
+1. OLS on NAM trait residuals - awaiting Tassel help, but also trying in R **KATE**
+2. PCA - compute Tracy-Widom statistics **JUSTIN**
+3. Missing data from Hmp 3.1 for Ames **KATE** 
+4. Run Qx, win the day **TBD**
+5. Do allele dropping single with missing hmp 31 and no missing on multiple loci hmp31 **KATE**
