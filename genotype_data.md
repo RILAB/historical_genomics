@@ -9,11 +9,13 @@ Ames Data:
 /group/jrigrp4/hmp31/hmp31_ames_imputed.txt
 ```
 
-NAM Founders:
+NAM Founders: 
+- list of NAM parents/founders here:
+```
+/group/jrigrp4/hmp31/taxa_list_founders37.txt
+```
 
-
-NAM RILs:
-
+NAM RILs: as far as I can tell there are no NAM RILS imputed for HMP v. 3.1 just for GBS 2.7
 
 ###GbS 2.7
 
