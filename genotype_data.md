@@ -4,6 +4,7 @@
 ####Maize Hapmap 3
 
 Ames Data: 
+- list of names of Ames data here:/group/jrigrp4/hmp31/hmp31_ames_imputed.txt
 
 
 NAM Founders:
