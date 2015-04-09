@@ -19,6 +19,11 @@ NAM RILs: as far as I can tell there are no NAM RILS imputed for HMP v. 3.1 just
 
 ###GbS 2.7
 
+Metadata:     
+```
+/group/jrigrp4/GBS2.7/AllZeaGBSv2.7_public.csv
+```
+
 Raw data (NAM and AMES and other):
 ```
 /group/jrigrp4/GBS2.7/AllZeaGBSv2.7_publicSamples_imputedV3b_agpv3.hmp.gz
