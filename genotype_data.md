@@ -1,4 +1,3 @@
-
 ###SNP sets
 
 ####Maize Hapmap 3
@@ -65,7 +64,14 @@ For the **GBS 2.7** data in
 ```
 /group/jrigrp4/GBS2.7/
 ```
-There is one script 'sortexport.sh' that will sort the GBS data, convert to plink (keeping only the Ames accessions), downsize to binary plink, and run flashpca. **JUSTIN** it will email you when it is finished.
+There is one script 'sortexport.sh' that will sort the GBS data, convert to plink (keeping only the Ames accessions), downsize to binary plink, and run flashpca. Correction - gmail will throw the email in your spam folder.
+
+## FLASHPCA RESULTS
+**JUSTIN** results for the flashpca with GBS 2.7 are in the
+```
+/group/jrigrp4/GBS2.7/flashpca_results/
+```
+There should be 5 files in there. I performed this only on the 'keep_list_Ames.txt' - if you want to do NAM, you can, but not sure why you would want to.
 
 
 ## To do list Kate/Justin
