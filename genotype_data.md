@@ -5,13 +5,13 @@
 Ames Data: 
 - list of names of Ames data here:
 ```
-/group/jrigrp4/hmp31/hmp31_ames_imputed.txt
+/group/jrigrp4/Justin_Kate/hmp31/hmp31_ames_imputed.txt
 ```
 
 NAM Founders: 
 - list of NAM parents/founders here:
 ```
-/group/jrigrp4/hmp31/taxa_list_founders37.txt
+/group/jrigrp4/Justin_Kate/hmp31/taxa_list_founders37.txt
 ```
 
 NAM RILs: as far as I can tell there are no NAM RILS imputed from HMP v. 3.1 just for GBS 2.7
@@ -20,22 +20,22 @@ NAM RILs: as far as I can tell there are no NAM RILS imputed from HMP v. 3.1 jus
 
 Metadata:     
 ```
-/group/jrigrp4/GBS2.7/AllZeaGBSv2.7_public.csv
+/group/jrigrp4/Justin_Kate/GBS2.7/AllZeaGBSv2.7_public.csv
 ```
 
 Raw data (NAM and AMES and other):
 ```
-/group/jrigrp4/GBS2.7/AllZeaGBSv2.7_publicSamples_imputedV3b_agpv3.hmp.gz
+/group/jrigrp4/Justin_Kate/GBS2.7/AllZeaGBSv2.7_publicSamples_imputedV3b_agpv3.hmp.gz
 ```
 
 Script to sort raw data:    
 ```
-/group/jrigrp4/GBS2.7/sort_export.sh
+/group/jrigrp4/Justin_Kate/GBS2.7/sort_export.sh
 ```
 
 Sorted data (NAM and AMES and other):       
 ```
-/group/jrigrp4/GBS2.7/sortedGBS.hmp.txt
+/group/jrigrp4/Justin_Kate/GBS2.7/sortedGBS.hmp.txt
 ```
 
 Script to generate lists of entries from the projects:     
@@ -62,14 +62,14 @@ There are 2 scripts - one to convert and filter missinginess of the hmp31 ames d
 
 For the **GBS 2.7** data in
 ```
-/group/jrigrp4/GBS2.7/
+/group/jrigrp4/Justin_Kate/GBS2.7/
 ```
 There is one script 'sortexport.sh' that will sort the GBS data, convert to plink (keeping only the Ames accessions), downsize to binary plink, and run flashpca. Correction - gmail will throw the email in your spam folder.
 
 ## FLASHPCA RESULTS
 **JUSTIN** results for the flashpca with GBS 2.7 are in the
 ```
-/group/jrigrp4/GBS2.7/flashpca_results/
+/group/jrigrp4/Justin_Kate/GBS2.7/flashpca_results/
 ```
 There should be 5 files in there. I performed this only on the 'keep_list_Ames.txt' - if you want to do NAM, you can, but not sure why you would want to.
 
