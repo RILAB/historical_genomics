@@ -64,7 +64,7 @@ For the **GBS 2.7** data in
 ```
 /group/jrigrp4/Justin_Kate/GBS2.7/
 ```
-There is one script 'sortexport.sh' that will sort the GBS data, convert to plink (keeping only the Ames accessions), downsize to binary plink, and run flashpca. Correction - gmail will throw the email in your spam folder.
+There is one script 'ames_sort_export.sh' that will sort the GBS data, convert to plink (keeping only the Ames accessions), downsize to binary plink, and run flashpca. 
 
 ## FLASHPCA RESULTS
 **JUSTIN** results for the flashpca with GBS 2.7 are in the
