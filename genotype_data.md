@@ -71,7 +71,17 @@ There is one script 'ames_sort_export.sh' that will sort the GBS data, convert t
 ```
 /group/jrigrp4/Justin_Kate/GBS2.7/flashpca_results/
 ```
-There should be 5 files in there. I performed this only on the 'keep_list_Ames.txt' - if you want to do NAM, you can, but not sure why you would want to.
+There should be 5 files in there. I performed this only on the 'keep_list_Ames.txt' - if you want to do NAM, you can, but not sure why you would want to. For further options with respect to [flashpca link is here](https://github.com/gabraham/flashpca)
+
+##GWAS with the NAM children/progeny 
+The script 'get_NAM_children' gets the data all wrangled into some agreeable format to do GWAS with the NAM Wallace residuals.
+
+This script is in:
+```
+/group/jrigrp4/Justin_Kate/GBS2.7/scripts
+```
+
+The plan is to use [GCTA](http://www.complextraitgenomics.com/software/gcta/index.html) to do stepwise OLS on the SNPs with respect to each trait. There's also a [free ebook here that has more detailed documentation] (http://www.ncbi.nlm.nih.gov/pubmed/23756892).
 
 
 ## To do list Kate/Justin
