@@ -81,12 +81,54 @@ This script is in:
 /group/jrigrp4/Justin_Kate/GBS2.7/scripts
 ```
 
+But what the script does is this:
+```
+run_pipeline.pl -Xmx64g -fork1 -h sortedGBS.hmp.txt -includeTaxaInfile keep_list_NAM_children.txt -export -exportType VCF -runfork1
+
+
+Call vcftools and then make everything biallelic because we really don't have time for much else
+
+gzip *.vcf
+
+~/bin/vcftools_0.1.12b/bin/vcftools --gzvcf sorted_NAM_children.vcf.gz --min-alleles 2 --max-alleles 2 --recode --out biallelic_NAM_children
+
+# Cut the header
+sed '11q;d' biallelic_NAM_children.recode.vcf > header.vcf
+
+# Get the lines before the header
+sed '1,10!d' biallelic_NAM_children.recode.vcf > first.vcf
+
+# Get lines below the header
+sed -e '1,11d' biallelic_NAM_children.recode.vcf > last.vcf
+
+# transpose the header and awk and transpose again
+cat header.vcf | tr '\t' '\n'| awk -F":" '{print $1}'| tr '\n' '\t' > middle.vcf
+
+# Middle.vcf has no line ending so add one
+sed -i -e '$a\' middle.vcf
+
+# Put it all back together as one vcf file
+cat first.vcf middle.vcf last.vcf > GWAS_NAM.vcf
+
+# Convert this biallelic output back to plink
+# Convert to plink binary, and exclude the SNPs that are not on any chromosome
+
+~/bin/vcftools_0.1.12b/bin/vcftools --vcf GWAS_NAM.vcf --plink --out GWAS_NAM_plk
+
+plink --file GWAS_NAM_plk --make-bed --chr 1-10 --out GWAS_NAM_bplk
+# IT WORKS!!! Then take this file to GCTA and compute the GRM, do GWAS on NAM children
+```
+
 The plan is to use [GCTA](http://www.complextraitgenomics.com/software/gcta/index.html) to do stepwise OLS on the SNPs with respect to each trait. There's also a [free ebook here that has more detailed documentation] (http://www.ncbi.nlm.nih.gov/pubmed/23756892).
 
+This is currently running, as it's close to 5000 individuals, might take a bit of time, but once output - GWAS.
+```
+gcta64 --bfile GWAS_NAM_bplk --make-grm --out NAM_Child
+```
 
 ## To do list Kate/Justin
-1. OLS on NAM trait residuals - awaiting Tassel help, but also trying in R **KATE**
-2. PCA - compute Tracy-Widom statistics **JUSTIN**
-3. Missing data from Hmp 3.1 for Ames **KATE** 
+1. OLS on NAM trait residuals - ~awaiting Tassel help, but also trying in R~ **UPDATE USING GCTA** **KATE**
+2. PCA - compute Tracy-Widom statistics **JUSTIN** **FLASHPCA done, awaiting T-W stats on largest eigenvalue** 
+3. Missing data from Hmp 3.1 for Ames **KATE** **THIS IS RUNNING STILL - files are super big**
 4. Run Qx, win the day **TBD**
 5. Do allele dropping single with missing hmp 31 and no missing on multiple loci hmp31 **KATE**
