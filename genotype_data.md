@@ -82,6 +82,7 @@ This script is in:
 ```
 
 But what the script does is this:
+
 ```
 run_pipeline.pl -Xmx64g -fork1 -h sortedGBS.hmp.txt -includeTaxaInfile keep_list_NAM_children.txt -export -exportType VCF -runfork1
 
