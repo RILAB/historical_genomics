@@ -127,7 +127,7 @@ gcta64 --bfile GWAS_NAM_bplk --make-grm --out NAM_Child
 ```
 
 ## To do list Kate/Justin
-1. OLS on NAM trait residuals - ~awaiting Tassel help, but also trying in R~ **UPDATE USING GCTA** **KATE**
+1. OLS on NAM trait residuals - ~~awaiting Tassel help, but also trying in R~~ **UPDATE USING GCTA** **KATE**
 2. PCA - compute Tracy-Widom statistics **JUSTIN** **FLASHPCA done, awaiting T-W stats on largest eigenvalue** 
 3. Missing data from Hmp 3.1 for Ames **KATE** **THIS IS RUNNING STILL - files are super big**
 4. Run Qx, win the day **TBD**
