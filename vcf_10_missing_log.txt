@@ -1,0 +1,155 @@
+Module BUILD 1.6 Loaded.
+Module slurm/2.6.5 loaded 
+Module JDK 1.8 Loaded.
+Module tassel/5 loaded 
+Module plink/1.90 loaded 
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr10_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr10_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4147 out of 4147 Individuals
+Outputting VCF file...
+After filtering, kept 18441 out of a possible 2389504 Sites
+Run Time = 2020.00 seconds
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr1_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr1_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4149 out of 4149 Individuals
+Outputting VCF file...
+After filtering, kept 6007 out of a possible 5192033 Sites
+Run Time = 4348.00 seconds
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr2_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr2_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4149 out of 4149 Individuals
+Outputting VCF file...
+After filtering, kept 17646 out of a possible 3849372 Sites
+Run Time = 3324.00 seconds
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr3_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr3_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4149 out of 4149 Individuals
+Outputting VCF file...
+After filtering, kept 10046 out of a possible 3754351 Sites
+Run Time = 3588.00 seconds
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr4_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr4_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4149 out of 4149 Individuals
+Outputting VCF file...
+After filtering, kept 1651 out of a possible 3900088 Sites
+Run Time = 3268.00 seconds
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr5_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr5_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4149 out of 4149 Individuals
+Outputting VCF file...
+After filtering, kept 1665 out of a possible 3248873 Sites
+Run Time = 2710.00 seconds
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr6_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr6_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4149 out of 4149 Individuals
+Outputting VCF file...
+After filtering, kept 4151 out of a possible 2527426 Sites
+Run Time = 2133.00 seconds
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr7_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr7_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4148 out of 4148 Individuals
+Outputting VCF file...
+After filtering, kept 18858 out of a possible 2851905 Sites
+Run Time = 2453.00 seconds
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr8_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr8_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4148 out of 4148 Individuals
+Outputting VCF file...
+After filtering, kept 5720 out of a possible 2656788 Sites
+Run Time = 2236.00 seconds
+
+VCFtools - v0.1.12b
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf chr9_biallelic.vcf.gz
+	--max-missing 0.9
+	--out filter_missingchr9_biallelic.vcf.gz
+	--recode
+
+Using zlib version: 1.2.8
+After filtering, kept 4149 out of 4149 Individuals
+Outputting VCF file...
+After filtering, kept 8095 out of a possible 2509217 Sites
+Run Time = 2148.00 seconds
