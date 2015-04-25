@@ -46,6 +46,27 @@ Phenotype data:
 
 
 ## Analysis strategy
+### Detecting Selection
+The planned analyses can be divided into two approaches. 1) Detecting selection on single loci and 2) detection of polygenic selection on a phenotype. The single and polygenic approaches can be further divided by the type of null model used
+##### Sinle locus vs polygenic
+Both **single locus** and **polygenic** approaches can be used. Single locus approaches will test for outlier SNPs relative to a background distribution. Polygenic approaches will test if SNPs associated with a specific phenotype are more strongly correlated than expected based on the genomic background. Although the polygenic approach is better suited to detect selection on complex traits, it requires association with a phenotype, whereas a single locus approach does not. 
+##### Null model
+For both single and polygenic approaches, the null expectation can be determined either by modeling mendelian segregation through the **pedigree** or by correcting for population structure by modeling the covariance among populations using a **multivariate normal** distribution (MVN). The MVN approach can include individual with uncertain or unknown pedigree information, but will likely be more sensitive to population structure than a pedigree approach.
+
+With this way of thinking, the analyses can be divided into quadrants:
+
+|Loci/Null | Pedigree | MVN |
+|||
+| **Single Locus** | allele dropping | [Bayenv2](http://gcbias.org/bayenv/) |
+| **Polygenic** |  MEBV analysis| [SQuaT](https://github.com/jjberg2/PolygenicAdaptationCode)|
+
+### GWAS
+
+The polygenic methods rely on effect size estimates of SNPs for the trait of interest. For the SQuaT approach, this must be done using a GWAS approach.  Although the [NAM](insert link) population contains less than 30 founders, it will probably provide the most robust data due to the large number of individuals phenotyped within each family. However the half-sib structure of NAM requires a non-standard approach to GWAS that is different from a more conventional mixed model approach.
+
+### MEBV Analysis
+
+This is the polygenic version of allele dropping. An MEBV for a trait of interest will be calculated for each individual with allele effects determined by an association panel. Throughout the pedigree, selection on the trait can be calculated by deviation of MEBVs from midparent values.
 
 #### BAYENV2
 
@@ -109,6 +130,8 @@ Plan:
 
 * Identify GWAS panel and traits of interest, run.
 * Try multiple GWAS panels of same trait to see how results differ?
+
+
 
 ### Questions
 
