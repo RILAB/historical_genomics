@@ -71,6 +71,8 @@ If the NAM chromosome residuals already incorporate major effect QTL, then we ou
 
 Should we just do RMIP in tassel? Should I just randomly sample n=1000 SNPs at a time, and do OLS/GWAS on these without stepwise? 
 
+Finally, I could write a painful for loop in R, that stops when AIC stops decreasing.
+
 ### MEBV Analysis
 
 This is the polygenic version of allele dropping. An MEBV for a trait of interest will be calculated for each individual with allele effects determined by an association panel. Throughout the pedigree, selection on the trait can be calculated by deviation of MEBVs from midparent values.
