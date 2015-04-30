@@ -64,6 +64,13 @@ With this way of thinking, the analyses can be divided into quadrants:
 
 The polygenic methods rely on effect size estimates of SNPs for the trait of interest. For the SQuaT approach, this must be done using a GWAS approach.  Although the [NAM](insert link) population contains less than 30 founders, it will probably provide the most robust data due to the large number of individuals phenotyped within each family. However the half-sib structure of NAM requires a non-standard approach to GWAS that is different from a more conventional mixed model approach.
 
+## Stepwise OLS on NAM trait residuals
+With respect to stepwise forward regression on the chromosome residuals of a trait from Wallace et al. 2014, I am running into several problems. First, with respect to memory being exceeded in a variety of R packages, biglars, lars, biglm. I also realized that when p>>n, you'll only get good estimates of predictors, but not their effect sizes with lars and lasso methods.
+
+If the NAM chromosome residuals already incorporate major effect QTL, then we ought to be able to just do regular GWAS, but there's the issue of relatedness and n goes to 14, due to NAM progeny being a set of half-sib families (special GWAS- above). One thing I don't understand here is the residual after a QTL study is noise, environment? **Not sure how we are getting SNP effect sizes (additive ones) from this analysis, or if they can be trusted. Is the idea that these might be SNPs of small effect?** 
+
+Should we just do RMIP in tassel? Should I just randomly sample n=1000 SNPs at a time, and do OLS/GWAS on these without stepwise? 
+
 ### MEBV Analysis
 
 This is the polygenic version of allele dropping. An MEBV for a trait of interest will be calculated for each individual with allele effects determined by an association panel. Throughout the pedigree, selection on the trait can be calculated by deviation of MEBVs from midparent values.
