@@ -120,49 +120,10 @@ plink --file GWAS_NAM_plk --make-bed --chr 1-10 --out GWAS_NAM_bplk
 # IT WORKS!!! Then take this file to GCTA and compute the GRM, do GWAS on NAM children
 ```
 
-~~The plan is to use [GCTA](http://www.complextraitgenomics.com/software/gcta/index.html) to do stepwise OLS on the SNPs with respect to each trait. There's also a [free ebook here that has more detailed documentation] (http://www.ncbi.nlm.nih.gov/pubmed/23756892).~~
+## Fitting simple single lms to NAM trait chrom residuals (Wallace et al. 2014) 
 
-~~This is currently running, as it's close to 5000 individuals, might take a bit of time, but once output - GWAS.~~
-```
-gcta64 --bfile GWAS_NAM_bplk --make-grm --out NAM_Child
-```
+Forward stepwise on the raw is not possible/probable (memory issues). A new gist with example data as to how to do that using the output from plink. The gist is [here.](https://gist.github.com/kate-crosby/d4c4f0c5f727bcf6366f)
 
-Ok, so no GWAS with GCTA. But am about to try this test set with R basic code/structure with comments:
-```
-# make a dummy data set for giant multi-factor ANOVA/glm
-
-
-# Make a bunch of factors for SNPs -just doing 5 not 500k
-seq1 <- seq(0,2, by=1)
-
-SNP1 <- sample(seq1, size = 40, replace=TRUE)
-SNP2 <- sample(seq1, size = 40, replace=TRUE)
-SNP3 <- sample(seq1, size = 40, replace=TRUE)
-SNP4 <- sample(seq1, size = 40, replace=TRUE)
-SNP5 <- sample(seq1, size = 40, replace=TRUE)
-
-# Normally (we assume) distributed residuals by chromosome by trait in the NAM kids
-Y <- rnorm(40)
-
-# make a data.frame
-df <- data.frame(Y, SNP1,SNP2,SNP3,SNP4,SNP5)
-
-df
-
-# Min model
-min.model = lm(Y ~ 1, data=df)
-
-biggest.model <- formula(lm(Y~., df))
-
-fwd.model <- step(min.model, direction = 'forward', scope = biggest.model)
-
-best.model <- lm(Y~SNP2)
-
-# Check best.model residuals for craziness, quickly 
-par(mfrow=c(2,2))
-
-plot(best.model)
-```
 
 ## To do list Kate/Justin
 1. OLS on NAM trait residuals - ~~awaiting Tassel help, but also trying in R~~ ~~**UPDATE USING GCTA** **KATE**~~ UPDATE KATE NOW JUST DOING IT STRAIGHT UP DIRTY IN R
