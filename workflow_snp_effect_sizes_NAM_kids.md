@@ -128,39 +128,74 @@ done
 - Y ~ SNP<sub>n</sub>
 
 
-We will also impute the missing genotypes first - the script to do this is (an example with chromosome 2):
-
+We will also impute the missing genotypes first - I've just provided a toy example here.
 ```
 rm(list=ls())
-setwd("/group/jrigrp4/Justin_Kate/GBS2.7")
-library(data.table)
+set.seed(3428)
+n = 50
 
-# SNP header remains with AD files
-dt <- fread("AD_NAM_KIDS_chr2.raw", header = TRUE, colClasses=list(=1:125786))
+# Make a bunch of factors for SNPs -just doing 5 not 500k
+seq1 <- seq(0,2, by = 1)
+seq2 <- seq(0,1, by = 1)
+seq7 <- seq(1,2, by = 1)
+seq4 <- seq(0,2, by = 2)
+seq5 <- rep(0, by = n)
+seq6 <- rep(1, by = n)
+seq3 <- rep(2, by = n)
 
-dim(dt)
 
-df <- data.frame(dt, stringsAsFactors = TRUE)
-str(df)
+SNP1 <- sample(seq4, size = n, replace=TRUE)
+SNP2 <- sample(seq1, size = n, replace=TRUE)
+SNP3 <- sample(seq3, size = n, replace=TRUE)
+SNP4 <- sample(seq1, size = n, replace=TRUE)
+SNP5 <- sample(seq2, size = n, replace=TRUE)
+SNP6 <- sample(seq1, size = n, replace=TRUE)
+SNP7 <- sample(seq4, size = n, replace=TRUE)
+SNP8 <- sample(seq1, size = n, replace=TRUE)
+SNP9 <- sample(seq2, size = n, replace=TRUE)
+SNP10 <- sample(seq4, size = n, replace=TRUE)
+SNP11 <- seq5
+SNP12 <- seq6
+SNP13 <- seq7
+SNP14 <- seq5
+SNP15 <- seq6
+SNP16 <- seq7
+SNP17 <- seq5
+SNP18 <- seq6
+SNP19 <- seq7
+
+# Normally (we assume) distributed residuals by chromosome by trait in the NAM kids
+Y <- rnorm(n)
+
+# make a data.frame of just the SNPs
+SNPs <- data.frame(SNP1,SNP2,SNP3,SNP4,SNP5,SNP6,SNP7,SNP8,SNP9,SNP10, SNP11, SNP12, SNP13,
+	SNP14, SNP15, SNP16, SNP17, SNP18, SNP19)
+
+# Add random NAs based on n, save for the first col
+SNPs[-1] <- lapply(SNPs[-1], function(x) { x[sample(c(1:n), floor(n/10))] <- NA ; x })
 
 
-df <- as.numeric(unlist(df))
+# My example data
+df <- data.frame(Y, SNPs)
+print(df)
 
-for(i in 1:ncol(dt)){
+# Impute the missing genotypes coarsely - it's NAM so not HWE
+
+for(i in 2:ncol(df)){
 print(i)
 probs<-c()
-probs[1]<-length(which(dt[,i]==0))/length(which(is.na(df[,i])==F))
-probs[2]<-length(which(dt[,i]==1))/length(which(is.na(df[,i])==F))
-probs[3]<-length(which(dt[,i]==2))/length(which(is.na(df[,i])==F))
+probs[1]<-length(which(df[,i]==0))/length(which(is.na(df[,i])==F))
+probs[2]<-length(which(df[,i]==1))/length(which(is.na(df[,i])==F))
+probs[3]<-length(which(df[,i]==2))/length(which(is.na(df[,i])==F))
+print(probs)
 replace <- sample(c(0,1,2),length(which(is.na(df[,i])==T)),replace=T,prob=probs)
-dt[which(is.na(df[,i])==T),i] <- replace
+df[which(is.na(df[,i])==T),i] <- replace
 }
 
-save(df, file = "imputed_chrom2.RData")
-```
+# All the NAs are now filled
 
-- Take the imputed file and run:
-```
+print(df)
+
 # Throw out columns with no variance, reducing the array size
 
 df <- Filter(function(x)(length(unique(x))>1), df)
@@ -212,4 +247,5 @@ biggest.model <- formula(lm(Y~., df))
  
 fwd.model <- step(min.model, direction = 'forward', scope = biggest.model)
 ```
-# YOU NOW HAVE EFFECT SIZES OF SNPs that contribute most to each trait of interest. NOW MORE SCRIPTS.
+
+# YOU NOW HAVE EFFECT SIZES OF SNPs that contribute most to each trait of interest (we may need to consider binning). NOW MORE SCRIPTS.
