@@ -1,6 +1,6 @@
 ## Obtaining NAM progeny SNP effect sizes
 
-# Trait or residual/error phenotype data:
+### Trait or residual/error phenotype data:
 
 - Obtained from Wallace et al. (2014) [supporting dataset 3] (http://journals.plos.org/plosgenetics/article/asset?unique&id=info:doi/10.1371/journal.pgen.1004845.s008)
 - Uploaded to farm in directory:
@@ -8,16 +8,16 @@
 /group/jrigrp4/Justin_Kate/NAM_GWAS/
 ```
 
-# Genotype data from GBS 2.7 v.3.b of B73 reference genome:
-1.  I obtained the data from [PANZEA](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/panzea/genotypes/GBS/v27/AllZeaGBSv2.7_publicSamples_imputedV3b_agpv3.hmp.gz) **NB** this data also contains metadata which is important for pulling out samples/individuals in steps 3-4 
+### Genotype data from GBS 2.7 v.3.b of B73 reference genome:
+-  I obtained the data from [PANZEA](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/panzea/genotypes/GBS/v27/AllZeaGBSv2.7_publicSamples_imputedV3b_agpv3.hmp.gz) **NB** this data also contains metadata which is important for pulling out samples/individuals in steps 3-4 
 
-2. Sort the genotype file with:
+- Sort the genotype file with:
 
 ```
 run_pipeline.pl -Xmx64g -SortGenotypeFilePlugin -inputFile AllZeaGBSv2.7_publicSamples_imputedV3b_agpv3.hmp.gz -outputFile sortedGBS -fileType Hapmap
 ```
 
-3. Use this script to make a list of the genotypes that you want:
+- Use this script to make a list of the genotypes that you want:
 ```
 rm(list=ls())
 library(data.table)
@@ -46,29 +46,32 @@ write.csv(keep_list, "keep_list.csv")
 ```
 
 
-4. Based on list pulled from R-script, pull genotypes of the NAM kids out - should be about 5000 - and export this as VCF
+- Based on list pulled from R-script, pull genotypes of the NAM kids out - should be about 5000 - and export this as VCF
 ```
 run_pipeline.pl -Xmx64g -fork1 -h sortedGBS.hmp.txt -includeTaxaInfile keep_list.txt -export -exportType VCF -runfork1
 
 ```
 
-5. With vcf file open vcftools (this is my local path) and keep only biallelic loci **NB** this is the only criteria I used to filter the data:
+- With vcf file open vcftools (this is my local path) and keep only biallelic loci **NB** this is the only criteria I used to filter the data:
 
 ```
 gzip*.vcf
 
 ~/bin/vcftools_0.1.12b/bin/vcftools --gzvcf sorted_NAM_children.vcf.gz --min-alleles 2 --max-alleles 2 --recode --out biallelic_NAM_children
 ```
-6. Some awk and sed scripts to clean up the names of the NAM children so that it will match Wallace's names
+- Some awk and sed scripts to clean up the names of the NAM children so that it will match Wallace's names
 
 ```
+#This cuts header
 sed '11q;d' biallelic_NAM_children.recode.vcf > header.vcf
 
+#This cuts lines BEFORE header
 sed '1,10!d' biallelic_NAM_children.recode.vcf > first.vcf
 
+#This cuts lines below the header
 sed -e '1,11d' biallelic_NAM_children.recode.vcf > last.vcf
 
-# transpose the header and awk and transpose again
+# transpose the header and awk and transpose again - give it the proper naming
 cat header.vcf | tr '\t' '\n'| awk -F":" '{print $1}'| tr '\n' '\t' > middle.vcf
 
 # Middle has no line ending so add one
