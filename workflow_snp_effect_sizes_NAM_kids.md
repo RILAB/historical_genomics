@@ -119,10 +119,10 @@ done
 ## Linear modeling with R
 
 - We need to eliminate massive numbers of SNPs, and there are too many to do forward stepwise on initially. So we will run a set of non-nested, i.e. not comparable models first. Basically:
-- 
-Y ~ SNP1
-Y ~ SNP2
-.
-.
-.
-Y ~ SNP_n
+
+- Y ~ SNP1
+- Y ~ SNP2
+- .
+- .
+- .
+- Y ~ SNP<sub>n</sub>
