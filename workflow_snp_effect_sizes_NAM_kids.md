@@ -126,3 +126,35 @@ done
 - .
 - .
 - Y ~ SNP<sub>n</sub>
+
+
+We will also impute the missing genotypes first - the script to do this is (an example with chromosome 2):
+
+```
+rm(list=ls())
+setwd("/group/jrigrp4/Justin_Kate/GBS2.7")
+library(data.table)
+
+# For some reason the SNPs are gone, but we can worry about that later
+dt <- fread("AD_NAM_KIDS_chr2.raw", header = TRUE, colClasses=list(=1:125786))
+
+dim(dt)
+
+df <- data.frame(dt, stringsAsFactors = TRUE)
+str(df)
+
+
+df <- as.numeric(unlist(df))
+
+for(i in 1:ncol(dt)){
+print(i)
+probs<-c()
+probs[1]<-length(which(dt[,i]==0))/length(which(is.na(df[,i])==F))
+probs[2]<-length(which(dt[,i]==1))/length(which(is.na(df[,i])==F))
+probs[3]<-length(which(dt[,i]==2))/length(which(is.na(df[,i])==F))
+replace <- sample(c(0,1,2),length(which(is.na(df[,i])==T)),replace=T,prob=probs)
+dt[which(is.na(df[,i])==T),i] <- replace
+}
+
+save(df, file = "imputed_chrom2.RData")
+```
