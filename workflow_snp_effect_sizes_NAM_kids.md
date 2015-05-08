@@ -84,3 +84,45 @@ cat first.vcf middle.vcf last.vcf > GWAS_NAM.vcf
 ~/bin/vcftools_0.1.12b/bin/vcftools --vcf GWAS_NAM.vcf --plink --out GWAS_NAM_plk
 
 ```
+- Next, we need to put get the 0,1,2 file format for the linear model (also known as GWAS) but must do it by chromosome. You can do this with plink, with the --recode AD format - but it creates duplicate columns (but keeps the marker headers). I opted for the --recode 12 flag option. This creates both map and ped files. Use the ped file for joining to the trait residuals. **NB** 0 = NA, 1 = first allele (I think minor), 2 = second allele (I think major).
+
+```
+plink --file GWAS_NAM_plk --chr 10 --recode 12 --out AD_NAM_KIDS_chr10
+plink --file GWAS_NAM_plk --chr 1 --recode 12 --out AD_NAM_KIDS_chr1
+plink --file GWAS_NAM_plk --chr 2 --recode 12 --out AD_NAM_KIDS_chr2
+plink --file GWAS_NAM_plk --chr 3 --recode 12 --out AD_NAM_KIDS_chr3
+plink --file GWAS_NAM_plk --chr 4 --recode 12 --out AD_NAM_KIDS_chr4
+plink --file GWAS_NAM_plk --chr 5 --recode 12 --out AD_NAM_KIDS_chr5
+plink --file GWAS_NAM_plk --chr 6 --recode 12 --out AD_NAM_KIDS_chr6
+plink --file GWAS_NAM_plk --chr 7 --recode 12 --out AD_NAM_KIDS_chr7
+plink --file GWAS_NAM_plk --chr 8 --recode 12 --out AD_NAM_KIDS_chr8
+plink --file GWAS_NAM_plk --chr 9 --recode 12 --out AD_NAM_KIDS_chr9
+```
+
+- In case you want to run with the --recode AD options, run these (better for indexing downstream). 
+```
+# this eliminates every second column
+for file in *.raw
+do
+        echo "$file: " $(awk '{for(i=1;i<=NF;i=i+2){printf "%s ", $i}{printf "%s", RS}}' $file > unique$file)
+done
+
+# this cuts the second and third column which are not useful
+
+for file in unique*.
+do
+        echo "$file: " $(cut --complement -f2,3 $file > cut$file)
+done
+
+```
+
+## Linear modeling with R
+
+- We need to eliminate massive numbers of SNPs, and there are too many to do forward stepwise on initially. So we will run a set of non-nested, i.e. not comparable models first. Basically:
+- 
+Y ~ SNP1
+Y ~ SNP2
+.
+.
+.
+Y ~ SNP_n
