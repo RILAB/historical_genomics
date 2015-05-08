@@ -135,7 +135,7 @@ rm(list=ls())
 setwd("/group/jrigrp4/Justin_Kate/GBS2.7")
 library(data.table)
 
-# For some reason the SNPs are gone, but we can worry about that later
+# SNP header remains with AD files
 dt <- fread("AD_NAM_KIDS_chr2.raw", header = TRUE, colClasses=list(=1:125786))
 
 dim(dt)
@@ -158,3 +158,58 @@ dt[which(is.na(df[,i])==T),i] <- replace
 
 save(df, file = "imputed_chrom2.RData")
 ```
+
+- Take the imputed file and run:
+```
+# Throw out columns with no variance, reducing the array size
+
+df <- Filter(function(x)(length(unique(x))>1), df)
+
+
+# Define empty vectors of stuff we want to keep from the single GLM or goddamn GWAS (stupid acronymn) 
+# summaries
+
+
+intercept <- NULL
+effect.size <- NULL
+probability <- NULL
+SNP.names <- NULL
+
+# Fit single SNPs to chrom residuals, and pull out diagnostics of interest
+for(j in 2:ncol(df)){
+	print(j)
+	intercept[j] <- coef(summary(lm(df$Y ~ df[,j])))[1]
+	effect.size[j] <- coef(summary(lm(df$Y ~ df[,j])))[2]
+	probability[j] <- coef(summary(lm(df$Y ~ df[,j])))[8]
+	SNP.names[j] <- colnames(df[j])
+}
+
+SNP.names <- as.character(SNP.names)
+
+# Bind the vectors
+results <- data.frame(SNP.names,intercept, effect.size, probability, stringsAsFactors = FALSE)
+
+
+# Establish a cutoff - I chose multiple Bonnferroni because it's insane, but here is a toy example
+# of not bonnferroni but some BS value
+sig.results <- subset(results, probability <= 0.3)
+
+print(sig.results)
+
+x <- as.vector(sig.results$SNP.names)
+
+# Now use the vector of names to pull stuff out of the larger array
+new.df <- df[,colnames(df) %in% x]
+
+# Add Y back in to the new array
+
+new.df <- data.frame(Y, new.df)
+
+# Stepwise
+min.model = lm(Y ~ 1, data=df)
+ 
+biggest.model <- formula(lm(Y~., df))
+ 
+fwd.model <- step(min.model, direction = 'forward', scope = biggest.model)
+```
+# YOU NOW HAVE EFFECT SIZES OF SNPs that contribute most to each trait of interest. NOW MORE SCRIPTS.
