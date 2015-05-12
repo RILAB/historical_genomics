@@ -109,9 +109,9 @@ done
 
 # this cuts the second and third column which are not useful
 
-for file in unique*.
+for file in unique*
 do
-        echo "$file: " $(cut --complement -f2,3 $file > cut$file)
+        echo "$file: " $(cut -d" " -f -1,4- $file > cut2$file)
 done
 
 ```
