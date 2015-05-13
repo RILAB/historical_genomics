@@ -144,11 +144,9 @@ for(i in 2:ncol(dt))
         probs[3]<-length(which(dt[,i]==2))/length(which(is.na(dt[,i])==F))
         replace <- sample(c(0,1,2),length(which(is.na(dt[,i])==T)),replace=T,prob=probs)
         dt[which(is.na(dt[,i])==T),i] <- replace
-
-        out <- function(dt)
-
-        save(out)
         }
+
+        write.table(dt, file=paste(x, sep="", "out.RObj"))
 })
 ```
 
