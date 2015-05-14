@@ -25,5 +25,5 @@ for(i in 2:ncol(dt))
         dt[which(is.na(dt[,i])==T),i] <- replace
         }
 
-        write.table(dt, file=paste(x, sep="", "out.RObj"))
+        save(dt, file=paste(x, sep="", ".RData"))
 })
