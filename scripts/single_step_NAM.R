@@ -4,7 +4,7 @@ setwd("/group/jrigrp4/Justin_Kate/GBS2.7")
 
 load("cut2uniqueAD_NAM_KIDS_chr10.raw.RData")
 
-# I have checked this - and it turns out that the imputation does add at least
+# These next 3 lines just ensure that there are no columns with NO variation to deal with
 dim(dt)
 new.chr10 <- Filter(function(x)(length(unique(x))>1), dt)
 dim(new.chr10)
@@ -14,6 +14,7 @@ dim(new.chr10)
 trait <- read.table("TasselLength.txt", header = TRUE, stringsAsFactors = FALSE)
 
 # Get the chromosome of interest
+# ALSO, might be really important, whether these SNPs are coded as factors or integers... factors might be better...
 trait10 <- trait[,c(1,11)]
 df <- merge(trait10, new.chr10, by.x = "Sample", by.y = "FID")
 
