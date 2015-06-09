@@ -5,6 +5,7 @@ setwd("~/SNP_outputs")
 library(broom)
 library(stringr)
 library(stringi)
+library(plyr)
 
 load("fwd.model_chr10tasselL_500_step.RData")
 chr10 <- fwd.model
@@ -58,3 +59,8 @@ chr.list <- lapply(model.list, function(chr) {
   dd <- df[order(df$rounded - abs(df$estimate) ), ]
   pp<-dd[ !duplicated(dd$rounded), ]  
 })
+
+df <- ldply(chr.list, data.frame)
+
+barplot(df$estimate, col ="blue", ylab = "SNP Effect size",
+  main ="All Chromosomes Ordered")
