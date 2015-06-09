@@ -104,7 +104,7 @@ save(snp.idx3, file = "snp.idx3.RData")
 save(snp.idx2, file = "snp.idx2.RData")
 save(snp.idx1, file = "snp.idx1.RData")
 
-# Brief visualizations for the whole genome
+# Brief visualizations for the whole genome - keep in mind you will have to recalculate effect sizes - so these aren't really real
 barplot(df$estimate, col ="blue", ylab = "SNP Effect Size",
         main ="All Chromosomes Ordered", names.arg=df$term, cex.axis=0.5)
 
