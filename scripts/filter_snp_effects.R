@@ -63,10 +63,12 @@ chr.list <- lapply(model.list, function(chr) {
   pp<- dd[ !duplicated(dd$rounded), ]  
 })
 
-# Extract as one data.frame - this gives you an index of SNPs to do stepwise on
+# Extract as one data.frame - this gives you an index of SNPs to refit an lm
 df <- ldply(chr.list, data.frame)
 
-# Example if you want to do it by chromosome - e.g. chromosome 10
+
+snp.idx <- as.vector(df$term)
+# Example if you want to do it by chromosome - e.g. chromosome 10, etc
 df10 <- ldply(chr.list[10], data.frame)
 df9 <- ldply(chr.list[9], data.frame)
 df8 <- ldply(chr.list[8], data.frame)
@@ -78,8 +80,29 @@ df3 <- ldply(chr.list[3], data.frame)
 df2 <- ldply(chr.list[2], data.frame)
 df1 <- ldply(chr.list[1], data.frame)
 
+# Pull out the indices
+snp.idx10<- as.vector(df10$term)
+snp.idx9<- as.vector(df9$term)
+snp.idx8<- as.vector(df8$term)
+snp.idx7<- as.vector(df7$term)
+snp.idx6<- as.vector(df6$term)
+snp.idx5<- as.vector(df5$term)
+snp.idx4<- as.vector(df4$term)
+snp.idx3<- as.vector(df3$term)
+snp.idx2<- as.vector(df2$term)
+snp.idx1<- as.vector(df1$term)
 
-
+# Save all the indices, violating DRY all over the place
+save(snp.idx10, file = "snp.idx10.RData")
+save(snp.idx9, file = "snp.idx9.RData")
+save(snp.idx8, file = "snp.idx8.RData")
+save(snp.idx7, file = "snp.idx7.RData")
+save(snp.idx6, file = "snp.idx6.RData")
+save(snp.idx5, file = "snp.idx5.RData")
+save(snp.idx4, file = "snp.idx4.RData")
+save(snp.idx3, file = "snp.idx3.RData")
+save(snp.idx2, file = "snp.idx2.RData")
+save(snp.idx1, file = "snp.idx1.RData")
 
 # Brief visualizations for the whole genome
 barplot(df$estimate, col ="blue", ylab = "SNP Effect Size",
@@ -97,4 +120,3 @@ barplot(df4$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 4
 barplot(df3$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 3")
 barplot(df2$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 2")
 barplot(df1$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 1")
-
