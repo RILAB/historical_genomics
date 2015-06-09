@@ -38,8 +38,9 @@ chr5 <- tidy(chr5)
 chr4 <- tidy(chr4)
 chr3 <- tidy(chr3)
 chr2 <- tidy(chr2)
-chr1 <- tidy(chr1)
+chr1 <- tidy(chr1) 
 
+# Make a list of our model dataframes
 model.list <- list(chr1, chr2, chr3, chr4, chr5, chr6, chr7, chr8, chr9, chr10)
 
 chr.list <- lapply(model.list, function(chr) {
@@ -54,13 +55,46 @@ chr.list <- lapply(model.list, function(chr) {
   basepairs <- as.numeric(terms)
   chr <- data.frame(chr, basepairs)
   chr <- chr[order(basepairs),]
-  rounded <-round(chr$basepairs, -5)
+  # Round a window to nearest 100000th or -5 for 10000th, etc 
+  rounded <-round(chr$basepairs, -6)
   df <- data.frame(chr, rounded)
-  dd <- df[order(df$rounded - abs(df$estimate) ), ]
-  pp<-dd[ !duplicated(dd$rounded), ]  
+  # This next line is important change to - abs(df$estimate) for largest effect
+  dd <- df[order(df$rounded + abs(df$p.value) ), ]
+  pp<- dd[ !duplicated(dd$rounded), ]  
 })
 
+# Extract as one data.frame - this gives you an index of SNPs to do stepwise on
 df <- ldply(chr.list, data.frame)
 
-barplot(df$estimate, col ="blue", ylab = "SNP Effect size",
-  main ="All Chromosomes Ordered")
+# Example if you want to do it by chromosome - e.g. chromosome 10
+df10 <- ldply(chr.list[10], data.frame)
+df9 <- ldply(chr.list[9], data.frame)
+df8 <- ldply(chr.list[8], data.frame)
+df7 <- ldply(chr.list[7], data.frame)
+df6 <- ldply(chr.list[6], data.frame)
+df5 <- ldply(chr.list[5], data.frame)
+df4 <- ldply(chr.list[4], data.frame)
+df3 <- ldply(chr.list[3], data.frame)
+df2 <- ldply(chr.list[2], data.frame)
+df1 <- ldply(chr.list[1], data.frame)
+
+
+
+
+# Brief visualizations for the whole genome
+barplot(df$estimate, col ="blue", ylab = "SNP Effect Size",
+        main ="All Chromosomes Ordered", names.arg=df$term, cex.axis=0.5)
+
+# Or by chromosome
+par(mfrow = c(5,2))
+barplot(df10$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 10")
+barplot(df9$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 9")
+barplot(df8$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 8")
+barplot(df7$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 7")
+barplot(df6$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 6")
+barplot(df5$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 5")
+barplot(df4$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 4")
+barplot(df3$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 3")
+barplot(df2$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 2")
+barplot(df1$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 1")
+
