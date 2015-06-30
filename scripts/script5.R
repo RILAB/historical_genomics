@@ -1,4 +1,4 @@
-rm(list())
+rm(list=ls())
 
 setwd("/group/jrigrp4/Justin_Kate/GBS2.7/imputed_NAM/models/LeafAngle/SNPs_effects")
 
@@ -37,4 +37,4 @@ chr.list <- lapply(model.list, function(chr) {
 
 df <- ldply(chr.list, data.frame)
 
-save(df, "SNP_effects_ordered.RData")
+save(df, file="SNP_effects_ordered.RData")
