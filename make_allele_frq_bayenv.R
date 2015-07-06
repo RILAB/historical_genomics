@@ -14,7 +14,9 @@ cluster.list <- lapply(files, function(cluster) {
         major <- cluster[,5]
         minor <- cluster[,6]
         N_CHR <- cluster[,4]
-
+        POS <- cluster[,2]
+        CHROM <- cluster[,1]
+        
         major <- str_replace(major, "C:", "")
         major <- str_replace(major, "A:", "")
         major <- str_replace(major, "T:", "")
@@ -33,8 +35,14 @@ cluster.list <- lapply(files, function(cluster) {
 
         minor[is.na(minor)] <- 0
 
-        sfs <- data.frame(N_CHR, major, minor)
-
+        sfs <- data.frame(N_CHR, major, minor, POS, CHROM)
+        #By chromosome subset round the positions to the nearest 100 thousandth bp
+        rounded <- ddply(sfs, "CHROM", subset, POS == round(POS, -6))
+        #Add this to the dataframe
+        sfs <- data.frame(sfs, rounded)
+        #And just choose the first value - not quite random, but it works for cov. creation
+        sfs[!duplicated(sfs$rounded),]
+        
         ind.major <- (sfs[,1] * sfs[,2])/2
         ind.major <- round(ind.major, digits = 0)
 
