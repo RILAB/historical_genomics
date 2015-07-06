@@ -31,9 +31,8 @@ cluster.list <- lapply(files, function(cluster) {
         minor <- str_replace(minor, "G:", "")
         minor <- str_replace(minor, "N:", "")
 
-        minor <- as.numeric(minor)
-
         minor[is.na(minor)] <- 0
+        minor <- as.numeric(minor)
 
         sfs <- data.frame(N_CHR, major, minor, POS, CHROM)
         #By chromosome subset round the positions to the nearest 100 thousandth bp
@@ -41,12 +40,12 @@ cluster.list <- lapply(files, function(cluster) {
         #Add this to the dataframe
         sfs <- data.frame(sfs, rounded)
         #And just choose the first value - not quite random, but it works for cov. creation
-        sfs[!duplicated(sfs$rounded),]
+        sfs.1 <- sfs[!duplicated(sfs$rounded),]
         
-        ind.major <- (sfs[,1] * sfs[,2])/2
+        ind.major <- (sfs.1[,1] * sfs.1[,2])/2
         ind.major <- round(ind.major, digits = 0)
 
-        ind.minor <- (sfs[,1] * sfs[,3])/2
+        ind.minor <- (sfs.1[,1] * sfs.1[,3])/2
         ind.minor <- round(ind.minor, digits = 0)
 
         df <- data.frame(ind.minor, ind.major)
@@ -57,7 +56,7 @@ cluster.list <- lapply(files, function(cluster) {
 
         x <- t(df.T[,3])
 
-        pop1.all.snps.counts <- t(x)
+        pop.all.snps.counts <- t(x)
 })
 
 # Break them up
@@ -74,4 +73,4 @@ bayenv.snps.mat <- as.matrix(bayenv.df)
 bayenv.snps.mat <- matrix(bayenv.snps.mat, ncol = ncol(bayenv.df), dimnames = NULL)
 
 
-write.table(bayenv.snps.mat, "bayenv_SNPsfile_6clusters", sep = "\t")
+write.table(bayenv.snps.mat, "bayenv_SNPsfile_6clusters_less_LD", sep = "\t")
