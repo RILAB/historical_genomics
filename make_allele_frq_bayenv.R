@@ -36,7 +36,7 @@ cluster.list <- lapply(files, function(cluster) {
 
         sfs <- data.frame(N_CHR, major, minor, POS, CHROM)
         #By chromosome subset round the positions to the nearest 100 thousandth bp
-        rounded <- round(sfs$POS, -5)
+        rounded <- round(sfs$POS, -4)
         #Add this to the dataframe
         sfs <- data.frame(sfs, rounded)
         #And just choose the first value - not quite random, but it works for cov. creation
