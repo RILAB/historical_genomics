@@ -27,6 +27,13 @@ awk '{printf("%s\t \n", $0)}' input > output
 
 This last output is your SNPsfile - so called - in the BAYENV manual.
 
+Bayenv will throw a tantrum if any of your rows have fixed alleles in it, e.g.
+
+0 0 0 0 0 0
+4 89  8 23  14
+
+For 6 pops, that first line is not acceptable.
+
 And run on 6 heterotic groups first
 ```
 bayenv2 -i SNPsfile -p 6 -r $RANDOM -k 100000 > matrix.out
