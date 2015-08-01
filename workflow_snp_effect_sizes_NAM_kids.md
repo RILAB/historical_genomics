@@ -152,134 +152,15 @@ for(i in 2:ncol(dt))
 
 ## Linear modeling with R
 
-- We need to eliminate massive numbers of SNPs, and there are too many to do forward stepwise on initially. So we will run a set of non-nested, i.e. not comparable models first. Basically:
-
-- Y ~ SNP1
-- Y ~ SNP2
-- .
-- .
-- .
-- Y ~ SNP<sub>n</sub>
+- We need to eliminate massive numbers of SNPs, and there are too many to do forward stepwise on initially. So we will run a set of non-nested, i.e. not comparable models first. Go to script folder in historical genomics.
 
 
-We will also impute the missing genotypes first - I've just provided a toy example here.
-```
-rm(list=ls())
-set.seed(3428)
-n = 50
-
-# Make a bunch of factors for SNPs -just doing 5 not 500k
-seq1 <- seq(0,2, by = 1)
-seq2 <- seq(0,1, by = 1)
-seq7 <- seq(1,2, by = 1)
-seq4 <- seq(0,2, by = 2)
-seq5 <- rep(0, by = n)
-seq6 <- rep(1, by = n)
-seq3 <- rep(2, by = n)
 
 
-SNP1 <- sample(seq4, size = n, replace=TRUE)
-SNP2 <- sample(seq1, size = n, replace=TRUE)
-SNP3 <- sample(seq3, size = n, replace=TRUE)
-SNP4 <- sample(seq1, size = n, replace=TRUE)
-SNP5 <- sample(seq2, size = n, replace=TRUE)
-SNP6 <- sample(seq1, size = n, replace=TRUE)
-SNP7 <- sample(seq4, size = n, replace=TRUE)
-SNP8 <- sample(seq1, size = n, replace=TRUE)
-SNP9 <- sample(seq2, size = n, replace=TRUE)
-SNP10 <- sample(seq4, size = n, replace=TRUE)
-SNP11 <- seq5
-SNP12 <- seq6
-SNP13 <- seq7
-SNP14 <- seq5
-SNP15 <- seq6
-SNP16 <- seq7
-SNP17 <- seq5
-SNP18 <- seq6
-SNP19 <- seq7
-
-# Normally (we assume) distributed residuals by chromosome by trait in the NAM kids
-Y <- rnorm(n)
-
-# make a data.frame of just the SNPs
-SNPs <- data.frame(SNP1,SNP2,SNP3,SNP4,SNP5,SNP6,SNP7,SNP8,SNP9,SNP10, SNP11, SNP12, SNP13,
-	SNP14, SNP15, SNP16, SNP17, SNP18, SNP19)
-
-# Add random NAs based on n, save for the first col
-SNPs[-1] <- lapply(SNPs[-1], function(x) { x[sample(c(1:n), floor(n/10))] <- NA ; x })
 
 
-# My example data
-df <- data.frame(Y, SNPs)
-print(df)
-
-# Impute the missing genotypes coarsely - it's NAM so not HWE
-
-for(i in 2:ncol(df)){
-print(i)
-probs<-c()
-probs[1]<-length(which(df[,i]==0))/length(which(is.na(df[,i])==F))
-probs[2]<-length(which(df[,i]==1))/length(which(is.na(df[,i])==F))
-probs[3]<-length(which(df[,i]==2))/length(which(is.na(df[,i])==F))
-print(probs)
-replace <- sample(c(0,1,2),length(which(is.na(df[,i])==T)),replace=T,prob=probs)
-df[which(is.na(df[,i])==T),i] <- replace
-}
-
-# All the NAs are now filled
-
-print(df)
-
-# Throw out columns with no variance, reducing the array size
-
-df <- Filter(function(x)(length(unique(x))>1), df)
 
 
-# Define empty vectors of stuff we want to keep from the single GLM or goddamn GWAS (stupid acronymn) 
-# summaries
 
 
-intercept <- NULL
-effect.size <- NULL
-probability <- NULL
-SNP.names <- NULL
 
-# Fit single SNPs to chrom residuals, and pull out diagnostics of interest
-for(j in 2:ncol(df)){
-	print(j)
-	intercept[j] <- coef(summary(lm(df$Y ~ df[,j])))[1]
-	effect.size[j] <- coef(summary(lm(df$Y ~ df[,j])))[2]
-	probability[j] <- coef(summary(lm(df$Y ~ df[,j])))[8]
-	SNP.names[j] <- colnames(df[j])
-}
-
-SNP.names <- as.character(SNP.names)
-
-# Bind the vectors
-results <- data.frame(SNP.names,intercept, effect.size, probability, stringsAsFactors = FALSE)
-
-
-# Establish a cutoff - I chose multiple Bonnferroni because it's insane, but here is a toy example
-# of not bonnferroni but some BS value
-sig.results <- subset(results, probability <= 0.3)
-
-print(sig.results)
-
-x <- as.vector(sig.results$SNP.names)
-
-# Now use the vector of names to pull stuff out of the larger array
-new.df <- df[,colnames(df) %in% x]
-
-# Add Y back in to the new array
-
-new.df <- data.frame(Y, new.df)
-
-# Stepwise
-min.model = lm(Y ~ 1, data=df)
- 
-biggest.model <- formula(lm(Y~., df))
- 
-fwd.model <- step(min.model, direction = 'forward', scope = biggest.model)
-```
-
-# YOU NOW HAVE EFFECT SIZES OF SNPs that contribute most to each trait of interest (we may need to consider binning). NOW MORE SCRIPTS.
