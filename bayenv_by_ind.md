@@ -1,18 +1,5 @@
 # Relatively hacky way to get a Bayenv file by Individual
 
-Cut up your heterotic group's vcf header and metadata, and then the data in the vcf.
-
-```bash
-sed '1,11!d' input.vcf > output1.vcf
-sed -e '1,11d' input > output2.vcf
-```
-
-Choose every 25th SNP, this ought to minimize LD between SNPs on a chromosome
-```bash
-sed -n '1p;0~25p' output2.vcf > output_lessLD.vcf
-
-cat firstpart.vcf output_lessLD.vcf > cluster_reducedLD.vcf
-```
 
 Using a bash loop declare your list of named individuals (example below - you can make this file in vim - will provide script later):
 
