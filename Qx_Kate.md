@@ -12,10 +12,8 @@ write.table(df, "LeafAngle", row.names = FALSE)
 
 Quit R.
 
-With Vim. 
-
-Remove quotes with. 
-
+Open in Vim. 
+```vim
 :%s/"//g
 
 Add a tab anywhere there is a space.
@@ -27,12 +25,13 @@ And separate out the base that is the MINOR allele.
 :%s/_T/^IT/g
 :%s/_A/^IA/g
 :%s/_G/^IG/g
-
+```
 Retitle the header. Exit vim.
 
 Next do a unix join with the NAMfreqs.txt file - which is just the NAM_allfreqs.csv tab delimited.
 
 Remove the headers of both files and sort them. Now join them.
+
 
 ```bash
 sort LeafAngle > sortedLeafAngle
