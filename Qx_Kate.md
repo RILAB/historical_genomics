@@ -100,10 +100,6 @@ That's file 2.
 
 Remove the "S0_" coordinates because I originally took these out of the GWAS with NAM.
 
-```bash
-grep -v "S0_" full_dataset_file2.txt > full_dataset_Ames.txt
-```
-
 To make the freqs file (Ames) sort the full.dataset file and join to gwas.data.file:
 
 ```bash
@@ -121,13 +117,12 @@ sort -k 1,1 ordered_NAM > sortedordered_NAM
 grep -v "S_0" sortedordered_NAM > NAM_for_match
 ```
 
-Get the allele conversion file - remove the header.
+Get the allele conversion file - remove the header. Remove any S0_ coordinates in vim.
 
 ```bash
 sort -k3,3 alleleconversion.txt > sortedalleleconversion.txt
-grep -v "S0_" sortedalleleconversion.txt > conversion_allele
-join -1 1 -2 3 NAM_for_match conversion_allele > match_pop_file_to_edit
-awk '{print $1 " " $2 " " $3 " " $4 " " $5 " " $7 " " $6}' match_pop_file_to_edit > match_pop_file
+join -1 1 -2 3 NAM_for_match sortedalleleconversion.txt > match_pop_file_to_edit
+awk 'BEGIN {OFS="\t"}; {print $1,$2,$3,$4,$5,$7,$6}' match_pop_file_to_edit > match_pop_file
 ```
 
 Add a header, add tab separators in vim if you want.
