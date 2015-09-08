@@ -42,7 +42,7 @@ join -1 1 -2 1 sortedLeafAngle sortedNAM_allfreqs.txt > intermediatefile
 Now with awk just make the output you need. 
 
 ```bash
-awk '{ print $1 " " $4 " " $5 " " $3 " " $6}' intermediatefile > gwas.data.file
+awk 'BEGIN {OFS="\t"}; {print $1,$4,$5,$3,$6}' intermediatefile > gwas.data.file
 ```
 
 Ok, that's the first Qx file. 1 down four to go.
