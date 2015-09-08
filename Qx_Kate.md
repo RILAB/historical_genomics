@@ -47,54 +47,114 @@ awk 'BEGIN {OFS="\t"}; {print $1,$4,$5,$3,$6}' intermediatefile > gwas.data.file
 
 Ok, that's the first Qx file. 1 down four to go.
 
-# Next make the fulldatasetfile with AMES - FILE 2
+# Next make the fulldatasetfile for each cluster - split into 2 groups "late" and "early"
 
-i.e. the allele frequencies, first get each of the Ames cluster files into order, and remove the lines with scaffolds.
-
-
-``` bash
-for file in *.frq
-do
-	echo "$file: " $(awk '{ print $6 " " $5 " " $2 " " $1}' $file > out$file)
-done
-
-grep -v "scaffold" outnewcluster1.recode.vcf.frq > cluster1.frq
-grep -v "scaffold" outnewcluster2.recode.vcf.frq > cluster2.frq
-grep -v "scaffold" outnewcluster3.recode.vcf.frq > cluster3.frq
-grep -v "scaffold" outnewcluster4.recode.vcf.frq > cluster4.frq
-grep -v "scaffold" outnewcluster5.recode.vcf.frq > cluster5.frq
-grep -v "scaffold" outnewcluster6.recode.vcf.frq > cluster6.frq
-```
-
-Print out the group names an appropriate number of times (number of lines in frequency files minus the header).
 ```bash
-printf 'TropicalBlueGroup\n%.0s' {1..618333} > blue
-printf 'SSYellowGroup\n%.0s' {1..618333} > yellow
-printf 'SSGreenGroup\n%.0s' {1..618333} > green
-printf 'NSSRedGroup\n%.0s' {1..618333} > red
-printf 'PurpleGroup\n%.0s' {1..618333} > purple
-printf 'OrangeGroup\n%.0s' {1..618333} > orange
-```
+~/bin/vcftools_0.1.12b/bin/vcftools --vcf cluster2.recode.vcf --keep early_names_cluster2_Qx --recode --out early_cluster2
+~/bin/vcftools_0.1.12b/bin/vcftools --vcf cluster2.recode.vcf --keep late_names_cluster2_Qx --recode --out late_cluster2
 
-And paste groups together
+
+~/bin/vcftools_0.1.12b/bin/vcftools --vcf early_cluster2.recode.vcf --min-alleles 2 --max-alleles 2 --recode --out biallelic_early_cluster2
+~/bin/vcftools_0.1.12b/bin/vcftools --vcf late_cluster2.recode.vcf --min-alleles 2 --max-alleles 2 --recode --out biallelic_late_cluster2
+
+~/bin/vcftools_0.1.12b/bin/vcftools --vcf biallelic_early_cluster2.recode.vcf --freq --out frq_early_cluster2
+~/bin/vcftools_0.1.12b/bin/vcftools --vcf biallelic_late_cluster2.recode.vcf --freq --out frq_late_cluster2
+
+grep -v "scaffold" frq_early_cluster2.frq > early_c2.frq
+grep -v "scaffold" frq_late_cluster2.frq > late_c2.frq
+
+tail -n +2 late_c2.frq > latec2.frq
+tail -n +2 early_c2.frq > earlyc2.frq
+
+rm late_c2.frq
+rm early_c2.frq
+
+printf 'Late\n%.0s' {1..618333} > late
+printf 'Early\n%.0s' {1..618333} > early
+
+paste late latec2.frq > late_c2
+
+paste early earlyc2.frq > early_c2
+
+rm late
+rm latec2.frq
+
+
+rm early
+rm earlyc2.frq
+
+# This is problematic, we have sites with indels and they differ, we also have sites that have -nan (presumably ridiculously small freqencies)
+
+
+grep -v "nan" early_c2 > early_c2.frq
+grep -v "nan" late_c2 > late_c2.frq
+
+
+grep -v "-" early_c2.frq > frq_c2_early
+grep -v "-" late_c2.frq > frq_c2_late
+
+cut -f1,2,3,6,7 frq_c2_early > early_c2.frq
+cut -f1,2,3,6,7 frq_c2_late > late_c2.frq
+
+rm early_c2
+rm late_c2
+```
+ 
+Vim to edit these outputs.
+
 ```bash
-paste blue cluster1.frq > cluster1
-...
+
+awk 'BEGIN {OFS="\t"}; {print $1,$6,$4,$7,$3,$2}' early_c2.frq > frq_c2_early
+awk 'BEGIN {OFS="\t"}; {print $1,$6,$4,$7,$3,$2}' late_c2.frq > frq_c2_late
+
+rm early_c2.frq
+rm late_c2.frq
+
+awk '{print $1 " " $2 " " $3 " " $4 " " $5 " " $6 " " $6"_"$5}' frq_c2_late > late
+awk '{print $1 " " $2 " " $3 " " $4 " " $5 " " $6 " " $6"_"$5}' frq_c2_early > early
+
+rm frq_c2_late
+rm frq_c2_early
+
+sort -k 7,7 early > sorted_early
+sort -k 7,7 late > sorted_late
+
+join -1 7 -2 1 sorted_late sorted_allele > late_full_c2.txt
+join -1 7 -2 1 sorted_early sorted_allele > early_full_c2.txt
+
+
+rm sorted_late
+rm sorted_early
+
+
+awk 'BEGIN {OFS = "\t"}; {print $8,$2,$3,$4,$5,$6,$7} ' late_full_c2.txt > late_c2_final_full
+awk 'BEGIN {OFS = "\t"}; {print $8,$2,$3,$4,$5,$6,$7} ' early_full_c2.txt > early_c2_final_full
+
+
+
+rm late_full_c2.txt
+rm early_full_c2.txt
+
+sort -k 1,1 late_c2_final_full > sorted_late
+sort -k 1,1 early_c2_final_full > sorted_early
+
+join -1 1 -2 1 sorted_late sorted_early > to_split
+
+# This to_split file should be concordant between groups for frequencies now. Use VIM to remove S0_
+
+awk 'BEGIN {OFS="\t"}; {print $1,$2,$3,$4,$5,$6,$7}' to_split > late
+
+awk 'BEGIN {OFS="\t"}; {print $1,$8,$9,$10,$11,$12,$13}' to_split > early
+
+
+cat late early > full_dataset_c2_early_late.txt
+
+sort -k 1,1 full_dataset_c2_early_late.txt > full_dataset_file_cluster2.txt
+
+rm full_dataset_c2_early_late.txt
 ```
-Etc. 
 
 
-Now we just need to join the alleleconversion.txt file with each of the clusters so that we have the v2 coordinate as the SNP name.
-``` bash
-for file in cluster*
-do
-	echo "$file: " $(awk '{print $1 " " $2 " " $3 " " $4 " " $5 " " $6 " " $7 " " $7"_"$6}' $file > out$file)
-done
-```
-
-Then just awk some more to put the fields together in the order you want. Thanks awk.
-
-That's file 2.
 
 # FILE 3 - Freqs file
 
