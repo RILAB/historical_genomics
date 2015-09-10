@@ -6,7 +6,7 @@ load("SNP_effects_ordered_Leaf_Angle.RData")
 
 df <- df[,1:2]
 
-write.table(df, "LeafAngle", row.names = FALSE)
+write.table(df, "LeafAngle", quote = FALSE, row.names = FALSE, col.names = FALSE)
 
 ```
 
@@ -14,7 +14,6 @@ Quit R.
 
 Open in Vim. 
 ```vim
-:%s/"//g
 
 Add a tab anywhere there is a space.
 
@@ -25,6 +24,7 @@ And separate out the base that is the MINOR allele.
 :%s/_T/^IT/g
 :%s/_A/^IA/g
 :%s/_G/^IG/g
+%s/_\./^I\./g
 ```
 Retitle the header. Exit vim.
 
