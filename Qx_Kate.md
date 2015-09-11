@@ -160,11 +160,11 @@ rm full_dataset_c2_early_late.txt
 
 Remove the "S0_" coordinates because I originally took these out of the GWAS with NAM.
 
-To make the freqs file (Ames) sort the full.dataset file and join to gwas.data.file - this file must be first in the join:
+To make the freqs file (Ames) sort the full.dataset file and join to gwas.data.file - this file must be the file to include all records in -a2 (because it is the second file here).
 
 ```bash
 (head -n 2 full_dataset_Ames.txt  && tail -n +3 full_dataset_Ames.txt | sort) > sorted.full.data.set.file
-join -1 1 -2 1 gwas.data.file sorted.full.data.set.file > freqs_file
+join -a2 -1 1 -2 1 sorted.full.data.set.file gwas.data.file > freqs_file
 ```
 
 # FILE4 - make the match pop file from the GWAS panel pop
