@@ -185,4 +185,4 @@ join -1 1 -2 3 NAM_for_match sortedalleleconversion.txt > match_pop_file_to_edit
 awk 'BEGIN {OFS="\t"}; {print $1,$2,$3,$4,$5,$7,$6}' match_pop_file_to_edit > match_pop_file
 ```
 
-Add a header, add tab separators in vim if you want.
+Add a header, add tab separators in vim if you want. NB - if you get an error related to Cholesky decomposition, it means you messed up allele orientation between matchpopfile/gwas and the fulldataset/freqdataset.
