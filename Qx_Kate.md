@@ -2,11 +2,11 @@
 
 Make the GWAS files first...note the underscore allele in this file IS the MINOR allele.. technically you could run through the whole SNP effects for all traits for NAM with a list function and do.call after. This is one example.
 ```R
-load("SNP_effects_ordered_Leaf_Angle.RData")
+load("SNP_effects_ordered.RData")
 
 df <- df[,1:2]
 
-write.table(df, "LeafAngle", quote = FALSE, row.names = FALSE, col.names = FALSE)
+write.table(df, "trait", quote = FALSE, row.names = FALSE, col.names = FALSE)
 
 ```
 
