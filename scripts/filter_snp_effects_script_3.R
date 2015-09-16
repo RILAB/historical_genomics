@@ -104,19 +104,3 @@ save(snp.idx3, file = "snp.idx3.RData")
 save(snp.idx2, file = "snp.idx2.RData")
 save(snp.idx1, file = "snp.idx1.RData")
 
-# Brief visualizations for the whole genome - keep in mind you will have to recalculate effect sizes - so these aren't really real
-barplot(df$estimate, col ="blue", ylab = "SNP Effect Size",
-        main ="All Chromosomes Ordered", names.arg=df$term, cex.axis=0.5)
-
-# Or by chromosome
-par(mfrow = c(5,2))
-barplot(df10$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 10")
-barplot(df9$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 9")
-barplot(df8$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 8")
-barplot(df7$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 7")
-barplot(df6$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 6")
-barplot(df5$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 5")
-barplot(df4$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 4")
-barplot(df3$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 3")
-barplot(df2$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 2")
-barplot(df1$estimate, col = "red", ylab = "SNP Effect Size", main ="Chromosome 1")
