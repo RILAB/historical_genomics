@@ -12,31 +12,23 @@ write.table(df, "trait", quote = FALSE, row.names = FALSE, col.names = FALSE)
 
 Quit R.
 
-Open in Vim. 
-```vim
-
-Add a tab anywhere there is a space.
-
-:%s/ /^I/g
-
-And separate out the base that is the MINOR allele.
-:%s/_C/^IC/g
-:%s/_T/^IT/g
-:%s/_A/^IA/g
-:%s/_G/^IG/g
-%s/_\./^I\./g
+``` bash
+sort -k 1,1 trait > sortedtrait
+sed -i 's/\s/\t/g' sortedtrait
+sed -i 's/_A/\tA/g' sortedtrait
+sed -i 's/_C/\tC/g' sortedtrait
+sed -i 's/_G/\tG/g' sortedtrait
+sed -i 's/_T/\tT/g' sortedtrait
 ```
-Retitle the header. Exit vim.
 
-Next do a unix join with the NAMfreqs.txt file - which is just the NAM_allfreqs.csv tab delimited.
+
+Next do a unix join with the sortedNAM file - which is just the NAM_allfreqs.csv tab delimited.
 
 Remove the headers of both files and sort them. Now join them.
 
 
 ```bash
-sort LeafAngle > sortedLeafAngle
-sort NAM_allfreqs.txt > sortedNAM_allfreqs.txt
-join -1 1 -2 1 sortedLeafAngle sortedNAM_allfreqs.txt > intermediatefile
+join -1 1 -2 1 sortedtrait sortedNAM > intermediatefile
 ```
 
 Now with awk just make the output you need. 
