@@ -1,7 +1,5 @@
 rm(list=ls())
 
-setwd("/group/jrigrp4/Justin_Kate/GBS2.7/imputed_NAM/models/LeafAngle/SNPs_effects")
-
 library(broom)
 library(plyr)
 
